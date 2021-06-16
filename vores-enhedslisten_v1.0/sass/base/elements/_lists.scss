@@ -1,0 +1,40 @@
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+#content {
+	ul {
+		/*  list-style: none; */
+	}
+
+	li::before {
+	/*	content: "\2022";
+		color: $primRed;
+		font-size: 1.25em;
+		display: inline-block;
+		width: 1.2em;  
+		margin-left: -1.2em;
+		position: relative;
+		top: 0.15em; */
+	}
+}
+
+
+ol {
+	list-style: decimal;
+}
+
+li>ul,
+li>ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}

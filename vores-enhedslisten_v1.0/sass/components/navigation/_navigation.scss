@@ -1,0 +1,266 @@
+$menuIndent:1rem;
+
+.main-navigation {
+   display: block;
+   //width: 100%;
+   font-size: 1rem;
+   z-index: 666;
+
+   @include mobile {
+      .menu-toggle {
+         //display: block;
+         background-color: transparent;
+         padding: 0;
+         margin: 0 1rem 0 0;
+         border: none;
+         display: block;
+      }
+
+      &.toggled .menu-strukturmenu-container {
+         display: block;
+         //flex-direction: column;
+         background-color: rgba(88, 88, 88, .95);
+         width: 100vw;
+         height: 100vh;
+         position: fixed;
+         overflow-y: auto;
+         overflow-x: hidden;
+         top: 0;
+         left: 0;
+         z-index: 110;
+
+         &>ul {
+            display: block;
+         }
+      }
+   }
+
+   ul {
+      @include mobile {
+         display: none;
+         width: 100%;
+      }
+
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+
+      li {
+         color: #fff;
+
+         &.menu-item-has-children::before {
+            content: '\f078';
+            font-family: fontAwesome;
+            transition: .5s transform;
+            position: absolute;
+            right: 1rem;
+
+            @include mobile {
+               color: #888;
+               top: 1rem;
+            }
+         }
+
+         &.menu-item-has-children:hover::before {
+            transform: rotate(180deg);
+         }
+
+         a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, .07);
+            text-transform: uppercase;
+            font-weight: 300;
+
+            @include mobile {
+               padding: $menuIndent;
+            }
+         }
+      }
+
+      @include mobile {
+         ul {
+            ul {
+               top: 0;
+            }
+
+            li {
+
+               &:hover>ul,
+               &.focus>ul {
+                  display: block;
+               }
+            }
+         }
+
+         li:hover>ul,
+         li.focus>ul {
+            display: block;
+            background-color: rgba(0, 0, 0, .33);
+         }
+      }
+   }
+
+   @include mobile {
+      li {
+         a {}
+
+         li {
+            a {
+               padding-left: 2*$menuIndent;
+            }
+
+            li {
+               a {
+                  padding-left: 3*$menuIndent;
+               }
+
+               li {
+                  a {
+                     padding-left: 4*$menuIndent;
+                  }
+
+                  li {
+                     a {
+                        padding-left: 5*$menuIndent;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   @include not-mobile {
+      min-width: 400px;
+      flex-grow: 4;
+      max-width: 1200px;
+      //background-color: rgba(0, 0, 0, .15);
+
+      .menu-toggle {
+         display: none;
+      }
+
+      ul {
+         &#primary-menu {
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+            max-width: 75rem;
+         }
+
+         li {
+            padding: .5rem 1rem .5rem 1rem;
+
+            &.menu-item-has-children::before {
+               content: '';
+            }
+
+            a {
+               border-bottom: none;
+            }
+
+            &:hover>ul,
+            &.focus>ul {
+               display: block;
+               background-color: $secGreen;
+               border: 1px solid rgba(0, 0, 0, 0.2);
+               position: absolute;
+               margin: -2px;
+            }
+         }
+
+         ul {
+            display: none;
+            background-color: aqua;
+            position: absolute;
+            width: max(12rem, 15vw);
+            padding: 1rem 0;
+            top: 2.2rem;
+            z-index: 666;
+            min-width: min-content;
+            box-shadow: 0rem .5rem 1.5rem 0rem rgba(0, 0, 0, .2);
+            left: -40%;
+
+            li {
+               padding: .5rem 3rem .5rem 1.5rem;
+
+               &:hover {
+                  background-color: rgba(0, 0, 0, 0.2);
+               }
+
+               &.menu-item-has-children::before {
+                  content: '\f078';
+                  top: .5rem;
+                  color: #fff;
+               }
+
+               &.menu-item-has-children:hover::before {
+                  transform: rotate(-90deg);
+               }
+            }
+
+            ul {
+               //display: block;
+               background-color: rgba(0, 0, 0, 0.33);
+               left: 97%;
+               top: -1rem;
+               //transform: translateX(97%);
+            }
+         }
+
+         //moves the submenus to left for the two rightmost top menu items
+         li:nth-last-child(-n+2) ul ul {
+            left: 0%;
+            transform: translateX(-97%);
+         }
+      }
+   }
+
+   li {
+      position: relative;
+
+      &:hover>a,
+      &.focus>a {}
+   }
+
+   a {
+      display: block;
+      text-decoration: none;
+   }
+
+   .current_page_item>a,
+   .current-menu-item>a,
+   .current_page_ancestor>a,
+   .current-menu-ancestor>a {
+      font-weight: 600;
+   }
+}
+
+/* Small menu. */
+@include not-mobile {
+   //.main-navigation ul {
+   //  display: flex;
+   //}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+   .site-main & {
+      margin: 0 0 1.5em;
+   }
+
+   .nav-links {
+      display: flex;
+   }
+
+   .nav-previous {
+      flex: 1 0 50%;
+   }
+
+   .nav-next {
+      text-align: end;
+      flex: 1 0 50%;
+   }
+}

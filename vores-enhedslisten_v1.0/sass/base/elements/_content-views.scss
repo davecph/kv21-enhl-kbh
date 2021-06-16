@@ -1,0 +1,24 @@
+/*This styles the content view overvies*/
+.pt-cv-wrapper {
+   .pt-cv-page {
+      display: flex;
+      flex-wrap: wrap;
+
+      .pt-cv-content-item {
+         width: 30%;
+         background-color: #333;
+         padding: 1rem;
+         margin: .5rem;
+         flex-grow: 1;
+         color: white;
+
+         .pt-cv-ifield h4 a{
+            color: white;
+         }
+
+         .pt-cv-href-thumbnail {
+            width: 100% !important;
+         }
+      }
+   }
+}

@@ -1,0 +1,69 @@
+.tribe-events .tribe-events-calendar-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__event- {
+        &row {
+            background-color: $terGrey;
+            border: 1px solid $terGrey02;  
+            margin: 8px !important;
+            width: calc(25% - 16px);
+            flex-grow: 1;
+            border-radius: 4px;
+            overflow: hidden;
+            min-width: 17rem;
+        }
+
+        &date-tag {
+            display: none;
+        }
+
+        &date-time-wrapper {
+            font-weight: 600;
+        }
+
+        &wrapper {
+            padding: 0 !important;
+            margin: 0 !important;
+
+            article {
+                background-color: transparent !important;
+                margin: 0 !important;
+                width: 100% !important;
+                padding: 0 !important;
+                height: auto !important;
+                min-height: 20rem !important;
+            }
+        }
+
+        &header h3 {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            font-weight: 300;
+            text-transform: uppercase;
+
+            a {
+                color: $secGrey;
+            }
+
+        }
+
+        &featured-image-wrapper {
+            margin: 0 !important;
+            width: 100% !important;
+            padding: 0 !important;
+        }
+
+        &details {
+            width: 100% !important;
+            padding: 1rem;
+        }
+    }
+
+    &__month-separator {
+        width: 100%;
+        font-size: 2.5rem;
+        margin: 2.1rem 0 1rem;
+    }
+}

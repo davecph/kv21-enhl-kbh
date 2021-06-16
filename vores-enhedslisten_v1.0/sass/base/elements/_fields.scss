@@ -1,0 +1,59 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+   color: $color__text-input;
+   border: 1px solid $color__border-input;
+   border-radius: 3px;
+   padding: 3px;
+
+   &:focus {
+      color: $color__text-input-focus;
+   }
+}
+
+select {
+   border: 1px solid $color__border-input;
+}
+
+textarea {
+   width: 100%;
+}
+
+input[type="text"]#filterInput {
+   width: max(400px, 33vw);
+   align-self: center;
+   height: 48px;
+   box-shadow: 0 0 24px 0px rgba(0, 0, 0, 0.3);
+   margin: 2vw;
+   border: solid 1px rgba(0, 0, 0, 0.3);
+   padding: 16px;
+   border-radius: 12px;
+   margin: 2rem auto;
+   display: block;
+}
+
+/*Ad justments for calderea forms*/
+.caldera-grid {
+
+   //background-color: aquamarine !important;
+   [class^='col-sm'] {
+      min-height: 1px; // ensures that form devisions is in effect even if the section is empty
+   }
+}
+
+.btn {
+   width: clamp(10rem, 100%, 40rem);
+}
