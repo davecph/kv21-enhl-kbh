@@ -1,0 +1,56 @@
+.sticky {
+   display: block;
+}
+
+article.post,
+article.page {
+   margin: 0;
+}
+
+.updated:not(.published) {
+   display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  // margin: 1.5em 0 0;
+
+   @include mobile {
+      padding: 7.5vw;
+   }
+}
+
+.page-links {
+   clear: both;
+   margin: 0 0 1.5em;
+}
+
+.postStream {
+   display: flex;
+   flex-wrap: wrap;
+
+   a {
+      color: #fff;
+      text-decoration: none;
+   }
+
+   article.type-post {
+      background-color: #282828;
+      color: #fff;
+      width: clamp(300px, 20vw, 375px);
+      //height: 500px;
+      overflow: hidden;
+      margin: 1rem;
+      flex-grow: 1;   
+   }
+
+   .entry-content {
+      display: none;
+   }
+
+   .entry-footer,
+   .entry-meta {
+      padding: .5rem 1rem;
+   }
+}

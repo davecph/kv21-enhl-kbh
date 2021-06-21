@@ -1,0 +1,69 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   clear: both;
+}
+
+h6,
+p strong {
+   font-size: 1.15 * $baseFontSize;
+   line-height: $lineHeight;
+   font-weight: 700;
+}
+
+h5 {
+   font-size: 2 * $baseFontSize;
+   line-height: 1.5 * $lineHeight;
+   text-transform: uppercase;
+   font-weight: 300;
+}
+
+h4 {
+   font-size: 2 * $lineHeight;
+   line-height: 2* $lineHeight;
+   font-weight: 500;
+}
+
+h3 {
+   font-size: $uppercaseFactor * 2 * $lineHeight;
+   line-height: 2* $lineHeight;
+   font-weight: 300;
+   text-transform: uppercase;
+}
+
+h2 {
+   font-size: 3*$baseFontSize;
+   line-height: 3*$lineHeight;
+}
+
+h1 {
+   font-size: $uppercaseFactor * 3 * $lineHeight;
+   line-height: 3*$lineHeight;
+   text-transform: uppercase;
+}
+
+.headerContainer {
+   h1 {
+      font-size: clamp(#{$uppercaseFactor * 2.25rem}, #{$uppercaseFactor * 11vw}, #{$uppercaseFactor * 7rem});
+      line-height: clamp(2.25rem, 11vw, 7rem);
+      hyphens: auto;
+   }
+
+   h2 {
+      font-size: clamp(#{$baseFontFactor * .66 * 2.25rem}, #{$baseFontFactor * .66 * 11vw}, #{$baseFontFactor * .66 * 7rem});
+      line-height: clamp(.66 * 2.25rem, .66 * 11vw, .66 * 7rem);
+   }
+}
+
+.postStream,
+.postStream #coverImg {
+   h2 {
+      font-size: 2rem;
+      line-height: 1.8rem;
+      text-transform: uppercase;
+      hyphens: auto;
+   }
+}

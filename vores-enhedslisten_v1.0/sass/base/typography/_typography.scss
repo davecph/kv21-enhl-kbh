@@ -1,0 +1,77 @@
+$font_path: '../_Web_fonts/';
+
+@font-face {
+   font-family: "Maj";
+   src: url($font_path+"Maj-Regular.eot") format("embedded-opentype"),
+      url($font_path+"Maj-Regular.woff") format("woff"),
+      url($font_path+"Maj-Regular.woff2") format("woff2");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: "Maj";
+   src: url($font_path+"Maj-Light.eot") format("embedded-opentype"),
+      url($font_path+"Maj-Light.woff") format("woff"),
+      url($font_path+"Maj-Light.woff2") format("woff2");
+   font-weight: 300;
+}
+
+@font-face {
+   font-family: "Maj";
+   src: url($font_path+"Maj-Bold.eot") format("embedded-opentype"),
+      url($font_path+"Maj-Bold.woff") format("woff"),
+      url($font_path+"Maj-Bold.woff2") format("woff2");
+   font-weight: 700;
+}
+
+@font-face {
+   font-family: "FontAwesome";
+   src: url($font_path+"fa-light-300.eot") format("embedded-opentype"),
+      url($font_path+"fa-light-300.woff") format("woff"),
+      url($font_path+"fa-light-300.woff2") format("woff2"),
+      url($font_path+"fa-light-300.ttf") format("truetype");
+   font-weight: 300;
+}
+
+@font-face {
+   font-family: "FontAwesome";
+   src: url($font_path+"fa-brands-400.eot") format("embedded-opentype"),
+      url($font_path+"fa-brands-400.woff") format("woff"),
+      url($font_path+"fa-brands-400.woff2") format("woff2"),
+      url($font_path+"fa-brands-400.ttf") format("truetype");
+   font-weight: 300;
+}
+
+/* 
+The following is defined in /abstracts/variables/_typography.scss 
+
+$lineHeight : 1.225rem;
+$baseFontSize: 1/1.4 * $lineHeight;
+
+$uppercaseFactor: 1.125; //This is the factor used to give a visually pleasing textpicture when a header is uppercase 
+*/
+
+body,
+p,
+button,
+input,
+select,
+optgroup,
+textarea {
+   color: $color__text-main;
+   font-family: $font__main;
+   font-size: $baseFontSize;
+   line-height: $lineHeight;
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+p {
+   padding: 0;
+   margin: 0;
+}
+

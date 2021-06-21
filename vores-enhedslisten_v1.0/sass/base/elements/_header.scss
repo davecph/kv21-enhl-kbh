@@ -1,0 +1,104 @@
+@mixin scrolled {
+   position: fixed;
+   top: 0;
+   background-color: rgba(0, 114, 102, .8);
+   animation: scroll-menu 0.5s 0.5s both;
+   z-index: 66;
+}
+
+#masthead {
+   width: 100%;
+   margin: 0;
+   display: flex;
+   background-color: $secGreen;
+   //height: 7rem;
+   color: #fff;
+   display: flex;
+   align-items: center;
+
+   .site-branding a::before {
+      display: block;
+      content: '';
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+   }
+
+   @include mobile {
+      justify-content: space-between;
+      padding: .5rem;
+
+      .site-branding a::before {
+         background-image: url(img/vores_logo_marker.svg);
+         width: 10vh;
+         height: 7vh;
+      }
+
+      .site-description {
+         color: #fff;
+         text-transform: uppercase;
+         font-size: clamp(1.2rem, 2vw, 3rem);
+         font-weight: 300;
+         width: min-content;
+      }
+   }
+
+   @include not-mobile {
+      //flex-wrap: wrap;
+      justify-content: start;
+
+      &.with-coverImg {
+         background: transparent;
+         position: absolute;
+         z-index: 99;
+      }
+
+      &.scrolled {
+         @include scrolled;
+
+         .site-branding {
+            padding: clamp(0.5rem, 1vw, 1.5rem);
+
+            a::before {
+               width: clamp(12rem, 9vw, 23rem);
+               height: clamp(3rem, 3vw, 5.5rem);
+            }
+         }
+      }
+
+      .site-branding {
+         padding: clamp(0.5rem, 2vw, 1.5rem);
+
+         a::before {
+            background-image: url(img/vores_logo_full.svg);
+            width: clamp(12rem, 18vw, 23rem);
+            height: clamp(3rem, 6vw, 5.5rem);
+         }
+      }
+
+      .site-description {
+         color: #fff;
+         text-transform: uppercase;
+         font-size: clamp(1.5rem, 2vw, 3rem);
+         font-weight: 300;
+      }
+   }
+}
+
+@include not-mobile {
+   body.home #masthead {
+      background: transparent;
+      position: absolute;
+      z-index: 99;
+
+      &.scrolled {
+         @include scrolled;
+      }
+   }
+
+/*   as the mast head erronously gets the class .with-coverImg, this forces a relative hasthead on archive pages */
+   body.archive #masthead{
+      background: $secGreen;
+      position: relative;
+   }
+}

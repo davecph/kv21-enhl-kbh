@@ -1,0 +1,40 @@
+#coverImg {
+   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(255, 255, 255, 0) 33%, rgba(255, 255, 255, 0) 66%, rgba(0, 0, 0, 0.20) 100%), var(--bg-img);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   width: 100%;
+   //min-height: 80vh;
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   background-blend-mode: multiply, normal;
+   color: white;
+
+   @include mobile {
+      //padding: 10vw 7.5vw 5vw;
+   }
+
+   @include not-mobile {
+      // padding: 20vw 15vw 5vw;
+   }
+}
+
+.category-candidates #coverImg {
+   background-image: linear-gradient(gray, gray), var(--bg-img), linear-gradient(gray, gray);
+   background-blend-mode: multiply, luminosity, normal;
+}
+
+#personImg {
+   background-image: var(--bg-img);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.postStream #coverImg {
+   height: 20rem;
+   padding: 1rem;
+   min-height: inherit;
+   justify-content: flex-end;
+}

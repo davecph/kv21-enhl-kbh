@@ -1,0 +1,23 @@
+a {
+   color: $primGreen;
+   text-decoration: none;
+
+	&:visited {
+		color: $primRed;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $primRed      ;
+	}
+
+	&:focus {
+		//outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

@@ -1,0 +1,178 @@
+/*.icon_star_primRed_medium*/
+[class*=icon_] {
+   &::before {
+      flex-shrink: 0;
+      font-family: FontAwesome;
+      text-align: center;
+      //background-color: darkblue;
+      font-size: 2.5rem;
+      width: 3rem;
+      height: 3rem;
+      line-height: 3rem;
+      font-weight: 300;
+   }
+
+   /*Icon selectors below*/
+   &[class*=none]::before {
+      content: '';
+   }
+   &[class*=star]::before {
+      content: '\f005';
+   }
+   &[class*=globe]::before {
+      content: '\f7a2';
+   }
+   &[class*=map]::before {
+      content: '\f3c5';
+   }
+   &[class*=government]::before {
+      content: '\f19c';
+   }
+   &[class*=news]::before {
+      content: '\f1ea';
+   }
+   &[class*=close]::before {
+      content: '\f00d';
+   }
+   &[class*=shop]::before {
+      content: '\f291';
+   }
+
+   &[class*=skull]::before {
+      content: '\f54c';
+   }
+   &[class*=menu]::before {
+      content: '\f0c9';
+   }
+   &[class*=facebook]::before {
+      content: '\f082';
+   }
+   &[class*=mail]::before {
+      content: '\f1fa';
+   }
+   &[class*=instagram]::before {
+      content: '\f16d';
+   }
+   &[class*=twitter]::before {
+      content: '\f099';
+   }
+   &[class*=linkedin]::before {
+      content: '\f0e1';
+   }
+   &[class*=homepage]::before {
+      content: '\f37e';
+   }
+   &[class*=user]::before {
+      content: '\f0c0';
+   }
+
+   /*Font Colors below*/
+   &[class*=primRed]::before {
+      color: $primRed;
+   }
+
+   &[class*=primGreen]::before {
+      color: $primGreen;
+   }
+
+   &[class*=secYellow]::before {
+      color: $secYellow;
+   }
+
+   &[class*=secOrange]::before {
+      color: $secOrange;
+   }
+
+   &[class*=secRed]::before {
+      color: $secRed;
+   }
+
+   &[class*=secGreen]::before {
+      color: $secGreen;
+   }
+
+   &[class*=secPurple]::before {
+      color: $secPurple;
+   }
+
+   &[class*=secBlue]::before {
+      color: $secBlue;
+   }
+
+   &[class*=secGrey]::before {
+      color: $secGrey;
+   }
+
+   &[class*=terYellow01]::before {
+      color: $terYellow01;
+   }
+
+   &[class*=terYellow02]::before {
+      color: $terYellow02;
+   }
+
+   &[class*=terOrange01]::before {
+      color: $terOrange01;
+   }
+
+   &[class*=terOrange02]::before {
+      color: $terOrange02;
+   }
+
+   &[class*=terRed01]::before {
+      color: $terRed01;
+   }
+
+   &[class*=terRed0]::before {
+      color: $terRed02;
+   }
+
+   &[class*=terGreen01]::before {
+      color: $terGreen01;
+   }
+
+   &[class*=terGreen02]::before {
+      color: $terGreen02;
+   }
+
+   &[class*=terPurple01]::before {
+      color: $terPurple01;
+   }
+
+   &[class*=terPurple02]::before {
+      color: $terPurple02;
+   }
+
+   &[class*=terBlue01]::before {
+      color: $terBlue01;
+   }
+
+   &[class*=terBlue02]::before {
+      color: $terBlue02;
+   }
+   &[class*=white]::before {
+      color: #fff;
+   }
+
+   /*Icon sizes below*/
+   &[class*=small]::before {
+      font-size: 1.5rem;
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+   }
+
+   &[class*=medium]::before {
+      font-size: 2.5rem;
+      width: 3rem;
+      height: 3rem;
+      line-height: 3rem;
+   }
+
+   &[class*=large]::before {
+      font-size: 4rem;
+      width: 4.5rem;
+      height: 4.5rem;
+      line-height: 4.8rem;
+   }
+}

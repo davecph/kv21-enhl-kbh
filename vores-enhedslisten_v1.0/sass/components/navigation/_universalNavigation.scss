@@ -1,0 +1,123 @@
+#uniNav {
+   display: flex;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   //right: calc(-1 * clamp(360px, 25vw, 600px));
+   z-index: 100;
+
+   &.collapsed {
+      right: calc(-1 * max(360px, min(25vw, 600px))); // fallback for old safari
+      right: calc(-1 * clamp(360px, 25vw, 600px));
+      transition: right 1s;
+   }
+
+   &.expanded {
+      right: 0;
+      transition: right 1s;
+      z-index: 999;
+
+      #uniNav-activateBtn::before {
+         background-image: url(img/close.svg);
+         //background-size: 100%;
+      }
+   }
+
+   #uniNav-activateBtn {
+      width: max(64px, min(4vw , 80px));// fallback for old safari
+      width: clamp(64px, 4vw, 80px);
+      height: max(64px, min(4vw , 80px));// fallback for old safari
+      height: clamp(64px, 4vw, 80px);
+      background-color: $primRed;
+      border-radius: 8px 0 0 8px;
+      top: -100px;
+      position: relative;
+      box-shadow: 0.1vw 0.3vw .5vw 0 rgba(0, 0, 0, .4);
+      overflow: hidden;
+      cursor: pointer;
+      animation: 1s uniNav-activateBtn-entry 3s forwards;
+
+      &:hover::before {
+         animation: 1s uniNav-activateBtn-hover linear infinite;
+         background-image: url(img/Oe.svg);
+      }
+
+      &::before {
+         display: block;
+         content: '';
+         width: 100%;
+         height: 100%;
+         background-image: url(img/menu.svg);
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: 66%;
+      }
+   }
+
+   #uniNav-closeBtn {
+      background-image: url(img/close.svg);
+      position: absolute;
+      width: 3rem;
+      height: 3rem;
+      display: block;
+      opacity: .3;
+      top: 1rem;
+      right: 1rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%, 66%;
+   }
+
+   .uniNav-content {
+      background-color: rgba(0, 0, 0, 0.9);
+      height: 100vh;
+      overflow: hidden;
+      width: max(360px, min(25vw, 600px));// fallback for old safari
+      width: clamp(360px, 25vw, 600px);
+      padding: max(32px, min(3vw, 120px));// fallback for old safari
+      padding: clamp(32px, 3vw, 120px);
+
+      .uniNav-links {
+         margin: 0%;
+         padding: 0%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+         height: 100%;
+         list-style: none;
+
+         li {
+            margin: 0;
+            display: flex;
+
+            &::before {
+               margin-right: 1rem;
+            }
+
+            a {
+               color: #fff;
+               text-decoration: none;
+               &:hover{
+                  opacity: .3;
+               }
+
+               h3 {
+                  font-size: 2rem;
+                  font-weight: 300;
+                  padding: 0;
+                  margin: 0;
+                  text-transform: uppercase;
+                  line-height: 1.8rem;
+               }
+
+               p {
+                  //font-weight: 700;
+                  margin: 0;
+                  color: #fff;
+                  //text-decoration: none;}
+               }
+            }
+         }
+      }
+   }
+}

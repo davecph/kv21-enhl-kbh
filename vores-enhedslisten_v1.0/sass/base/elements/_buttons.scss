@@ -1,0 +1,55 @@
+button,
+.btn,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+   border: 1px solid;
+   border-color: $color__border-button;
+   border-radius: 3px;
+   background: $color__background-button;
+   color: rgba(0, 0, 0, 0.8);
+   line-height: 1;
+   padding: 0.8em 1.2em 0.8em;
+   text-transform: uppercase;
+   font-size: 1.25 * $baseFontSize;
+   text-align: center;
+
+   &:hover {
+      border-color: $color__border-button-hover;
+   }
+
+   &:active,
+   &:focus {
+      border-color: $color__border-button-focus;
+   }
+
+   &.btn-success {
+      border: none;
+      background-color: $primGreen;
+      color: #fff;
+      transition: background-color .5s;
+
+      &:hover {
+         background-color: $secGreen;
+      }
+   }
+
+   &.btn-medium {
+      font-size: 1.25 * 1.25 * $baseFontSize;
+      font-weight: 300;
+   }
+
+   &.btn-large {
+      font-size: 1.25 * 1.25 * 1.25 * $baseFontSize;
+      font-weight: 300;
+   }
+
+   &.btn-inline-block {
+      display: inline-block;
+      margin: .4em 0 .8em;
+   }
+
+   &.btn-menu{
+      width: max-content;
+   }
+}

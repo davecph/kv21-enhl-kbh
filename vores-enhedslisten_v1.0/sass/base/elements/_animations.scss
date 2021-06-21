@@ -1,0 +1,30 @@
+@keyframes uniNav-activateBtn-entry {
+   from {
+      top: -100px;
+   }
+
+   to {
+      top: 20vh;
+   }
+}
+
+@keyframes uniNav-activateBtn-hover {
+   from {
+      transform: perspective(10rem) rotateY(0deg);
+   }
+
+   to {
+      transform: perspective(10rem) rotateY(360deg);
+   }
+}
+
+@keyframes scroll-menu {
+   from {
+      top: -100px
+   }
+
+   to {
+      top: 0;
+   }
+}
+
