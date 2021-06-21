@@ -884,7 +884,7 @@ table {
     padding: 0.5rem;
   }
   #masthead .site-branding a::before {
-    background-image: url(img/kbh_logo_marker.svg);
+    background-image: url(img/kbh_logo_marker_alt.svg);
     width: 10vh;
     height: 7vh;
   }
