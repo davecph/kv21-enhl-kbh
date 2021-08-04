@@ -426,7 +426,7 @@ optgroup,
 textarea {
   color: #404040;
   font-family: Maj, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.9423076923rem;
   line-height: 1.225rem;
 }
 
@@ -442,7 +442,7 @@ p {
 }
 
 .heroSection p, p.large {
-  font-size: 1.16375rem;
+  font-size: 1.2532692308rem;
   line-height: 1.62925rem;
   font-weight: 300;
 }
@@ -496,7 +496,7 @@ p {
 }
 
 .p-small {
-  font-size: 0.7rem;
+  font-size: 0.7538461538rem;
   line-height: 0.98rem;
 }
 
@@ -554,13 +554,13 @@ h6 {
 
 h6,
 p strong {
-  font-size: 1.00625rem;
+  font-size: 1.0836538462rem;
   line-height: 1.225rem;
   font-weight: 700;
 }
 
 h5 {
-  font-size: 1.75rem;
+  font-size: 1.8846153846rem;
   line-height: 1.8375rem;
   text-transform: uppercase;
   font-weight: 300;
@@ -580,7 +580,7 @@ h3 {
 }
 
 h2 {
-  font-size: 2.625rem;
+  font-size: 2.8269230769rem;
   line-height: 3.675rem;
 }
 
@@ -596,7 +596,7 @@ h1 {
   hyphens: auto;
 }
 .headerContainer h2 {
-  font-size: clamp(1.0607142857rem, 5.1857142857vw, 3.3rem);
+  font-size: clamp(1.1423076923rem, 5.5846153846vw, 3.5538461538rem);
   line-height: clamp(.66 * 2.25rem, .66 * 11vw, .66 * 7rem);
 }
 
@@ -1050,7 +1050,7 @@ input[type=submit] {
   line-height: 1;
   padding: 0.8em 1.2em 0.8em;
   text-transform: uppercase;
-  font-size: 1.09375rem;
+  font-size: 1.1778846154rem;
   text-align: center;
 }
 button:hover,
@@ -1093,7 +1093,7 @@ button.btn-medium,
 input[type=button].btn-medium,
 input[type=reset].btn-medium,
 input[type=submit].btn-medium {
-  font-size: 1.3671875rem;
+  font-size: 1.4723557692rem;
   font-weight: 300;
 }
 button.btn-large,
@@ -1101,7 +1101,7 @@ button.btn-large,
 input[type=button].btn-large,
 input[type=reset].btn-large,
 input[type=submit].btn-large {
-  font-size: 1.708984375rem;
+  font-size: 1.8404447115rem;
   font-weight: 300;
 }
 button.btn-inline-block,
@@ -1228,7 +1228,7 @@ input[type=text]#filterInput {
   grid-area: manchet;
   color: #000;
   font-weight: 300;
-  font-size: 1.3125rem;
+  font-size: 1.4134615385rem;
   line-height: 1.8375rem;
   text-align: right;
 }
