@@ -1660,7 +1660,12 @@ body.home .headerContainer {
 /* sections
 --------------------------------------------- */
 .heroSection {
-  min-height: 75vh;
+  min-height: 80vh;
+  padding: 25vh 16vw 12vh;
+  color: white;
+}
+.heroSection p {
+  color: white;
 }
 
 /* Posts and pages
