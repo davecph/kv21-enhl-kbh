@@ -47,7 +47,7 @@ h1 {
    transform: rotate(-7deg) skew(-7deg);
    max-width: 16ch;
 
-   [style *="text-align: center"] {
+   &[style *= "text-align: center"] {
       margin: 0 auto;
    }
 }
