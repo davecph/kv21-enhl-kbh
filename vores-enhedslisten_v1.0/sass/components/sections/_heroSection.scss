@@ -12,5 +12,6 @@
 
    p {
       color: white;
+      @extend %p-large; 
    }
 }
