@@ -441,12 +441,6 @@ p {
   margin: 0;
 }
 
-.heroSection p, p.large {
-  font-size: 1.1765384615rem;
-  line-height: 1.5295rem;
-  font-weight: 300;
-}
-
 dfn,
 cite,
 em,
@@ -492,12 +486,18 @@ big {
 }
 
 p {
-  max-width: 70ch;
+  max-width: 77ch;
 }
 
 .p-small {
   font-size: 0.7076923077rem;
   line-height: 0.92rem;
+}
+
+.heroSection p, p.large {
+  font-size: 1.1765384615rem;
+  line-height: 1.5295rem;
+  font-weight: 300;
 }
 
 h1 + p,

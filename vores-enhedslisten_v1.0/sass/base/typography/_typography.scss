@@ -74,12 +74,3 @@ p {
    margin: 0;
 }
 
-%p-large {
-   font-size: 1.33 * $baseFontSize;
-   line-height: 1.33 * $lineHeight;
-   font-weight: 300;
-}
-
-p.large {
-   @extend %p-large;
-}
