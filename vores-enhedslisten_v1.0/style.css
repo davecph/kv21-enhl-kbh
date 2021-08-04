@@ -1657,6 +1657,12 @@ body.home .headerContainer {
   color: #fff;
 }
 
+/* sections
+--------------------------------------------- */
+.heroSection {
+  min-height: 75vh;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {

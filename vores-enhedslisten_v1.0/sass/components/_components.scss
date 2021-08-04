@@ -2,11 +2,18 @@
 --------------------------------------------- */
 @import "navigation/navigation";
 @import "navigation/universalNavigation";
+
+/* sections
+--------------------------------------------- */
+@import "sections/heroSection";
+
+
 /* Posts and pages
 --------------------------------------------- */
 @import "content/posts-and-pages";
 /* Flip box design
 --------------------------------------------- */
+
 @import "content/flipBox";
 /*the cover image */
 @import "content/coverImg";
@@ -14,6 +21,7 @@
 @import "content/archive";
 @import "content/iconBlock";
 @import "content/events-calendar-list";
+
 
 /* Comments
 --------------------------------------------- */
