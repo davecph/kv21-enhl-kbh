@@ -1,6 +1,6 @@
 .heroSection {
    min-height: 80vh;
-   padding: 25vh 16vw 12vh;
+   padding: 25vh 2rem 12vh;
    color: white;
 
    h1 {
@@ -13,6 +13,10 @@
    p {
       color: white;
       margin: auto;
-      @extend %p-large; 
+      @extend %p-large;
+   }
+
+   @include not-mobile {
+      padding: 25vh 16vw 12vh;
    }
 }

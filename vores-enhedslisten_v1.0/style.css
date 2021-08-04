@@ -1667,7 +1667,7 @@ body.home .headerContainer {
 --------------------------------------------- */
 .heroSection {
   min-height: 80vh;
-  padding: 25vh 16vw 12vh;
+  padding: 25vh 2rem 12vh;
   color: white;
 }
 .heroSection h1 {
@@ -1679,6 +1679,11 @@ body.home .headerContainer {
 .heroSection p {
   color: white;
   margin: auto;
+}
+@media (min-width: 768px) and (min-height: 601px), (min-width: 1025px) {
+  .heroSection {
+    padding: 25vh 16vw 12vh;
+  }
 }
 
 /* Posts and pages
