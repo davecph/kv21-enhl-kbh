@@ -12,6 +12,7 @@
 
    p {
       color: white;
+      margin: auto;
       @extend %p-large; 
    }
 }

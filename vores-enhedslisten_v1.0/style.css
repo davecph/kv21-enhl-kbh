@@ -1678,6 +1678,7 @@ body.home .headerContainer {
 }
 .heroSection p {
   color: white;
+  margin: auto;
 }
 
 /* Posts and pages
