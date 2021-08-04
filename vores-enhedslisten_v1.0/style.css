@@ -1703,6 +1703,10 @@ body.home .headerContainer {
   padding-bottom: 7vh;
 }
 
+.contentSection_1 {
+  background-color: #eee;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
