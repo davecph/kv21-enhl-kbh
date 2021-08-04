@@ -442,7 +442,7 @@ p {
 }
 
 .heroSection p, p.large {
-  line-height: 1.16375rem;
+  font-size: 1.16375rem;
   line-height: 1.62925rem;
   font-weight: 300;
 }

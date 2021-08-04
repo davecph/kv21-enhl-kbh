@@ -75,7 +75,7 @@ p {
 }
 
 %p-large {
-   line-height: 1.33 * $baseFontSize;
+   font-size: 1.33 * $baseFontSize;
    line-height: 1.33 * $lineHeight;
    font-weight: 300;
 }
