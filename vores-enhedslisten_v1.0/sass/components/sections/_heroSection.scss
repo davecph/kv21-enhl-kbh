@@ -3,6 +3,13 @@
    padding: 25vh 16vw 12vh;
    color: white;
 
+   h1 {
+      font-size: max(2rem, min(8vw, 8rem));
+      font-size: clamp(2rem, 8vw, 8rem);
+      line-height: max(1.625rem, min(6.5vw, 6.5rem));
+      line-height: clamp(1.625rem, 6.5vw, 6.5rem);
+   }
+
    p {
       color: white;
    }
