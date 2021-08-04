@@ -45,9 +45,11 @@ h1 {
    text-transform: uppercase;
    transform-origin: left bottom;
    transform: rotate(-7deg) skew(-7deg);
-   margin: 1rem auto;
    max-width: 16ch;
-   
+
+   [style *="text-align: center"] {
+      margin: 0 auto;
+   }
 }
 
 .headerContainer {
