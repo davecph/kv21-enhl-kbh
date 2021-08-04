@@ -1667,14 +1667,14 @@ body.home .headerContainer {
 --------------------------------------------- */
 .heroSection {
   min-height: 80vh;
-  padding: 25vh 2rem 12vh;
+  padding: 10vh 1rem 5vh;
   color: white;
 }
 .heroSection h1 {
-  font-size: max(2rem, min(8vw, 8rem));
-  font-size: clamp(2rem, 8vw, 8rem);
-  line-height: max(1.625rem, min(6.5vw, 6.5rem));
-  line-height: clamp(1.625rem, 6.5vw, 6.5rem);
+  font-size: max(3.2rem, min(8vw, 8rem));
+  font-size: clamp(3.2rem, 8vw, 8rem);
+  line-height: max(2.6rem, min(6.5vw, 6.5rem));
+  line-height: clamp(2.6rem, 6.5vw, 6.5rem);
 }
 .heroSection p {
   color: white;
