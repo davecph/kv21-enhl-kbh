@@ -21,7 +21,10 @@
 }
 
 #candidateGrid {
-   .candidate_grid .ue_post_grid:nth-child(1n + 4) {
-      display: none;
+   .candidate_grid .ue_post_grid {
+      background-color: yellowgreen;
+      &:nth-child(1n + 4) {
+         display: none;
+      }
    }
 }
