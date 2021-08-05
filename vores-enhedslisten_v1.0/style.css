@@ -2005,11 +2005,11 @@ body.archive #page .spacer {
   text-align: left;
 }
 
-#candidateGrid .candidate_grid .ue_post_grid {
-  background-color: yellowgreen;
-}
-#candidateGrid .candidate_grid .ue_post_grid:nth-child(1n+4) {
+#candidateGrid .candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n+5) {
   display: none;
+}
+#candidateGrid.displayAll .candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n+5) {
+  display: inherit;
 }
 
 /* Comments
