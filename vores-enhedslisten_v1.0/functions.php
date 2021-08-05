@@ -171,6 +171,8 @@ function test_scripts() {
    
    wp_enqueue_script( 'universal-navigation', get_template_directory_uri() . '/js/universalNavigation.js' );
 
+   wp_enqueue_script( 'section-expand', get_template_directory_uri() . '/js/sectionExpand.js' );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

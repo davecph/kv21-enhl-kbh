@@ -24,7 +24,10 @@
    .candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n + 5) {
       display: none;
    }
-   &.displayAll{.candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n + 5) {
-      display: inherit;
-   }}
+
+   &.displayAll {
+      .candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n + 5) {
+         display: inherit;
+      }
+   }
 }
