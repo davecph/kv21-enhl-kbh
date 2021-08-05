@@ -1994,7 +1994,12 @@ body.archive #page .spacer {
   color: #fff;
 }
 .candidate_grid .uc_post_image {
+  background-image: linear-gradient(#888, #888), var(--bg-img);
+  background-blend-mode: saturation;
+}
+.candidate_grid .uc_post_image:hover {
   background-image: var(--bg-img);
+  background-blend-mode: normal;
 }
 .candidate_grid .uc_content {
   text-align: left;

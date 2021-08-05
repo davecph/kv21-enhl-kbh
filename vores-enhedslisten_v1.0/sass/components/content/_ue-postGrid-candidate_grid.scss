@@ -6,7 +6,13 @@
    }
 
    .uc_post_image {
-      background-image: var(--bg-img);
+      background-image: linear-gradient(#888, #888), var(--bg-img);
+      background-blend-mode: saturation;
+
+      &:hover {
+         background-image:  var(--bg-img);
+         background-blend-mode: normal;
+      }
    }
 
    .uc_content {
