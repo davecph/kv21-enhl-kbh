@@ -1993,6 +1993,9 @@ body.archive #page .spacer {
 .candidate_grid a:hover {
   color: #fff;
 }
+.candidate_grid .uc_post_image {
+  background-image: var(--bg-img);
+}
 .candidate_grid .uc_content {
   text-align: left;
 }
