@@ -244,6 +244,24 @@ function sortEventsByDate($args, $widgetControlsValues){
 
 add_filter("sort_events_by_date", "sortEventsByDate", 10, 2);
 
+/* New post from category */
+
+function set_category () {
+
+   global $post;
+ //Check for a category parameter in our URL, and sanitize it as a string
+   $category_slug = filter_input(INPUT_GET, 'category', FILTER_SANITIZE_STRING, array("options" => array("default" => 0)));
+
+ //If we've got a category by that name, set the post terms for it
+   if ( $category = get_category_by_slug($category_slug) ) {
+       wp_set_post_terms( $post->ID, array($category->term_id), 'category' );
+   }
+
+}
+
+//hook it into our post-new.php specific action hook
+add_action( 'admin_head-post-new.php', 'set_category', 10, 1 );
+
 
 
 ?>
