@@ -2005,6 +2005,10 @@ body.archive #page .spacer {
   text-align: left;
 }
 
+#candidateGrid .candidate_grid .ue_post_grid:nth-child(1n+4) {
+  display: none;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {

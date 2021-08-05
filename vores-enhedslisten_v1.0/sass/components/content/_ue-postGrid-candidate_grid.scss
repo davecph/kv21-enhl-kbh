@@ -10,12 +10,18 @@
       background-blend-mode: saturation;
 
       &:hover {
-         background-image:  var(--bg-img);
+         background-image: var(--bg-img);
          background-blend-mode: normal;
       }
    }
 
    .uc_content {
       text-align: left;
+   }
+}
+
+#candidateGrid {
+   .candidate_grid .ue_post_grid:nth-child(1n + 4) {
+      display: none;
    }
 }
