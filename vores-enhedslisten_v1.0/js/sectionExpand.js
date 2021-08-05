@@ -8,7 +8,7 @@ $(document).ready(function() {
          $("#candidateGrid").addClass("displayAll");
       } else if ($("#candidateGrid").hasClass("displayAll") == true) {
          
-         $("#uniNav").removeClass("displayAll");
+         $("#candidateGrid").removeClass("displayAll");
       }
    });
    
