@@ -4,7 +4,7 @@ $(document).ready(function() {
       console.log('clicked');
       if ($("#candidateGrid").hasClass("displayAll") !== true) {
          $("#candidateGrid").addClass("displayAll");
-      } else if ($("#candidateGrid").hasClass("displayAll") == true) {
+      } else if ($("#candidateGrid").hasClass("displayAll") = true) {
          console.log('here');
          $("#candidateGrid").removeClass("displayAll");
       }
