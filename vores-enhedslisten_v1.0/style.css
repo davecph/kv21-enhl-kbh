@@ -1989,6 +1989,13 @@ body.archive #page .spacer {
   margin: 2.1rem 0 1rem;
 }
 
+.candidate_grid {
+  text-align: left;
+}
+.candidate_grid a, .candidate_grid a:hover {
+  color: #fff;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
