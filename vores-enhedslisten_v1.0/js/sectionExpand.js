@@ -1,5 +1,5 @@
 $(document).ready(function() {
-   console.log('ready!');
+   console.log('ready!!');
    $('#expandCandidates').click(function() {
       console.log('clicked yup!');
       if ($("#candidateGrid").hasClass("displayAll") !== true) {
