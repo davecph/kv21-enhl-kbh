@@ -1241,7 +1241,8 @@ input[type=text]#filterInput {
 #page article .factbox {
   grid-area: fact;
   padding: 1rem;
-  background: #bbb;
+  background: rgba(30, 30, 30, 0.8);
+  color: #fff;
 }
 #page article.category-candidates .factbox {
   grid-column: 2/3;
