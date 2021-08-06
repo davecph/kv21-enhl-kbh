@@ -17,6 +17,10 @@
 
    .uc_content {
       text-align: left;
+
+      h3 {
+         word-break: break-word;
+      }
    }
 }
 

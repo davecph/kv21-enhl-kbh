@@ -45,15 +45,7 @@
       </header>
    <?php endif; ?>
 <!-- / .entry-header -->
-	<?php	if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				test_posted_on();
-				test_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-	<?php endif ; ?>
+
 	
    <?php if (is_singular() ) :  ?>
       <div class="entry-content">

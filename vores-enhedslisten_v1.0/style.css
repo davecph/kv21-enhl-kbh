@@ -2004,6 +2004,9 @@ body.archive #page .spacer {
 .candidate_grid .uc_content {
   text-align: left;
 }
+.candidate_grid .uc_content h3 {
+  word-break: break-word;
+}
 
 #candidateGrid .candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n+5) {
   display: none;
