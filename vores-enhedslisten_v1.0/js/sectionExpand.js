@@ -11,3 +11,13 @@ $(document).ready(function() {
       }
    });
 });
+
+
+$(document).ready(function() {
+   $(document).click(function(event){
+      $(event.target).closest(".clickable").each(function(){
+        // "this" is your "clickable" clicked
+        console.log('stuff');
+      });
+    });
+});
