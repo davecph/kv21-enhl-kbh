@@ -1296,7 +1296,7 @@ input[type=text]#filterInput {
   }
 }
 #page article.has-post-thumbnail.category-candidates #coverImg {
-  grid-row: 1/4;
+  grid-row: 1/5;
 }
 #page article.has-post-thumbnail .headerContainer {
   color: #fff;
