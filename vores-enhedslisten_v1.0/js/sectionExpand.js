@@ -11,7 +11,10 @@ $(document).ready(function() {
       }
    });
    $(document).click(function(event) {
-      console.log('stuff');
+      console.log($(event.target));
+      $(event.target).closest(".clickable").each(function() {
+         
+      });
       
    });
 });
