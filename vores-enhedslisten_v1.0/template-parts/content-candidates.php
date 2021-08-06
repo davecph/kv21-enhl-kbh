@@ -108,19 +108,19 @@
                   <!-- bob is fucked -->
                   <?php while( have_rows('candidate_contact_info') ): the_row(); ?>
                      <?php if( get_sub_field('e-mail') ): ?> 
-                        <a class="icon_mail_secGrey_small" href="mailto:<?php the_sub_field('e-mail'); ?>"></a>
+                        <a class="icon_mail_white_small" href="mailto:<?php the_sub_field('e-mail'); ?>"></a>
                      <?php endif; ?>
                      <?php if( get_sub_field('facebook') ): ?>
-                        <a class="icon_facebook_secGrey_small" href="<?php the_sub_field('facebook'); ?>"></a>
+                        <a class="icon_facebook_white_small" href="<?php the_sub_field('facebook'); ?>"></a>
                      <?php endif; ?>
                      <?php if( get_sub_field('instagram') ): ?>
-                        <a class="icon_instagram_secGrey_small" href="<?php the_sub_field('instagram'); ?>"></a>
+                        <a class="icon_instagram_white_small" href="<?php the_sub_field('instagram'); ?>"></a>
                      <?php endif; ?>
                      <?php if( get_sub_field('twitter') ): ?>
-                        <a class="icon_twitter_secGrey_small" href="<?php the_sub_field('twitter'); ?>"></a>
+                        <a class="icon_twitter_white_small" href="<?php the_sub_field('twitter'); ?>"></a>
                      <?php endif; ?>
                      <?php if( get_sub_field('linkedin') ): ?>
-                        <a class="icon_linkedin_secGrey_small" href="<?php the_sub_field('linkedin'); ?>"></a>
+                        <a class="icon_linkedin_white_small" href="<?php the_sub_field('linkedin'); ?>"></a>
                      <?php endif; ?>
                      
                   <?php endwhile; 
