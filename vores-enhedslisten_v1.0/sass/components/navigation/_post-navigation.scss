@@ -2,6 +2,7 @@
    position: fixed;
    width: 100vw;
    bottom: 0;
+   padding: 2vw;
 
    .nav-links {
       display: flex;
@@ -15,7 +16,7 @@
       border-radius: 2.5rem;
       flex-grow: 0;
       padding: 1rem;
-      flex-basis: 16vw;
+      flex-basis: 20vw;
    }
 
    .nav-subtitle {

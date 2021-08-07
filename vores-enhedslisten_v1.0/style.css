@@ -1669,6 +1669,7 @@ body.home .headerContainer {
   position: fixed;
   width: 100vw;
   bottom: 0;
+  padding: 2vw;
 }
 .post-navigation .nav-links {
   display: flex;
@@ -1681,7 +1682,7 @@ body.home .headerContainer {
   border-radius: 2.5rem;
   flex-grow: 0;
   padding: 1rem;
-  flex-basis: 16vw;
+  flex-basis: 20vw;
 }
 .post-navigation .nav-subtitle {
   display: flex;
