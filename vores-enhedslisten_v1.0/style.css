@@ -1687,7 +1687,7 @@ body.home .headerContainer {
   display: flex;
   align-items: center;
 }
-.post-navigation .nav-subtitle .nav-next {
+.post-navigation .nav-next .nav-subtitle {
   justify-content: right;
 }
 .post-navigation img {

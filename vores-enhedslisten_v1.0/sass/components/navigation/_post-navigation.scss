@@ -21,7 +21,10 @@
    .nav-subtitle {
       display: flex;
       align-items: center;
-      .nav-next{justify-content: right;}
+   }
+
+   .nav-next .nav-subtitle {
+      justify-content: right;
    }
 
    img {
