@@ -1,9 +1,4 @@
 .post-navigation {
-   position: fixed;
-   width: 100vw;
-   bottom: 0;
-   padding: 2vw;
-
    .nav-links {
       display: flex;
       justify-content: space-between;
@@ -17,6 +12,8 @@
       flex-grow: 0;
       padding: 1rem;
       flex-basis: 20vw;
+      position: fixed;
+      bottom: 2vw;
    }
 
    .nav-subtitle {
@@ -24,11 +21,20 @@
       align-items: center;
    }
 
+   .nav-previous {
+      left: 2vw;
+   }
+
    .nav-next {
+      right: 2vw;
+
       .nav-subtitle {
          justify-content: right;
       }
-      .nav-title{text-align: right;}
+
+      .nav-title {
+         text-align: right;
+      }
    }
 
    .nav-title {

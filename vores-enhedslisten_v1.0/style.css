@@ -1665,12 +1665,6 @@ body.home .headerContainer {
   color: #fff;
 }
 
-.post-navigation {
-  position: fixed;
-  width: 100vw;
-  bottom: 0;
-  padding: 2vw;
-}
 .post-navigation .nav-links {
   display: flex;
   justify-content: space-between;
@@ -1683,10 +1677,18 @@ body.home .headerContainer {
   flex-grow: 0;
   padding: 1rem;
   flex-basis: 20vw;
+  position: fixed;
+  bottom: 2vw;
 }
 .post-navigation .nav-subtitle {
   display: flex;
   align-items: center;
+}
+.post-navigation .nav-previous {
+  left: 2vw;
+}
+.post-navigation .nav-next {
+  right: 2vw;
 }
 .post-navigation .nav-next .nav-subtitle {
   justify-content: right;
