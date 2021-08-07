@@ -1558,17 +1558,6 @@ body.home .headerContainer {
 .post-navigation .nav-links {
   display: flex;
 }
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  flex: 1 0 50%;
-}
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  text-align: end;
-  flex: 1 0 50%;
-}
 
 #uniNav {
   display: flex;
@@ -1676,15 +1665,30 @@ body.home .headerContainer {
   color: #fff;
 }
 
+.post-navigation {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+}
+.post-navigation .nav-links {
+  display: flex;
+  justify-content: space-between;
+}
 .post-navigation .nav-next,
 .post-navigation .nav-previous {
   background-color: rgba(0, 0, 0, 0.85);
-  height: 6rem;
-  border-radius: 3rem;
+  height: 5rem;
+  border-radius: 2.5rem;
+  flex-grow: 0;
+  padding: 1rem;
+  flex-basis: 16vw;
 }
-.post-navigation .nav-next img,
-.post-navigation .nav-previous img {
-  width: 4.5rem;
+.post-navigation .nav-subtitle {
+  display: flex;
+  align-items: center;
+}
+.post-navigation img {
+  width: 3rem;
   border-radius: 50%;
 }
 

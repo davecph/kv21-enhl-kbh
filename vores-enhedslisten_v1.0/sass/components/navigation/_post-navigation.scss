@@ -1,14 +1,30 @@
 .post-navigation {
+   position: fixed;
+   width: 100vw;
+   bottom: 0;
+
+   .nav-links {
+      display: flex;
+      justify-content: space-between;
+   }
 
    .nav-next,
    .nav-previous {
-      background-color: rgba(0, 0, 0, .85);
-      height: 6rem;
-      border-radius: 3rem;
+      background-color: rgba(0, 0, 0, 0.85);
+      height: 5rem;
+      border-radius: 2.5rem;
+      flex-grow: 0;
+      padding: 1rem;
+      flex-basis: 16vw;
+   }
 
-      img {
-         width:  4.5rem;
-         border-radius: 50%;
-      }
+   .nav-subtitle {
+      display: flex;
+      align-items: center;
+   }
+
+   img {
+      width: 3rem;
+      border-radius: 50%;
    }
 }
