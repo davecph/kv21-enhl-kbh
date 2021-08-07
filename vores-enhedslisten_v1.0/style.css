@@ -1676,14 +1676,14 @@ body.home .headerContainer {
   color: #fff;
 }
 
-.post-navigation nav-next,
-.post-navigation nav-previous {
+.post-navigation .nav-next,
+.post-navigation .nav-previous {
   background-color: rgba(0, 0, 0, 0.85);
   height: 6rem;
   border-radius: 3rem;
 }
-.post-navigation nav-next img,
-.post-navigation nav-previous img {
+.post-navigation .nav-next img,
+.post-navigation .nav-previous img {
   height: 4.5rem;
   border-radius: 50%;
 }
