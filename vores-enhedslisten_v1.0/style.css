@@ -1691,6 +1691,9 @@ body.home .headerContainer {
 .post-navigation .nav-next .nav-subtitle {
   justify-content: right;
 }
+.post-navigation .nav-title {
+  color: #fff;
+}
 .post-navigation img {
   width: 3rem;
   border-radius: 50%;
