@@ -57,7 +57,7 @@ get_header();
          echo "<!-- 03 -->";
 			the_post_navigation(
 				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'test' ) .get_the_post_thumbnail($previous_post->ID,'thumbnail'). '</span> <span class="nav-title">%title</span>',
+					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'test' ) .get_the_post_thumbnail($get_previous_post->ID,'thumbnail'). '</span> <span class="nav-title">%title</span>',
 					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'test' ) .get_the_post_thumbnail($next_post->ID,'thumbnail'). '</span> <span class="nav-title">%title</span>',
 				)
 			);
