@@ -1684,7 +1684,7 @@ body.home .headerContainer {
 }
 .post-navigation .nav-next img,
 .post-navigation .nav-previous img {
-  height: 4.5rem;
+  width: 4.5rem;
   border-radius: 50%;
 }
 
