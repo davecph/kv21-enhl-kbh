@@ -61,8 +61,8 @@ get_header();
 
             
 				array(
-					'prev_text' => '<span class="nav-subtitle"><span class="icon_arrow-l_white_small"></span>'.get_the_post_thumbnail($prev_post->ID,'thumbnail').'<span class="nav-title">%title</span></span>',
-					'next_text' => '<span class="nav-subtitle">'.get_the_post_thumbnail($next_post->ID,'thumbnail').'<span class="nav-title">%title</span><span class="icon_arrow-r_white_small"></span></span>',
+					'prev_text' => '<span class="nav-subtitle"><span class="icon_arrow-l_white_medium"></span>'.get_the_post_thumbnail($prev_post->ID,'thumbnail').'<span class="nav-title">%title</span></span>',
+					'next_text' => '<span class="nav-subtitle">'.get_the_post_thumbnail($next_post->ID,'thumbnail').'<span class="nav-title">%title</span><span class="icon_arrow-r_white_medium"></span></span>',
 				)
 			);
          echo "<!-- 04 -->";
