@@ -55,9 +55,10 @@ get_header();
             get_template_part( 'template-parts/content', get_post_type() );
          endif;  
          echo "<!-- 03 -->";
+         $next_post = get_next_post();
+         $prev_post = get_previous_post();
 			the_post_navigation(
-            $next_post = get_next_post();
-            $prev_post = get_previous_post():
+
             
 				array(
 					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'test' ) .get_the_post_thumbnail($prev_post->ID,'thumbnail'). '</span> <span class="nav-title">%title</span>',
