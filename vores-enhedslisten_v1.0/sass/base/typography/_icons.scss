@@ -16,6 +16,14 @@
    &[class*=none]::before {
       content: '';
    }
+   &[class*=arrow-l]::before {
+      content: '\f060';
+   }
+
+   &[class*=arrow-r]::before {
+      content: '\f061';
+   }
+
    &[class*=star]::before {
       content: '\f005';
    }

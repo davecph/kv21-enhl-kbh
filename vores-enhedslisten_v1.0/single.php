@@ -61,8 +61,8 @@ get_header();
 
             
 				array(
-					'prev_text' => '<span class="nav-subtitle icon_facebook_white_small">' . esc_html__( 'Previous:', 'test' ) .get_the_post_thumbnail($prev_post->ID,'thumbnail'). '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'test' ) .get_the_post_thumbnail($next_post -> ID,'thumbnail'). '</span> <span class="nav-title">%title</span>',
+					'prev_text' => '<span class="nav-subtitle icon_arrow-l_white_small">' .get_the_post_thumbnail($prev_post->ID,'thumbnail'). '</span> <span class="nav-title">%title</span>',
+					'next_text' => '<span class="nav-subtitle icon_arrow-r_white_small">' .get_the_post_thumbnail($next_post->ID,'thumbnail'). '</span> <span class="nav-title">%title</span>',
 				)
 			);
          echo "<!-- 04 -->";

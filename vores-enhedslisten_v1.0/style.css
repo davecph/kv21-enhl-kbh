@@ -633,6 +633,12 @@ h1[style*="text-align: center"] {
 [class*=icon_][class*=none]::before {
   content: "";
 }
+[class*=icon_][class*=arrow-l]::before {
+  content: "";
+}
+[class*=icon_][class*=arrow-r]::before {
+  content: "";
+}
 [class*=icon_][class*=star]::before {
   content: "";
 }
