@@ -21,10 +21,12 @@
    .nav-subtitle {
       display: flex;
       align-items: center;
+      .nav-next{justify-content: right;}
    }
 
    img {
       width: 3rem;
       border-radius: 50%;
+      margin: 0 .5rem;
    }
 }

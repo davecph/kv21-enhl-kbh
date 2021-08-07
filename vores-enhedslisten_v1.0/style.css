@@ -1687,9 +1687,13 @@ body.home .headerContainer {
   display: flex;
   align-items: center;
 }
+.post-navigation .nav-subtitle .nav-next {
+  justify-content: right;
+}
 .post-navigation img {
   width: 3rem;
   border-radius: 50%;
+  margin: 0 0.5rem;
 }
 
 /* sections
