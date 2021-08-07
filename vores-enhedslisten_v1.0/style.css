@@ -1691,8 +1691,13 @@ body.home .headerContainer {
 .post-navigation .nav-next .nav-subtitle {
   justify-content: right;
 }
+.post-navigation .nav-next .nav-title {
+  text-align: right;
+}
 .post-navigation .nav-title {
   color: #fff;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
 }
 .post-navigation img {
   width: 3rem;

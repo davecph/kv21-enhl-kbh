@@ -24,12 +24,17 @@
       align-items: center;
    }
 
-   .nav-next .nav-subtitle {
-      justify-content: right;
+   .nav-next {
+      .nav-subtitle {
+         justify-content: right;
+      }
+      .nav-title{text-align: right;}
    }
 
    .nav-title {
       color: #fff;
+      font-size: .7rem;
+      line-height: .7rem;
    }
 
    img {
