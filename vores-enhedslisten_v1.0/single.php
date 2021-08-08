@@ -55,8 +55,8 @@ get_header();
             get_template_part( 'template-parts/content', get_post_type() );
          endif;  
          echo "<!-- 03 -->";
-         $next_post = get_next_post();
-         $prev_post = get_previous_post();
+         $next_post = get_next_post($in_same_term = true);
+         $prev_post = get_previous_post($in_same_term = true);
 			the_post_navigation(
 
             
