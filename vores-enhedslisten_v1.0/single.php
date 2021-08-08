@@ -61,7 +61,7 @@ get_header();
 
             
 				array(
-					'prev_text' => '<span class="nav-subtitle"><span class="icon_arrow-l_white_small"></span>'.get_the_post_thumbnail($prev_post->ID,'thumbnail').'<span class="nav-title">%title</span></span>',
+					'prev_text' => '<span class="nav-subtitle">XX<span class="icon_arrow-l_white_small"></span>'.get_the_post_thumbnail($prev_post->ID,'thumbnail').'<span class="nav-title">%title</span></span>',
 					'next_text' => '<span class="nav-subtitle"><span class="nav-title">%title</span>'.get_the_post_thumbnail($next_post->ID,'thumbnail').'<span class="icon_arrow-r_white_small"></span></span>',
 				)
 			);
