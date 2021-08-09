@@ -1743,12 +1743,16 @@ body.home .headerContainer {
 }
 
 [class*=contentSection_] {
-  padding-top: 7vh;
-  padding-bottom: 7vh;
+  padding: 8vh 0 6vh;
 }
 
 .contentSection_1 {
   background-color: #f8f8f8;
+}
+
+.contentSection_3 {
+  background-color: #D0004D;
+  color: #fff;
 }
 
 /* Posts and pages

@@ -1,7 +1,12 @@
-[class *= contentSection_]{
-   padding-top: 7vh;
-   padding-bottom: 7vh;
+[class *=contentSection_] {
+   padding: 8vh 0 6vh;
 }
-.contentSection_1{
+
+.contentSection_1 {
    background-color: #f8f8f8;
-}  
+}
+
+.contentSection_3 {
+   background-color: $primRed;
+   color: #fff;
+}
