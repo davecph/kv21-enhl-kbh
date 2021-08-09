@@ -16,7 +16,7 @@
 
          <section id="coverImg" 
             <?php if ( has_post_thumbnail() ):  ?> 
-               style="--bg-img:url(<?php the_post_thumbnail_url( 'x-large' ); ?>)" 
+               style="--bg-img:url(<?php the_post_thumbnail_url( 'medium_large' ); ?>)" 
             <?php endif; ?> 
             > 
             
@@ -29,7 +29,7 @@
          <!-- not single -->
          
             <section id="coverImg" 
-               <?php if ( has_post_thumbnail() ):  ?> style="--bg-img:url(<?php the_post_thumbnail_url( 'medium_large' ); ?>)"
+               <?php if ( has_post_thumbnail() ):  ?> style="--bg-img:url(<?php the_post_thumbnail_url( 'medium' ); ?>)"
                <?php endif; ?> > 
                <?php the_title( '<h5 class="entry-title "><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h5>' ); ?>
             </section>
