@@ -96,7 +96,7 @@
          <?php if (get_field('age')) : ?>
             <h6>Alder: <span class="fw-light"><?php the_field('age'); ?></span>  </h6>
          <?php endif; ?><?php if (get_field('afdeling')) : ?>
-            <h6>Afdeling: <span class="fw-light"><?php the_field('afdeling'); ?> </span> </h6>
+            <h6>Bydel: <span class="fw-light"><?php the_field('afdeling'); ?> </span> </h6>
          <?php endif; ?><?php if (get_field('education')) : ?>
             <h6>Uddannelse: <span class="fw-light"><?php the_field('education'); ?> </span> </h6>
          <?php endif; ?><?php if (get_field('job')) : ?>
