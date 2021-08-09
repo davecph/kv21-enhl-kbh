@@ -1754,6 +1754,9 @@ body.home .headerContainer {
   background-color: #D0004D;
   color: #fff;
 }
+.contentSection_3 p {
+  color: #fff;
+}
 
 /* Posts and pages
 --------------------------------------------- */
