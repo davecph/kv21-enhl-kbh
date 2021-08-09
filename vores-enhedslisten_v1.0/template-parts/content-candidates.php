@@ -22,7 +22,7 @@
             
          </section>
          <section id="personImg" 
-            <?php if ( has_post_thumbnail() ):  ?> style="--bg-img:url(<?php the_post_thumbnail_url( 'medium-large' ); ?>)"
+            <?php if ( has_post_thumbnail() ):  ?> style="--bg-img:url(<?php the_post_thumbnail_url( 'medium' ); ?>)"
             <?php endif; ?> > 
          </section>
       <?php else : ?>
