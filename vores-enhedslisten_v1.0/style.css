@@ -1683,6 +1683,7 @@ body.home .headerContainer {
 .post-navigation .nav-subtitle {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 .post-navigation .nav-previous {
   left: 2vw;
@@ -1700,11 +1701,12 @@ body.home .headerContainer {
   color: #fff;
   font-size: 0.7rem;
   line-height: 0.7rem;
+  margin: 0 0.5rem;
 }
 .post-navigation img {
   width: 3rem;
   border-radius: 50%;
-  margin: 0 0.5rem;
+  margin: 0 0.5rem 0 0;
 }
 
 /* sections
