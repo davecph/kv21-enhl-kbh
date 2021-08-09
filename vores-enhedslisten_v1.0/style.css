@@ -1769,6 +1769,7 @@ body.home .headerContainer {
 .contentSection_3 h6,
 .contentSection_3 p {
   color: #fff;
+  padding: 0;
 }
 
 /* Posts and pages
