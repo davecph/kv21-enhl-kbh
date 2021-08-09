@@ -1754,6 +1754,19 @@ body.home .headerContainer {
   background-color: #D0004D;
   color: #fff;
 }
+.contentSection_3 a h1,
+.contentSection_3 a h2,
+.contentSection_3 a h3,
+.contentSection_3 a h4,
+.contentSection_3 a h5,
+.contentSection_3 a h6,
+.contentSection_3 a p,
+.contentSection_3 h1,
+.contentSection_3 h2,
+.contentSection_3 h3,
+.contentSection_3 h4,
+.contentSection_3 h5,
+.contentSection_3 h6,
 .contentSection_3 p {
   color: #fff;
 }
