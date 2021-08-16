@@ -275,7 +275,7 @@ function frm_populate_posts($values, $field){
     $values['options'][''] = ''; //remove this line if you are using a checkbox or radio button field
     
     foreach($posts as $p){
-      $start_time = get_field('event_start_time',  false);
+      $start_time = get_field('event_start_time', $p->ID, Y );
       $end_time = get_field('event_end_time', $p->ID);
       
       $values['options'][$p->ID] = $p->post_title.' '.$start_time.' – '.$end_time;
