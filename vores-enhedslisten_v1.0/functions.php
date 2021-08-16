@@ -275,9 +275,9 @@ function frm_populate_posts($values, $field){
     $values['options'][''] = ''; //remove this line if you are using a checkbox or radio button field
     
     foreach($posts as $p){
-      $time = get_field('event_start_time',$p->ID);
-      console.log($time);
-      $values['options'][$p->ID] = $p->post_title.$time;
+      $time = get_field('event_start_time');
+      
+      $values['options'][$p->ID] = $p->post_title.' '.$time;
     }
     $values['use_key'] = false; //this will set the field to save the post ID instead of post title
     unset($values['options'][0]);
