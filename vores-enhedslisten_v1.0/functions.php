@@ -273,14 +273,22 @@ function frm_populate_posts($values, $field){
     unset($values['options']);
     $values['options'] = array(''); //remove this line if you are using a checkbox or radio button field
     $values['options'][''] = ''; //remove this line if you are using a checkbox or radio button field
+    $time = the_field('event_start_time');
     foreach($posts as $p){
-      $values['options'][$p->ID] = $p->post_title.'hey';
+      $values['options'][$p->ID] = $p->post_title.$time;
     }
     $values['use_key'] = false; //this will set the field to save the post ID instead of post title
     unset($values['options'][0]);
   }
   return $values;
 }
+
+
+
+
+
+
+
 /* / Test formidable*/
 
 
