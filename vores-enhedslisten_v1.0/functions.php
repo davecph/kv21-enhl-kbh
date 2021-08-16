@@ -276,8 +276,8 @@ function frm_populate_posts($values, $field){
     
     foreach($posts as $p){
       $start_time = get_field('event_start_time', $p->ID );
-      $end_time = get_field('event_end_time', $p->ID, false);
-      
+      $end_time = get_field('event_end_time', $p->ID );
+            
       $values['options'][$p->ID] = $p->post_title.' '.$start_time.' – '.$end_time;
     }
     $values['use_key'] = false; //this will set the field to save the post ID instead of post title
