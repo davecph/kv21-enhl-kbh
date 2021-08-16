@@ -276,6 +276,7 @@ function frm_populate_posts($values, $field){
     
     foreach($posts as $p){
       $time = get_field('event_start_time',$p->ID);
+      console.log($time);
       $values['options'][$p->ID] = $p->post_title.$time;
     }
     $values['use_key'] = false; //this will set the field to save the post ID instead of post title
