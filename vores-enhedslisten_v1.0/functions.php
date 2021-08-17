@@ -273,12 +273,16 @@ function frm_populate_posts($values, $field){
     unset($values['options']);
     $values['options'] = array(''); //remove this line if you are using a checkbox or radio button field
     $values['options'][''] = ''; //remove this line if you are using a checkbox or radio button field
-    
+    $date_now = date('Y-m-d H:i:s');
     foreach($posts as $p){
+      $compare_time = get_field('event_start_time', false, false );
       $start_time = get_field('event_start_time', $p->ID );
       $end_time = get_field('event_end_time', $p->ID );
+      if($date_now < $compare_time){
+         $values['options'][$p->ID] = $p->post_title.' '.$start_time.' – '.$end_time;
+      }
             
-      $values['options'][$p->ID] = $p->post_title.' '.$start_time.' – '.$end_time;
+      
     }
     $values['use_key'] = false; //this will set the field to save the post ID instead of post title
     unset($values['options'][0]);
