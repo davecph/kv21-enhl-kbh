@@ -272,7 +272,7 @@ function frm_populate_posts($values, $field){
     $posts = get_posts( array(
                      'post_type' => 'post', 
                      'category' => '2', 
-                     //'meta_key' => 'event_type',
+                     'meta_key' => 'event_type',
                      //'meta_value' => 'Aktivist event',
                      'post_status' => array(
                         'publish', 'private'), 
