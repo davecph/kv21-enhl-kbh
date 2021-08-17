@@ -89,3 +89,8 @@ input[type="submit"] {
 .frm_final_submit {
    @extend %success-btn;
 }
+
+.frm_forms .frm_progress_line input,
+.frm_forms .frm_progress_line input:disabled {
+   line-height: 0; //changes height of progress bar
+}

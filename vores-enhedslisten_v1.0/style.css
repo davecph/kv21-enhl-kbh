@@ -1139,6 +1139,11 @@ input[type=submit].btn-menu {
   width: max-content;
 }
 
+.frm_forms .frm_progress_line input,
+.frm_forms .frm_progress_line input:disabled {
+  line-height: 0;
+}
+
 input[type=text],
 input[type=email],
 input[type=url],
