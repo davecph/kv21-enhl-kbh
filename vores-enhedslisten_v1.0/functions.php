@@ -264,12 +264,28 @@ function set_category () {
 //hook it into our post-new.php specific action hook
 add_action( 'admin_head-post-new.php', 'set_category', 10, 1 );
 
-/*Test formidable*/
+/* formidable - filters by */
 add_filter('frm_setup_new_fields_vars', 'frm_populate_posts', 20, 2);
 add_filter('frm_setup_edit_fields_vars', 'frm_populate_posts', 20, 2); //use this function on edit too
 function frm_populate_posts($values, $field){
   if($field->id == 6){ //replace 125 with the ID of the field to populate
-    $posts = get_posts( array('post_type' => 'post', 'category' => '2', 'post_status' => array('publish', 'private'), 'numberposts' => 3, 'orderby' => 'title', 'order' => 'ASC'));
+    $posts = get_posts( array(
+                     'post_type' => 'post', 
+                     'category' => '2', 
+                     'meta_query'	=> array(
+                        'relation'		=> 'AND',
+                        array(
+                           'key'	 	=> 'event_type',
+                           'value'	  	=> 'Aktivist event',
+                           'compare' 	=> 'IN',
+                        ),
+                     ),
+                     'post_status' => array(
+                        'publish', 'private'), 
+                     'numberposts' => 3, 
+                     'orderby' => 'title', 
+                     'order' => 'ASC'
+                  ));
     unset($values['options']);
     $values['options'] = array(''); //remove this line if you are using a checkbox or radio button field
     $values['options'][''] = ''; //remove this line if you are using a checkbox or radio button field
