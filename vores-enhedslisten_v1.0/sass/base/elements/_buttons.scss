@@ -1,8 +1,4 @@
-button,
-.btn,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+%base-btn {
    border: 1px solid;
    border-color: $color__border-button;
    border-radius: 3px;
@@ -22,26 +18,46 @@ input[type="submit"] {
    &:focus {
       border-color: $color__border-button-focus;
    }
+}
+
+%success-btn {
+   border: none;
+   background-color: $primGreen;
+   color: #fff;
+   transition: background-color .5s;
+
+   &:hover {
+      background-color: $secGreen;
+   }
+}
+
+%medium-btn {
+   font-size: 1.25 * 1.25 * $baseFontSize;
+   font-weight: 300;
+}
+
+%large-btn {
+   font-size: 1.25 * 1.25 * 1.25 * $baseFontSize;
+   font-weight: 300;
+}
+
+button,
+.btn,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+   @extend %base-btn;
 
    &.btn-success {
-      border: none;
-      background-color: $primGreen;
-      color: #fff;
-      transition: background-color .5s;
-
-      &:hover {
-         background-color: $secGreen;
-      }
+      @extend %success-btn;
    }
 
    &.btn-medium {
-      font-size: 1.25 * 1.25 * $baseFontSize;
-      font-weight: 300;
+      @extend %medium-btn;
    }
 
    &.btn-large {
-      font-size: 1.25 * 1.25 * 1.25 * $baseFontSize;
-      font-weight: 300;
+      @extend %large-btn;
    }
 
    &.btn-inline-block {
@@ -49,7 +65,28 @@ input[type="submit"] {
       margin: .4em 0 .8em;
    }
 
-   &.btn-menu{
+   &.btn-menu {
       width: max-content;
    }
+}
+
+.elementor-button {
+   @extend %base-btn;
+
+   &.elementor-button-success {
+      @extend %success-btn;
+   }
+
+   &.elementor-size-md {
+      @extend %medium-btn;
+   }
+}
+
+.frm_button_submit,
+.frm_prev_page {
+   @extend %base-btn;
+}
+
+.frm_final_submit {
+   @extend %success-btn;
 }
