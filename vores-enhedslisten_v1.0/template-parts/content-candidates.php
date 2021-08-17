@@ -102,7 +102,7 @@
          <?php endif; ?><?php if (get_field('job')) : ?>
             <h6>Beskæftigelse: <span class="fw-light"><?php the_field('job'); ?> </span> </h6>
          <?php endif; ?><?php if (get_field('union')) : ?>
-            <h6>Fagforening: <span class="fw-light"><?php the_field('union'); ?> </span> </h6>
+            <h6>FagforeningXXXX: <span class="fw-light"><?php the_field('union'); ?> </span> </h6>
             <div class="iconBlock"> 
                <?php if( have_rows('candidate_contact_info') ): ?>
                   <!-- bob is fucked -->
