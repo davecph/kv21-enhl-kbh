@@ -277,7 +277,7 @@ function frm_populate_posts($values, $field){
                      'meta_query'	=> array(
                            'key'	 	=> 'event_type',
                            'value'	  	=> 'active_event',
-                           'compare' 	=> '=',
+                           
                         ),
                      'post_status' => array(
                         'publish', 'private'), 
