@@ -276,8 +276,9 @@ function frm_populate_posts($values, $field){
     
     foreach($posts as $p){
       $date_now = date('YmdHis');
-      $compare_time = preg_replace("/[^0-9]/", "", get_field('event_start_time', false, false ));
-      $start_time = preg_replace("/[^0-9]/", "", get_field('event_start_time', false, false ));
+      $compare_time = get_field('event_start_time', false, false );
+      $start_time = preg_replace("/[^0-9]/", "", $compare_time);
+      //$start_time = get_field('event_start_time', $p->ID, false );
       $end_time = get_field('event_end_time', $p->ID );
       //if($date_now < $compare_time){
          $values['options'][$p->ID] = $p->post_title.' '.$start_time.' – '.$end_time;
