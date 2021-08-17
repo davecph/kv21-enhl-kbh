@@ -277,7 +277,7 @@ function frm_populate_posts($values, $field){
                         array(
                            'key'	 	=> 'event_type',
                            'value'	  	=> 'Aktivist event',
-                           'compare' 	=> 'IN',
+                           'compare' 	=> 'OUT',
                         )
                      ),
                      'post_status' => array(
