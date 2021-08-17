@@ -1144,6 +1144,21 @@ input[type=submit].btn-menu {
   line-height: 0;
 }
 
+.with_frm_style .frm-summary-page-wrapper {
+  padding: 1rem;
+}
+
+.frm-line-table {
+  margin: 0;
+}
+.frm-line-table td,
+.frm-line-table th {
+  padding: 0.5rem;
+}
+.frm-line-table tr:last-child {
+  border: none;
+}
+
 input[type=text],
 input[type=email],
 input[type=url],

@@ -94,3 +94,20 @@ input[type="submit"] {
 .frm_forms .frm_progress_line input:disabled {
    line-height: 0; //changes height of progress bar
 }
+
+.with_frm_style .frm-summary-page-wrapper {
+   padding: 1rem;
+}
+
+.frm-line-table {
+   margin: 0;
+
+   td,
+   th {
+      padding: .5rem;
+   }
+
+   tr:last-child {
+      border: none;
+   }
+}
