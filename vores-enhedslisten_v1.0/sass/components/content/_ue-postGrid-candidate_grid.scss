@@ -25,12 +25,12 @@
 }
 
 #candidateGrid {
-   .candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n + 5) {
+   .candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n + 9) {
       display: none;
    }
 
    &.displayAll {
-      .candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n + 5) {
+      .candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n + 9) {
          display: inherit;
       }
    }
