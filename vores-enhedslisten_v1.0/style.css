@@ -1055,11 +1055,10 @@ a:hover, a:active {
 input[type=button],
 input[type=reset],
 input[type=submit] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+  border: none;
   border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
+  background: #8BD0E4;
+  color: #fff;
   line-height: 1;
   padding: 0.8em 1.2em 0.8em;
   text-transform: uppercase;
