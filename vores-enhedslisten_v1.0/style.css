@@ -55,7 +55,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   background-position: 50% 0vh;
   background-image: url(img/waves_anim.svg);
   background-repeat: no-repeat;
-  animation: water_rise 15s 3s ease-in-out;
+  animation: water_rise 15s -3s ease-in-out;
 }
 @keyframes water_rise {
   from {
