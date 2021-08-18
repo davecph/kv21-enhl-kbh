@@ -10,9 +10,8 @@
    width: map-get($columns, $numberColumns) - (($columns__margin * ($numberColumns - 1)) / $numberColumns);
 }
 
-@mixin water_rise {
-   width: 100vw;
-   height: 100vh;
+%water_rise {
+
    background-size: cover;
    background-position: 50% 0%;
    background-image: url(img/waves_anim.svg);

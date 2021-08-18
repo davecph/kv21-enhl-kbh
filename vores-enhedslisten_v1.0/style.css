@@ -50,6 +50,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 /*Enhedslistens farvelade*/
+.contentSection_1 {
+  background-size: cover;
+  background-position: 50% 0%;
+  background-image: url(img/waves_anim.svg);
+  background-repeat: no-repeat;
+  animation: water_rise 15s ease-in-out;
+}
+@keyframes water_rise {
+  from {
+    background-position: 50% 100vh;
+  }
+  to {
+    background-position: 50% 0vh;
+  }
+}
+
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -1777,21 +1793,6 @@ body.home .headerContainer {
 
 .contentSection_1 {
   background-color: #f8f8f8;
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  background-position: 50% 0%;
-  background-image: url(img/waves_anim.svg);
-  background-repeat: no-repeat;
-  animation: water_rise 15s ease-in-out;
-}
-@keyframes water_rise {
-  from {
-    background-position: 50% 100vh;
-  }
-  to {
-    background-position: 50% 0vh;
-  }
 }
 
 .contentSection_3 {

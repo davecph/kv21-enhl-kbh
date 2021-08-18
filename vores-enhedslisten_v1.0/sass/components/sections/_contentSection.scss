@@ -4,7 +4,7 @@
 
 .contentSection_1 {
    background-color: #f8f8f8;
-   @include water_rise;
+   @extend %water_rise;
 }
 
 .contentSection_3 {
