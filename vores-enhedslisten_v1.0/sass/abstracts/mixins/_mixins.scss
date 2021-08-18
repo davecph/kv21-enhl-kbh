@@ -13,18 +13,18 @@
 %water_rise {
 
    background-size: cover;
-   background-position: 50% 100%;
+   background-position: 50% 0vh;
    background-image: url(img/waves_anim.svg);
    background-repeat: no-repeat;
    animation: water_rise 15s ease-in-out;
 
    @keyframes water_rise {
       from {
-         background-position: 50% 100%;
+         background-position: 50% 100vh;
       }
 
       to {
-         background-position: 50% 0%;
+         background-position: 50% 0vh;
       }
    }
 }
