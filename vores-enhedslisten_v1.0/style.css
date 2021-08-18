@@ -50,13 +50,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 /*Enhedslistens farvelade*/
-.contentSection_1 {
-  background-size: cover;
-  background-position: 50% 0vh;
-  background-image: url(img/waves_anim.svg);
-  background-repeat: no-repeat;
-  animation: water_rise 15s -7s ease-in-out;
-}
 @keyframes water_rise {
   from {
     background-position: 50% 100vh;
