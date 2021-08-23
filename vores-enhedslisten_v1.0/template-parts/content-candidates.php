@@ -128,7 +128,7 @@
          </div>
       </div>
    <?php endif; ?>
-   [elementor-template id="521"]
+  <?php echo do_shortcode(' [elementor-template id="521"] '); ?>
 	<footer class="entry-footer">
 		<?php test_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
