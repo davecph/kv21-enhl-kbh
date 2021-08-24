@@ -28,3 +28,30 @@
       }
    }
 }
+
+
+.xxxxxxcontainer{width: 100%;
+   height:100vh;
+   overflow: hidden;
+   //background-color:blue;
+   img{
+     position:relative;
+     //top: 33%;
+     //width:100%;
+     //height:100%;
+     object-fit: cover;
+     transform: scale(210%);
+     transform-origin: center top;
+     object-position:center top;
+     animation: move 10s ease-out, wobble 2s alternate infinite ease-in-out;
+   }
+ }
+ @keyframes move{
+   from{top: 100%}
+   to{top: 3%}
+ }
+ 
+ @keyframes wobble{
+   from{transform: rotate(2deg) skew(2deg) ;}
+   to{transform: rotate(-2deg) skew(-2deg);}
+ }

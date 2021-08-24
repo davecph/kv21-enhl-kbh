@@ -59,6 +59,36 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   }
 }
 
+.xxxxxxcontainer {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.xxxxxxcontainer img {
+  position: relative;
+  object-fit: cover;
+  transform: scale(210%);
+  transform-origin: center top;
+  object-position: center top;
+  animation: move 10s ease-out, wobble 2s alternate infinite ease-in-out;
+}
+
+@keyframes move {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 3%;
+  }
+}
+@keyframes wobble {
+  from {
+    transform: rotate(2deg) skew(2deg);
+  }
+  to {
+    transform: rotate(-2deg) skew(-2deg);
+  }
+}
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -1808,6 +1838,10 @@ body.home .headerContainer {
 .contentSection_3 p {
   color: #fff;
   padding: 0;
+}
+
+.elementor-536 {
+  grid-column: 1/6;
 }
 
 /* Posts and pages
