@@ -261,9 +261,9 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
       'meta_query'	=> array(
          
          array(
-            'key'		=> 'location',
-            'value'		=> 'Melbourne',
-            'compare'	=> 'LIKE'
+            'key'		=> 'event_type',
+            'value'		=> 'debate',
+            'compare'	=> '='
          )
       )
    );
