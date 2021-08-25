@@ -256,14 +256,19 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
 	
    $args = array(
       'numberposts'	=> -1,
-      'vategoty'		=> 'event',
+      'category'		=> 'event',
    
       'meta_query'	=> array(
-         
+         'relation'		=> 'OR',
          array(
-            'key'		=> 'tag_candidate',
-            'value'		=> 'Knud Holt Nielsen',
-            'compare'	=> 'IN'
+            'key'		=> 'location',
+            'value'		=> 'Melbourne',
+            'compare'	=> 'LIKE'
+         ),
+         array(
+            'key'		=> 'location',
+            'value'		=> 'Sydney',
+            'compare'	=> 'LIKE'
          )
       )
    );
