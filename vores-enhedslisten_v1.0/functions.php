@@ -259,15 +259,10 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
       'vategoty'		=> 'event',
    
       'meta_query'	=> array(
-         'relation'		=> 'OR',
+         
          array(
             'key'		=> 'location',
             'value'		=> 'Melbourne',
-            'compare'	=> 'LIKE'
-         ),
-         array(
-            'key'		=> 'location',
-            'value'		=> 'Sydney',
             'compare'	=> 'LIKE'
          )
       )
