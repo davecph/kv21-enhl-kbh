@@ -256,9 +256,9 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
 	
     $args[category] = 'event';
     
-    $args[meta_query]['Key'] = 'cf_event_type';
-    $args[meta_query]['value'] = 'active_event';
-    $args[meta_query]['compare'] = 'IN';
+    $args[0][meta_query]['Key'] = 'cf_event_type';
+    $args[0][meta_query]['value'] = 'active_event';
+    $args[0][meta_query]['compare'] = 'IN';
    
 
     
