@@ -261,9 +261,9 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
       'meta_query'	=> array(
          
          array(
-            /* 'key'		=> 'cf_tag_candidates[post_title]',
+            'key'		=> 'cf_tag_candidates[post_title]',
             'value'		=> 'Knud Holt Nielsen',
-            'compare'	=> '=' */
+            'compare'	=> '='
          )
       )
    );
