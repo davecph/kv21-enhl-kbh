@@ -256,18 +256,11 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
 	
     $args[category] = 'event';
     $args[orderby] = meta_value;
-    $args[meta_key] = 'event_start_time'; 
+    $args[meta_key] = 'tag_candidates'; 
+    $args[meta_value] = $currentPost;
     $args[order] = ASC;
 
-    $args[meta_query] = array(
-		
-		array(
-			'key'	 	=> $variable,
-			'value'	  	=> $currentPost,
-			'compare' 	=> 'IN',
-		),
-		
-	);
+    
  
 					
 	return($args);
