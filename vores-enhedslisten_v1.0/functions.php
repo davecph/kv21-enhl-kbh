@@ -262,7 +262,7 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
          
          array(
             'key'		=> 'event_type',
-            'value'		=> 'debate',
+            'value'		=> 'active_event',
             'compare'	=> '='
          )
       )
