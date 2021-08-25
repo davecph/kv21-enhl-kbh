@@ -246,6 +246,36 @@ function sortEventsByDate($args, $widgetControlsValues){
 
 add_filter("sort_events_by_date", "sortEventsByDate", 10, 2);
 
+
+function sortCandidateEventsByDate($args, $widgetControlsValues){
+	
+   $currentPost =  get_the_title();
+   /* Sorts posts "kurser" by starting date  */
+	
+    $args[category] = 'event';
+    $args[orderby] = meta_value;
+    $args[meta_key] = 'event_start_time'; 
+    $args[order] = ASC;
+
+    $args[meta_query] = array(
+		
+		array(
+			'key'	 	=> 'tag_candidates',
+			'value'	  	=> $currentPost,
+			'compare' 	=> 'IN',
+		),
+		
+	);
+ 
+					
+	return($args);
+}
+
+add_filter("sortCandidateEventsByDate", "sortCandidateEventsByDate", 10, 2);
+
+
+
+
 /* New post from category */
 
 function set_category () {
