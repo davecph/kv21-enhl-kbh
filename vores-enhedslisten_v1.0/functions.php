@@ -268,7 +268,7 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
       )
    );
    
-
+  
     
  
 					
