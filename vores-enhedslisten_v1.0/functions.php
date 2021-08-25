@@ -237,7 +237,7 @@ function sortEventsByDate($args, $widgetControlsValues){
 	
     $args[post_type] = post;
     $args[orderby] = meta_value;
-    $args[meta_key] = 'event_start_time'; 
+    $args[meta_key] = 'event_start__time'; 
     $args[order] = ASC;
     
 					
