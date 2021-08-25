@@ -254,11 +254,24 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
    
    
 	
-    $args[category] = 'event';
-    
-    $args[0][meta_query]['Key'] = 'cf_event_type';
-    $args[0][meta_query]['value'] = 'active_event';
-    $args[0][meta_query]['compare'] = 'IN';
+   $args = array(
+      'numberposts'	=> -1,
+      'vategoty'		=> 'event',
+   
+      'meta_query'	=> array(
+         'relation'		=> 'OR',
+         array(
+            'key'		=> 'location',
+            'value'		=> 'Melbourne',
+            'compare'	=> 'LIKE'
+         ),
+         array(
+            'key'		=> 'location',
+            'value'		=> 'Sydney',
+            'compare'	=> 'LIKE'
+         )
+      )
+   );
    
 
     
