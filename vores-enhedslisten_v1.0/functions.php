@@ -235,9 +235,9 @@ function sortEventsByDate($args, $widgetControlsValues){
 	
    /* Sorts posts "kurser" by starting date  */
 	
-    $args[post_type] = kurser;
+    $args[post_type] = post;
     $args[orderby] = meta_value;
-    $args[meta_key] = 'event_start_date_time'; 
+    $args[meta_key] = 'event_start_time'; 
     $args[order] = ASC;
     
 					
