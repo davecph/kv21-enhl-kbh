@@ -256,10 +256,9 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
 	
     $args[category] = 'event';
     
-    $args[meta_query] = array(
-       array('key' => 'Knud Holt Nielsen',
-       'value' => $currentPost,
-       'compare' => 'IN')
+    $args[meta_query]['Key'] = 'tag_candidate';
+    $args[meta_query]['value'] = $currentPost;
+    $args[meta_query]['compare'] = 'IN';
     );
 
     
