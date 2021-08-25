@@ -263,7 +263,7 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
          array(
             'key'		=> 'tag_candidates',
             'value'		=> 'Knud Holt Nielsen',
-            'compare'	=> 'IN'
+            'compare'	=> 'LIKE'
          )
       )
    );
