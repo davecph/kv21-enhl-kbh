@@ -251,8 +251,8 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
 	
    $currentPost =  get_the_title();
 
-   $variable = the_field('tag_candidates', $post->ID );
-   /* Sorts posts "kurser" by starting date  */
+   
+   
 	
     $args[category] = 'event';
     
