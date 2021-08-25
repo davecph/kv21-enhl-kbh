@@ -257,9 +257,9 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
     $args[category] = 'event';
     
     $args[meta_query] = array(
-       'meta_key' => 'tag_candidates',
-       'meta_value' => $currentPost,
-       'compare' => 'IN'
+       array('key' => 'tag_candidate',
+       'value' => $currentPost,
+       'compare' => 'IN')
     );
 
     
