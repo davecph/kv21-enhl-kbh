@@ -251,7 +251,7 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
 	
    $currentPost =  get_the_title();
 
-   
+   $candidates = get_field('cf_tag_candidates');
    
 	
    $args = array(
@@ -261,7 +261,7 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
       'meta_query'	=> array(
          
          array(
-            'key'		=> 'cf_tag_candidates[4][post_title]',
+            'key'		=> $candidates,
             'value'		=> 'Knud',
             'compare'	=> 'LIKE' 
          )
