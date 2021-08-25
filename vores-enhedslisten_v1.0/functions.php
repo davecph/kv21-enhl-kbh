@@ -255,10 +255,12 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
    /* Sorts posts "kurser" by starting date  */
 	
     $args[category] = 'event';
-    $args[orderby] = meta_value;
-    $args[meta_key] = 'tag_candidates'; 
-    $args[meta_value] = $currentPost;
-    $args[order] = ASC;
+    
+    $args[meta_query] = array(
+       'key' => 'tag_candidates',
+       'value' => $currentPost,
+       'compare' => 'IN'
+    );
 
     
  
