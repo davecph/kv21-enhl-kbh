@@ -251,15 +251,11 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
 	
    $currentPost =  get_the_id();
 
-   
-   
-	
    $args = array(
       'numberposts'	=> -1,
       'category'		=> 'event',
    
       'meta_query'	=> array(
-         
          array(
             'key'		=> 'tag_candidates',
             'value'		=> $currentPost,
@@ -272,11 +268,7 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
       'order' => 'ASC'
    );
    
-  
-    
- 
-					
-	return($args);
+   return($args);
 }
 
 add_filter("sortCandidateEventsByDate", "sortCandidateEventsByDate", 10, 2);
