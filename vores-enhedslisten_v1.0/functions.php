@@ -261,8 +261,8 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
       'meta_query'	=> array(
          
          array(
-            'key'		=> 'cf_event_type',
-            'value'		=> 'debate',
+            'key'		=> 'tag_candidates',
+            'value'		=> '445',
             'compare'	=> 'IN' 
          )
       )
