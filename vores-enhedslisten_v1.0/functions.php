@@ -262,8 +262,8 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
          
          array(
             'key'		=> 'tag_candidates',
-            'value'		=> 'Knud',
-            'compare'	=> 'LIKE' 
+            'value'		=> '445',
+            'compare'	=> 'IN' 
          )
       )
    );
