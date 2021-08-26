@@ -249,7 +249,7 @@ add_filter("sort_events_by_date", "sortEventsByDate", 10, 2);
 
 function sortCandidateEventsByDate($args, $widgetControlsValues){
 	
-   $currentPost =  get_the_title();
+   $currentPost =  get_the_id();
 
    
    
@@ -261,8 +261,8 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
       'meta_query'	=> array(
          
          array(
-            'key'		=> 'event_type',
-            'value'		=> 'debate',
+            'key'		=> 'tag_candidates_array',
+            'value'		=> $currentPost,
             'compare'	=> 'IN' 
          )
       )
