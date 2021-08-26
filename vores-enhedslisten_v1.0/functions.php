@@ -264,8 +264,12 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
             'key'		=> 'tag_candidates',
             'value'		=> $currentPost,
             'compare'	=> 'LIKE' 
-         )
-      )
+            )
+         ),
+
+      'orderby' => 'meta_value',
+      'meta_key' => 'event_start_time', 
+      'order' => 'ASC'
    );
    
   
