@@ -129,6 +129,16 @@
 
       &.category-candidates #coverImg{
          grid-row: 1 /5;
+
+         @include mobile {
+            grid-column: 1 / 4;
+            grid-row: 1 /3;
+         }
+
+         @include tablet {
+            grid-column: 1 / 5;
+            grid-row: 1 /3;
+         }
       }
 
       .headerContainer {

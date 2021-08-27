@@ -1,5 +1,14 @@
 .elementor-679 {
    grid-column: 1/6;
+   @include mobile {
+      grid-column: 1 / 4;
+      
+   }
+
+   @include tablet {
+      grid-column: 1 / 5;
+     
+   }
 }
 
 .eventContainer h2 {
