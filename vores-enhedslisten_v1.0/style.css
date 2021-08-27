@@ -1860,19 +1860,38 @@ body.home .headerContainer {
   min-height: 15rem;
   background-position: center;
 }
-.eventSection a.ue_post_grid_item p {
+.eventSection a.ue_post_grid_item::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 0;
+}
+.eventSection p {
   color: #fff;
 }
-.eventSection a.ue_post_grid_item h5 {
+.eventSection h5 {
   padding-top: 0;
 }
-.eventSection a.ue_post_grid_item.event_activist {
+.eventSection.event_activist {
   background-color: #159F6B;
 }
-.eventSection a.ue_post_grid_item.event_debate {
+.eventSection.event_activist::before {
+  background-color: #159F6B;
+}
+.eventSection.event_debate {
   background-color: #D0004D;
 }
-.eventSection a.ue_post_grid_item.event_party {
+.eventSection.event_debate::before {
+  background-color: #D0004D;
+}
+.eventSection.event_party {
+  background-color: #703290;
+}
+.eventSection.event_party::before {
   background-color: #703290;
 }
 
