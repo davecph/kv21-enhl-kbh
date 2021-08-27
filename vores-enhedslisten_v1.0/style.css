@@ -1853,7 +1853,7 @@ body.home .headerContainer {
 .eventSection a.ue_post_grid_item {
   padding: 20% 5% 5%;
   color: #fff;
-  background-image: --bg-img;
+  background-image: var(--bg-img);
   background-size: cover;
 }
 .eventSection a.ue_post_grid_item p {
