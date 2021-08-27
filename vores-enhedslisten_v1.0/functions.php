@@ -245,6 +245,7 @@ function sortEventsByDate($args, $widgetControlsValues){
       'category'		=> 'event',
    
       'meta_query'	=> array(
+         
          array(
             'key'		=> 'event_start_time',
             'value'		=> $date_now,
@@ -266,6 +267,8 @@ add_filter("sort_events_by_date", "sortEventsByDate", 10, 2);
 
 
 function sortCandidateEventsByDate($args, $widgetControlsValues){
+
+   $date_now = date('Y-m-d H:i:s');
 	
    $currentPost =  get_the_id();
 
@@ -274,12 +277,19 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
       'category'		=> 'event',
    
       'meta_query'	=> array(
+         'relation'		=> 'AND',
          array(
             'key'		=> 'tag_candidates',
             'value'		=> $currentPost,
-            'compare'	=> '!=' 
-            )
+            'compare'	=> 'LIKE' 
          ),
+         array(
+            'key'		=> 'event_start_time',
+            'value'		=> $date_now,
+            'type' => 'DATETIME',
+            'compare'	=> '>=' 
+         )
+      ),
 
       'orderby' => 'meta_value',
       'meta_key' => 'event_start_time', 
