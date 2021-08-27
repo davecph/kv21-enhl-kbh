@@ -338,8 +338,7 @@ function frm_populate_posts($values, $field){
 
 /* AFC event time validation */
 
-$event_start_value;
-$event_end_value;
+
 
 function afc_validate_event_start_time( $valid, $event_start_value, $field, $input_name ) {
    GLOBAL $event_start_value;
