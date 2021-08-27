@@ -1844,8 +1844,8 @@ body.home .headerContainer {
   grid-column: 1/6;
 }
 
-uc_post_grid_events_elementor10534 {
-  padding-top: 2vw;
+.uc_post_grid_events_elementor10534 {
+  padding-top: max(2rem, 3vw);
 }
 
 .eventSection {
