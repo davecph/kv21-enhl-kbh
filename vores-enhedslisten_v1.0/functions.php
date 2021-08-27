@@ -346,7 +346,7 @@ function afc_validate_event_time( $valid, $value, $field, $input_name ) {
    if( $valid !== true ) {
        return $valid;
    }
-   return __( $event_start_time.' ERNST '.$event_end_time );
+   return __( $event_start_time.' ERNST '.$value );
    // Prevent value from saving if it contains the companies old name.
    if( $event_start_time > $event_end_time  !== false ) {
        return __( 'Eventen skal slutte senere end den starter - med mindre du har lånt sekretariatets tidsmaskine' );
@@ -355,6 +355,7 @@ function afc_validate_event_time( $valid, $value, $field, $input_name ) {
 }
 
 // Apply to fields named "hero_text".
+add_filter('acf/validate_value/name=event_start_time', 'afc_validate_event_time', 10, 4);
  add_filter('acf/validate_value/name=event_end_time', 'afc_validate_event_time', 10, 4);
 
 
