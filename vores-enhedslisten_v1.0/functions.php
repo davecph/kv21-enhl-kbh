@@ -234,11 +234,28 @@ add_action( 'elementor/query/events_sorted_by_date', function( $query ) {
 function sortEventsByDate($args, $widgetControlsValues){
 	
    /* Sorts posts "kurser" by starting date  */
+
+   $date_now = date('YmdHis');
+      $compare_time = get_field('event_start_time', $p->ID, false );
+      $compare_time = preg_replace("/[^0-9]/", "", $compare_time);
+
 	
-    $args[category] = 'event';
-    $args[orderby] = meta_value;
-    $args[meta_key] = 'event_start_time'; 
-    $args[order] = ASC;
+   $args = array(
+      'numberposts'	=> -1,
+      'category'		=> 'event',
+   
+      'meta_query'	=> array(
+         array(
+            'key'		=> 'event_start_time',
+            'value'		=> $date_now,
+            'compare'	=> '>' 
+         )
+      ),
+
+      'orderby' => 'meta_value',
+      'meta_key' => 'event_start_time', 
+      'order' => 'ASC'
+   );
     
 					
 	return($args);
