@@ -1,3 +1,8 @@
 .elementor-536 {
    grid-column: 1/6;
 }
+
+.eventSection{
+   display: grid;
+   grid-template-columns: repeat(6, max(20rem , 1fr));
+} 

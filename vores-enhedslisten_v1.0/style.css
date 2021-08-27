@@ -1844,6 +1844,11 @@ body.home .headerContainer {
   grid-column: 1/6;
 }
 
+.eventSection {
+  display: grid;
+  grid-template-columns: repeat(6, max(20rem, 1fr));
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
