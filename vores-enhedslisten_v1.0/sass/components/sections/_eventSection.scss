@@ -28,37 +28,37 @@
          opacity: .5;
          z-index: 0;
       }
-   }
 
-   p {
-      color: #fff;
-   }
+      p {
+         color: #fff;
+      }
 
-   h5 {
-      padding-top: 0;
-   }
+      h5 {
+         padding-top: 0;
+      }
 
-   &.event_activist {
-      background-color: $primGreen;
-
-      &::before {
+      &.event_activist {
          background-color: $primGreen;
+
+         &::before {
+            background-color: $primGreen;
+         }
       }
-   }
 
-   &.event_debate {
-      background-color: $primRed;
-
-      &::before {
+      &.event_debate {
          background-color: $primRed;
+
+         &::before {
+            background-color: $primRed;
+         }
       }
-   }
 
-   &.event_party {
-      background-color: $secPurple;
-
-      &::before {
+      &.event_party {
          background-color: $secPurple;
+
+         &::before {
+            background-color: $secPurple;
+         }
       }
    }
 }
