@@ -338,8 +338,6 @@ function frm_populate_posts($values, $field){
 
 /* AFC event time validation */
 
-
-
 function afc_validate_event_time( $valid, $event_start_value, $field, $input_name ) {
    $event_start_value = preg_replace("/[^0-9]/", "", $_POST['acf']['field_60cb2a218ceb5']);
    $event_end_value = preg_replace("/[^0-9]/", "", $_POST['acf']['field_60cb2b568ceb6']);
@@ -356,16 +354,8 @@ function afc_validate_event_time( $valid, $event_start_value, $field, $input_nam
    return $valid;
 }
 
-
-
-
-
-// Apply to fields named "hero_text".
 add_filter('acf/validate_value/name=event_start_time', 'afc_validate_event_time', 10, 4);
 add_filter('acf/validate_value/name=event_end_time', 'afc_validate_event_time', 10, 4);
-
-
-
 
 /* / AFC event time validation */
 
