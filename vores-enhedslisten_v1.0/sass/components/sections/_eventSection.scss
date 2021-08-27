@@ -8,11 +8,11 @@
    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
    grid-gap: 1rem;
 
-   .ue_post_grid_item {
+   a.ue_post_grid_item {
       color: #fff;
       
 
-      a {
+      p {
          color: #fff;
       }
 
