@@ -235,9 +235,9 @@ function sortEventsByDate($args, $widgetControlsValues){
 	
    /* Sorts posts "kurser" by starting date  */
 
-   $date_now = date('YmdHis');
-      $compare_time = get_field('event_start_time', $p->ID, false );
-      $compare_time = preg_replace("/[^0-9]/", "", $compare_time);
+   /* $date_now = date('YmdHis'); */
+   $date_now = date('Y-m-d H:i:s');
+
 
 	
    $args = array(
@@ -246,9 +246,10 @@ function sortEventsByDate($args, $widgetControlsValues){
    
       'meta_query'	=> array(
          array(
-            'key'		=> 'event_start_time|raw',
+            'key'		=> 'event_start_time',
             'value'		=> $date_now,
-            'compare'	=> '<' 
+            'type' => 'DATETIME',
+            'compare'	=> '<=' 
          )
       ), 
 
