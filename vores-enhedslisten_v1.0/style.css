@@ -1846,7 +1846,7 @@ body.home .headerContainer {
 
 .eventSection {
   display: grid;
-  --auto-grid-min-size: 16rem;
+  --auto-grid-min-size: 25rem;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
   grid-gap: 1rem;
 }
