@@ -9,6 +9,13 @@
    grid-gap: 1rem;
 
    .ue_post_grid_item {
+      color: #fff;
+      
+
+      a {
+         color: #fff;
+      }
+
       &.event_activist {
          background-color: $primGreen;
       }
