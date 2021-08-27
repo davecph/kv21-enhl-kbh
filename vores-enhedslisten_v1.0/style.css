@@ -1894,6 +1894,9 @@ body.home .headerContainer {
 .eventSection a.ue_post_grid_item.event_party::before {
   background-color: #703290;
 }
+.eventSection a.ue_post_grid_item .uc_content {
+  position: relative;
+}
 
 /* Posts and pages
 --------------------------------------------- */
