@@ -19,7 +19,7 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 <!--  universal navigation -->
-{# <?php include_once('template-parts/universalNavigation.php'); ?> #}
+<?php /* include_once('template-parts/universalNavigation.php'); */ ?>
 <!-- END - universal navigation -->
 <?php wp_footer(); ?>
 
