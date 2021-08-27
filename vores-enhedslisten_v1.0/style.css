@@ -1856,6 +1856,7 @@ body.home .headerContainer {
   background-image: linear-gradient(#fff, #aaa), var(--bg-img);
   background-size: cover;
   background-blend-mode: multiply, luminosity;
+  min-height: 15rem;
   background-position: center;
 }
 .eventSection a.ue_post_grid_item p {

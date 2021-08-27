@@ -14,6 +14,7 @@
       background-image: linear-gradient(#fff , #aaa), var(--bg-img) ;
       background-size: cover;
       background-blend-mode: multiply, luminosity;
+      min-height: 15rem;
       background-position: center;
 
       p {
