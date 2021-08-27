@@ -7,6 +7,7 @@
    --auto-grid-min-size: 25rem;
    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
    grid-gap: 1rem;
+   padding: max(1rem, 3vw);
 
    a.ue_post_grid_item {
       padding: 20% 5% 5%;
