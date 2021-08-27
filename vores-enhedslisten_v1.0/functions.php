@@ -249,7 +249,7 @@ function sortEventsByDate($args, $widgetControlsValues){
             'key'		=> 'event_start_time',
             'value'		=> $date_now,
             'type' => 'DATETIME',
-            'compare'	=> '<=' 
+            'compare'	=> '>=' 
          )
       ), 
 
