@@ -341,8 +341,8 @@ function frm_populate_posts($values, $field){
 
 
 function afc_validate_event_time( $valid, $event_start_value, $field, $input_name ) {
-   $event_start_value = $_POST['acf']['field_60cb2a218ceb5'];
-   $event_end_value = $_POST['acf']['field_60cb2b568ceb6'];
+   $event_start_value = preg_replace("/[^0-9]/", "", $_POST['acf']['field_60cb2a218ceb5']);
+   $event_end_value = preg_replace("/[^0-9]/", "", $_POST['acf']['field_60cb2b568ceb6']);
   
    // Bail early if value is already invalid.
    if( $valid !== true ) {
