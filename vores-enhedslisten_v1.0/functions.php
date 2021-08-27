@@ -351,7 +351,7 @@ function afc_validate_event_time( $valid, $event_start_value, $field, $input_nam
    
    // Prevent value from saving if it contains the companies old name.
    if( $event_start_value > $event_end_value  !== false ) {
-       return __( 'Eventen skal slutte senere end den starter - med mindre du har lånt sekretariatets tidsmaskine' );
+       return __( 'Eventen skal slutte senere end den starter - med mindre du har lånt sekretariatets tidsmaskine'.$event_start_value.' > '.$event_end_value );
    }
    return $valid;
 }
