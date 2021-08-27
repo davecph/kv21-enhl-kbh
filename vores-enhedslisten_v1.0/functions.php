@@ -338,25 +338,44 @@ function frm_populate_posts($values, $field){
 
 /* AFC event time validation */
 
-function afc_validate_event_time( $valid, $value, $field, $input_name ) {
+$event_start_value;
+$event_end_value;
 
-   $event_start_time = get_field('event_start_time', false , false );
-   $event_end_time = get_field('event_end_time', false , false );
+function afc_validate_event_start_time( $valid, $event_start_value, $field, $input_name ) {
+
+  
    // Bail early if value is already invalid.
    if( $valid !== true ) {
        return $valid;
    }
-   return __( $event_start_time.' ERNST '.$value );
+   return __( $event_start_value.' ERNST '.$event_end_value );
    // Prevent value from saving if it contains the companies old name.
-   if( $event_start_time > $event_end_time  !== false ) {
+   if( $event_start_value > $event_end_value  !== false ) {
        return __( 'Eventen skal slutte senere end den starter - med mindre du har lånt sekretariatets tidsmaskine' );
    }
    return $valid;
 }
 
+function afc_validate_event_end_time( $valid, $event_end_value, $field, $input_name ) {
+
+  
+   // Bail early if value is already invalid.
+   if( $valid !== true ) {
+       return $valid;
+   }
+   return __( $event_start_value.' ERNST '.$event_end_value );
+   // Prevent value from saving if it contains the companies old name.
+   if( $event_start_value > $event_end_value  !== false ) {
+       return __( 'Eventen skal slutte senere end den starter - med mindre du har lånt sekretariatets tidsmaskine' );
+   }
+   return $valid;
+}
+
+
+
 // Apply to fields named "hero_text".
-add_filter('acf/validate_value/name=event_start_time', 'afc_validate_event_time', 10, 4);
- add_filter('acf/validate_value/name=event_end_time', 'afc_validate_event_time', 10, 4);
+add_filter('acf/validate_value/name=event_start_time', 'afc_validate_event_start_time', 10, 4);
+add_filter('acf/validate_value/name=event_end_time', 'afc_validate_event_end_time', 10, 4);
 
 
 
