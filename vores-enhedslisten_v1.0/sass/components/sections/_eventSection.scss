@@ -11,8 +11,9 @@
    a.ue_post_grid_item {
       padding: 20% 5% 5%;
       color: #fff;
-      background-image: var(--bg-img);
+      background-image: linear-gradient(#222 , #222), var(--bg-img) ;
       background-size: cover;
+      background-blend-mode: multiply, luminosity;
 
       p {
          color: #fff;
