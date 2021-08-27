@@ -246,7 +246,7 @@ function sortEventsByDate($args, $widgetControlsValues){
    
     /*   'meta_query'	=> array(
          array(
-            'key'		=> 'event_start_time',
+            'key'		=> 'event_start_time|raw',
             'value'		=> $date_now,
             'compare'	=> '>' 
          )
