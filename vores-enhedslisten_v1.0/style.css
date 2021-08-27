@@ -1850,13 +1850,13 @@ body.home .headerContainer {
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
   grid-gap: 1rem;
 }
-.eventSection .ue_post_grid_item.event_active {
+.eventSection .ue_post_grid_item.event_activist {
   background-color: #159F6B;
 }
 .eventSection .ue_post_grid_item.event_debate {
   background-color: #D0004D;
 }
-.eventSection .ue_post_grid_itemevent_party {
+.eventSection .ue_post_grid_item.event_party {
   background-color: #703290;
 }
 

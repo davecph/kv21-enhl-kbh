@@ -9,7 +9,7 @@
    grid-gap: 1rem;
 
    .ue_post_grid_item {
-      &.event_active {
+      &.event_activist {
          background-color: $primGreen;
       }
 
@@ -17,7 +17,7 @@
          background-color: $primRed;
       }
 
-      &event_party {
+      &.event_party {
          background-color: $secPurple;
       }
    }
