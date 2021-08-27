@@ -342,7 +342,8 @@ $event_start_value;
 $event_end_value;
 
 function afc_validate_event_start_time( $valid, $event_start_value, $field, $input_name ) {
-
+   GLOBAL $event_start_value;
+   GLOBAL $event_end_value;
   
    // Bail early if value is already invalid.
    if( $valid !== true ) {
@@ -357,7 +358,8 @@ function afc_validate_event_start_time( $valid, $event_start_value, $field, $inp
 }
 
 function afc_validate_event_end_time( $valid, $event_end_value, $field, $input_name ) {
-
+   GLOBAL $event_start_value;
+   GLOBAL $event_end_value;
   
    // Bail early if value is already invalid.
    if( $valid !== true ) {
