@@ -2,6 +2,8 @@
    grid-column: 1/6;
 }
 
+uc_post_grid_events_elementor10534{padding-top: 2vw;}
+
 .eventSection {
    display: grid;
    --auto-grid-min-size: 25rem;
@@ -10,12 +12,12 @@
    padding: max(1rem, 3vw);
 
    a.ue_post_grid_item {
-      padding: 20% 5% 5%;
+      padding: 30% 5% 5%;
       color: #fff;
       background-image: linear-gradient(#fff, #aaa), var(--bg-img);
       background-size: cover;
       background-blend-mode: multiply, luminosity;
-      min-height: 15rem;
+      min-height: 18rem;
       background-position: center;
 
       &::before {
@@ -25,7 +27,7 @@
          position: absolute;
          top: 0;
          left: 0;
-         opacity: .5;
+         opacity: .33;
          z-index: 0;
       }
 
