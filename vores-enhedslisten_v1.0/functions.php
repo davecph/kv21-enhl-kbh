@@ -244,13 +244,13 @@ function sortEventsByDate($args, $widgetControlsValues){
       'numberposts'	=> -1,
       'category'		=> 'event',
    
-      'meta_query'	=> array(
+    /*   'meta_query'	=> array(
          array(
             'key'		=> 'event_start_time',
             'value'		=> $date_now,
             'compare'	=> '>' 
          )
-      ),
+      ), */
 
       'orderby' => 'meta_value',
       'meta_key' => 'event_start_time', 
