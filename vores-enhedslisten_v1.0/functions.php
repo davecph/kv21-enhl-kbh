@@ -333,14 +333,33 @@ function frm_populate_posts($values, $field){
 }
 
 
-
-
-
-
-
 /* / Test formidable*/
 
 
+/* AFC event time validation */
 
+function afc_validate_event_time( $valid, $value, $field, $input_name ) {
+
+   $event_start_time = get_field('event_start_time', false , false );
+   $event_end_time = get_field('event_end_time', false , false );
+   // Bail early if value is already invalid.
+   if( $valid !== true ) {
+       return $valid;
+   }
+
+   // Prevent value from saving if it contains the companies old name.
+   if( $event_start_time < $event_end_time  !== false ) {
+       return __( 'Eventen skal slutte senere end den starter - med mindre du har lånt sekretariatets tidsmaskine' );
+   }
+   return $valid;
+}
+
+// Apply to fields named "hero_text".
+ add_filter('acf/validate_value/name=event_end_time', 'afc_validate_event_time', 10, 4);
+
+
+
+
+/* / AFC event time validation */
 
 ?>
