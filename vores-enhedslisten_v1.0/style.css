@@ -1851,10 +1851,14 @@ body.home .headerContainer {
   grid-gap: 1rem;
 }
 .eventSection a.ue_post_grid_item {
+  padding: 20% 5% 5%;
   color: #fff;
 }
 .eventSection a.ue_post_grid_item p {
   color: #fff;
+}
+.eventSection a.ue_post_grid_item h3 {
+  padding-top: 0;
 }
 .eventSection a.ue_post_grid_item.event_activist {
   background-color: #159F6B;

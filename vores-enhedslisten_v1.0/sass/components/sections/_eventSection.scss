@@ -9,11 +9,15 @@
    grid-gap: 1rem;
 
    a.ue_post_grid_item {
+      padding: 20% 5% 5%;
       color: #fff;
-      
 
       p {
          color: #fff;
+      }
+
+      h3 {
+         padding-top: 0;
       }
 
       &.event_activist {
