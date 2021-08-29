@@ -180,13 +180,13 @@ function test_scripts() {
          'ajaxurl' => admin_url( 'admin-ajax.php' )
       ));
 
-      add_action( 'wp_ajax_nopriv_load-post-content-ajax', 'my_load_post_content_ajax' );
-      add_action( 'wp_ajax_load-post-content-ajax', 'my_load_post_content_ajax' );
-      
-      function my_load_post_content_ajax() {
-          echo get_bloginfo( 'title' );
-          die();
-      }
+      add_action( 'wp_ajax_nopriv_ajax_pagination', 'my_ajax_pagination' );
+add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
+
+function my_ajax_pagination() {
+    echo get_bloginfo( 'title' );
+    die();
+}
 
    /* / get post content with ajax*/
 
