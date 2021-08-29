@@ -1,6 +1,6 @@
 (function($) {
 	$(document).on( 'click', '.eventSection a', function( event ) {
-		event.preventDefault();
+		//event.preventDefault();
             
       $post_id = $(this).attr('id').replace('post_item_', '');
       console.log( $post_id );
@@ -18,10 +18,10 @@
          success: function( data ) {
             
 				$stuff = JSON.parse(data);
-            alert($stuff.event_start_time);
+            //alert($stuff.event_start_time);
            
 				$('#primary').append($stuff.event_start_time );
-            $('.entry-content p').append($stuff.ID ); 
+            $('.entry-content').append($stuff.ID ); 
 			}  
       })
 	})
