@@ -1,6 +1,15 @@
 (function($) {
 	$(document).on( 'click', '.eventSection a', function( event ) {
 		event.preventDefault();
-		alert( 'Clicked Link' );
+		$.ajax({
+         url: ajaxpagination.ajaxurl,
+         type: 'post',
+         data: {
+            action: 'load-post-content-ajax'
+         },
+         success: function( result ) {
+            alert( result );
+         }
+      })
 	})
 })(jQuery);
