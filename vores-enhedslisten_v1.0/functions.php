@@ -179,7 +179,13 @@ function test_scripts() {
       wp_localize_script( 'ajax-pagination', 'ajaxpagination', array(
          'ajaxurl' => admin_url( 'admin-ajax.php' )
       ));
-
+      add_action( 'wp_ajax_nopriv_ajax_pagination', 'my_ajax_pagination' );
+      add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
+      
+      function my_ajax_pagination() {
+          echo get_bloginfo( 'title' );
+          die();
+      }
       
 
    /* / get post content with ajax*/
@@ -189,13 +195,7 @@ function test_scripts() {
 	}
 }  
 
-add_action( 'wp_ajax_nopriv_ajax_pagination', 'my_ajax_pagination' );
-add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
 
-function my_ajax_pagination() {
-    echo get_bloginfo( 'title' );
-    die();
-}
 
 
 add_action( 'wp_enqueue_scripts', 'test_scripts' );
