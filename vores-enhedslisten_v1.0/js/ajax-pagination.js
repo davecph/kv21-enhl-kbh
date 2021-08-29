@@ -20,7 +20,7 @@
 				$stuff = JSON.parse(data);
             //alert($stuff.event_start_time);
            console.log($stuff);
-				$('#primary').html($stuff );
+				$('#primary').html($stuff.event_start_time);
             //$('#colophon').html($stuff.ID ); 
 			}  
       })
