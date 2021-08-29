@@ -4,8 +4,8 @@
       console.log($(event.target));
 
       
-         var id = $(this).attr('id');
-        var id = id.replace('post_item_', ''); 
+          $post_id = $(this).attr('id');
+          $post_id = $post_id.replace('post_item_', ''); 
         console.log( id );
      
 
