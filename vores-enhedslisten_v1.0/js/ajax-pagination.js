@@ -19,9 +19,9 @@
             
 				$stuff = JSON.parse(data);
             alert($stuff.event_start_time);
-            
-				('#primary').append($stuff.event_start_time, html );
-            ('#colophon').append($stuff.ID, html );
+            document.getElementById('primary').innerText =  $stuff.event_start_time;
+				/* ('#primary').append($stuff.event_start_time, html );
+            ('#colophon').append($stuff.ID, html ); */
 			}  
       })
 	})
