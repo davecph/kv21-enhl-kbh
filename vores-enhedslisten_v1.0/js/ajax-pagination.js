@@ -1,6 +1,6 @@
 (function($) {
 	$(document).on( 'click', '.eventSection a', function( event ) {
-		//event.preventDefault();
+		event.preventDefault();
             
       $post_id = $(this).attr('id').replace('post_item_', '');
       console.log( $post_id );
