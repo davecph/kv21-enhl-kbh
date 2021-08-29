@@ -16,8 +16,8 @@
 				
 			},
          success: function( data ) {
-				$stuff = data;
-            alert($stuff);
+				$stuff = JSON.parse(data);
+            alert($stuff[ID]);
 //				$('#primary').append( html );
 			}  
       })
