@@ -13,7 +13,7 @@
          data: {
 				action: 'ajax_pagination',
 				query_vars: ajaxpagination.query_vars,
-				page: $post_id
+				page: post
 			},
          success: function( result ) {
             console.log( result );
