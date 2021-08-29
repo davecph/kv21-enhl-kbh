@@ -176,7 +176,7 @@ function test_scripts() {
    /*get post content with ajax*/
       wp_enqueue_script( 'load-post-content-ajax', get_template_directory_uri() . '/js/load-post-content-ajax.js' , array( 'jquery' ), '1.0', true);
 
-      wp_localize_script( 'load-post-content-ajax', 'loadpostcontentajax', array(
+      wp_localize_script( 'ajax-pagination', 'ajaxpagination', array(
          'ajaxurl' => admin_url( 'admin-ajax.php' )
       ));
 
