@@ -197,7 +197,7 @@ function my_ajax_pagination() {
    //print_r($query_vars);
    $content =  get_the_content( $post_id ); ;
 
-   $post = get_post( $post_id , ARRAY_A);
+   $post = get_post( $post_id , ARRAY_N);
 
     
 
