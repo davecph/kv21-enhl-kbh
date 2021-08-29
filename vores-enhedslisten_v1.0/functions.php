@@ -198,7 +198,7 @@ function my_ajax_pagination() {
    $content =  get_the_content( $post_id ); ;
 
    $post   = get_post( $post_id );
-   $output =  apply_filters( 'the_content', $post->post_content );
+   $output =  apply_filters(  $post->post_content );
 
 
    echo $output.' fuckathon '; 
