@@ -198,7 +198,7 @@ function my_ajax_pagination() {
    $content =  get_the_content( $post_id ); ;
 
    $post   = get_post( $post_id , OBJECT);
-   //$post['event_start_time'] = 'bobo'; 
+   $post['event_start_time'] = "bobo"; 
    
 
 
