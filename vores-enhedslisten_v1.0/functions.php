@@ -177,6 +177,7 @@ function test_scripts() {
       wp_enqueue_script( 'ajax-pagination',  get_stylesheet_directory_uri() . '/js/ajax-pagination.js', array( 'jquery' ), '1.0', true );
 
       global $wp_query;
+      
       wp_localize_script( 'ajax-pagination', 'ajaxpagination', array(
          'ajaxurl' => admin_url( 'admin-ajax.php' ),
          'query_vars' => json_encode( $wp_query->query )
