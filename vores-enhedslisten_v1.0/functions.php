@@ -180,13 +180,7 @@ function test_scripts() {
          'ajaxurl' => admin_url( 'admin-ajax.php' )
       ));
 
-      add_action( 'wp_ajax_nopriv_ajax_pagination', 'my_ajax_pagination' );
-add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
-
-function my_ajax_pagination() {
-    echo get_bloginfo( 'title' );
-    die();
-}
+      
 
    /* / get post content with ajax*/
 
