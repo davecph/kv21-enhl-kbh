@@ -12,7 +12,7 @@
          type: 'post',
          data: {
 				action: 'ajax_pagination',
-				query_vars: ajaxpagination.query_vars,
+				query_vars: $post_id,
 				page: $post_id
 			},
          success: function( result ) {
