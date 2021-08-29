@@ -21,7 +21,7 @@
             //alert($stuff.event_start_time);
            
 				$('#primary').html($stuff );
-            $('#colophon').html($stuff.ID ); 
+            //$('#colophon').html($stuff.ID ); 
 			}  
       })
 	})
