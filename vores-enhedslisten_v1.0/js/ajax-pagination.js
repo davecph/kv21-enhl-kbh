@@ -15,11 +15,9 @@
 				query_vars: ajaxpagination.query_vars,
 				page: $post_id
 			},
-         success: function( html ) {
-				$('#main').find( 'article' ).remove();
-				$('#main nav').remove();
-				$('#main').append( html );
-			}
+         success: function( result ) {
+            console.log( result );
+         }
       })
 	})
 })(jQuery); 
