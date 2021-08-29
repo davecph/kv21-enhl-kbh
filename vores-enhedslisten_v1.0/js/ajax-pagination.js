@@ -5,7 +5,7 @@
 
       
          var id = $(this).attr('id');
-        /* id = cycle(id.replace('post_item_', '')); */ 
+        var id = id.replace('post_item_', ''); 
         console.log( id );
      
 
