@@ -202,6 +202,7 @@ function my_ajax_pagination() {
     
 
    $post['event_start_time'] = get_field('event_start_time', $post_id);
+   $post['event_type'] = get_field('event_type', $post_id);
    
 
 
