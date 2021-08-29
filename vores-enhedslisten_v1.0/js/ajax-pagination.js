@@ -8,7 +8,7 @@
             action: 'ajax_pagination'
          },
          success: function( result ) {
-            alert( result );
+            console.log( result );
          }
       })
 	})
