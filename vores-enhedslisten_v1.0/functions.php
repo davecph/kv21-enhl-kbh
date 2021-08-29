@@ -193,7 +193,7 @@ add_action( 'wp_ajax_nopriv_ajax_pagination', 'my_ajax_pagination' );
 add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
 
 function my_ajax_pagination() {
-   $query_vars =  $_POST['query_vars'];
+   $query_vars =  query_vars;
    //$query_vars = json_decode( stripslashes( $_POST['query_vars'] ), true );
    print_r($query_vars);
    //echo get_bloginfo( 'title' );
