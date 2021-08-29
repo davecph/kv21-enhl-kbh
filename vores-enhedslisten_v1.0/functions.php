@@ -177,7 +177,7 @@ function test_scripts() {
       wp_enqueue_script( 'ajax-pagination',  get_stylesheet_directory_uri() . '/js/ajax-pagination.js', array( 'jquery' ), '1.0', true );
 
       global $wp_query;
-      
+
       wp_localize_script( 'ajax-pagination', 'ajaxpagination', array(
          'ajaxurl' => admin_url( 'admin-ajax.php' ),
          'query_vars' => json_encode( $wp_query->query )
@@ -193,8 +193,8 @@ add_action( 'wp_ajax_nopriv_ajax_pagination', 'my_ajax_pagination' );
 add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
 
 function my_ajax_pagination() {
-
-   $query_vars = json_decode( stripslashes( $_POST['query_vars'] ), true );
+   $query_vars =  $_POST['query_vars'];
+   //$query_vars = json_decode( stripslashes( $_POST['query_vars'] ), true );
    print_r($query_vars);
    //echo get_bloginfo( 'title' );
    die();
