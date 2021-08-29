@@ -19,9 +19,10 @@
             
 				$stuff = JSON.parse(data);
             //alert($stuff.event_start_time);
-           console.log($stuff);
+            console.log($stuff);
 				$('#primary').html($stuff.event_start_time);
-            //$('#colophon').html($stuff.ID ); 
+            $('#primary').append($stuff.thumbnail_url);
+            $('#colophon').html($stuff.ID ); 
 			}  
       })
 	})
