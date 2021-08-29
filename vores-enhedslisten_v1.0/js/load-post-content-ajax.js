@@ -2,7 +2,7 @@
 	$(document).on( 'click', '.eventSection a', function( event ) {
 		event.preventDefault();
 		$.ajax({
-         url: ajaxpagination.ajaxurl,
+         url: loadpostcontentajax.ajaxurl,
          type: 'post',
          data: {
             action: 'load-post-content-ajax'
