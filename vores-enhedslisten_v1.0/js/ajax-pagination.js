@@ -12,12 +12,12 @@
          type: 'post',
          data: {
 				action: 'ajax_pagination',
-				query_vars: ajaxpagination.query_vars,
-				page: $post_id
+				query_vars: $post_id,
+				page: page 
 			},
          success: function( result ) {
             console.log( result );
          }
       })
 	})
-})(jQuery); 
+})(jQuery);    
