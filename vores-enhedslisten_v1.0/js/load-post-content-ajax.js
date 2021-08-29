@@ -1,5 +1,5 @@
 (function($) {
-	$(document).on( 'click', 'a#post_item', function( event ) {
+	$(document).on( 'click', '.eventSection a', function( event ) {
 		event.preventDefault();
 		alert( 'Clicked Link' );
 	})
