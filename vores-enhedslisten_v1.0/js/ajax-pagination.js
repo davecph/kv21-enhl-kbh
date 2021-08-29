@@ -20,8 +20,8 @@
 				$stuff = JSON.parse(data);
             //alert($stuff.event_start_time);
            
-				$('#primary').append($stuff.event_start_time );
-            $('.entry-content').append($stuff.ID ); 
+				$('#primary').html($stuff.event_start_time );
+            $('.entry-content').html($stuff.ID ); 
 			}  
       })
 	})
