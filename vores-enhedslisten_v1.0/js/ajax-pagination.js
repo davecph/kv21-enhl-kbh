@@ -15,9 +15,10 @@
 				query_vars: $post_id,
 				
 			},
-         success: function( result ) {
-            console.log( result );
-         }
+         success: function( html ) {
+				
+				$('#primary').append( html );
+			}
       })
 	})
 })(jQuery);    
