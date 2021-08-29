@@ -16,7 +16,7 @@
 				
 			},
          success: function( data ) {
-            
+            alert(data);
 				$stuff = JSON.parse(data);
             alert($stuff);
             alert($stuff[ID]);
