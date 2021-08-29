@@ -3,6 +3,12 @@
 		event.preventDefault();
       console.log($(event.target));
 
+      
+         var id = $(this).attr('id');
+        $container.cycle(id.replace('post_item_', '')); 
+        console.log( id );
+     
+
 
 		$.ajax({
          url: ajaxpagination.ajaxurl,
