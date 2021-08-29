@@ -16,8 +16,8 @@
 				
 			},
          success: function( data ) {
-				$stuff = data.toString();
-            alert($stuff);
+				
+            alert($stuff['post_author']+'boo');
 //				$('#primary').append( html );
 			}  
       })
