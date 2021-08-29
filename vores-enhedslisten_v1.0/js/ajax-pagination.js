@@ -19,7 +19,7 @@
             
 				$stuff = JSON.parse(data);
             //alert($stuff.event_start_time);
-           
+           console.log($stuff);
 				$('#primary').html($stuff );
             //$('#colophon').html($stuff.ID ); 
 			}  
