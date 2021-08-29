@@ -200,7 +200,7 @@ function my_ajax_pagination() {
    $post = get_post( $post_id , ARRAY_A);
 
     
-   $post['thumbnail_url'] = get_the_post_thumbnail_url( $post_id, 'medium-large' );
+   $post['thumbnail_url'] = get_the_post_thumbnail_url( $post_id, 'x-large' );
    $post['event_start_time'] = get_field('event_start_time', $post_id);
    $post['event_type'] = get_field('event_type', $post_id);
    
