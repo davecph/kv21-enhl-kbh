@@ -19,7 +19,8 @@
             
 				$stuff = JSON.parse(data);
             alert($stuff.event_start_time);
-            document.getElementById('primary').innerText =  $stuff.event_start_time;
+            document.getElementById('primary').innerText +=  $stuff.event_start_time;
+            document.getElementById('colophon').innerText +=  $stuff.ID;
 				/* ('#primary').append($stuff.event_start_time, html );
             ('#colophon').append($stuff.ID, html ); */
 			}  
