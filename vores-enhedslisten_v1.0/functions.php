@@ -206,7 +206,7 @@ function my_ajax_pagination() {
    
 
 
-   echo $post; 
+   echo json_encode($post); 
    //echo get_post($query_vars);
    die();
 }
