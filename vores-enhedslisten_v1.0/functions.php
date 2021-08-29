@@ -198,7 +198,10 @@ function my_ajax_pagination() {
    $content =  get_the_content( $post_id ); ;
 
    $post = get_post( $post_id , ARRAY_A);
-   $post['event_start_time'] = "bobo"; 
+
+   $event_start_time = get_field('event_start_time', $post_id); 
+
+   $post['event_start_time'] = $event_start_time;
    
 
 
