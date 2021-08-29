@@ -16,7 +16,7 @@
 				
 			},
          success: function( data ) {
-				alert(data)
+				alert(data[ID])
 				$('#primary').append( html );
 			}  
       })
