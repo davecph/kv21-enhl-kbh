@@ -15,10 +15,10 @@
 				query_vars: $post_id,
 				
 			},
-         success: function( html ) {
-				
+         success: function( data ) {
+				alert(data)
 				$('#primary').append( html );
-			}
+			}  
       })
 	})
 })(jQuery);    
