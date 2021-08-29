@@ -206,7 +206,7 @@ function my_ajax_pagination() {
    
 
 
-   echo $post.' fuckathon '; 
+   echo ' fuckathon '.$post; 
    //echo get_post($query_vars);
    die();
 }
