@@ -6,7 +6,7 @@
       
          var post_id = $(this).attr('id');
         var post_id = post_id.replace('post_item_', ''); 
-        console.log( id );
+        console.log( post_id );
      
 
 
@@ -21,4 +21,4 @@
          }
       })
 	})
-})(jQuery);
+})(jQuery); 
