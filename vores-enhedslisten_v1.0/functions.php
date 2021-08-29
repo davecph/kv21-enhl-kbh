@@ -196,7 +196,12 @@ function my_ajax_pagination() {
    $post_id = json_decode( stripslashes( $_POST['query_vars'] ), true );
    //print_r($query_vars);
    $content =  get_the_content( $post_id ); ;
-   echo $content.' fuckathon '; 
+
+   $post   = get_post( $post_id );
+   $output =  apply_filters( 'the_content', $post->post_content );
+
+
+   echo $output.' fuckathon '; 
    //echo get_post($query_vars);
    die();
 }
