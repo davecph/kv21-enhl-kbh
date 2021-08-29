@@ -195,7 +195,7 @@ function my_ajax_pagination() {
 
    $query_vars = json_decode( stripslashes( $_POST['query_vars'] ), true );
    print_r($query_vars);
-   echo get_the_content($query_vars);
+   echo get_post($query_vars);
    die();
 }
 
