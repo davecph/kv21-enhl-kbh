@@ -197,11 +197,11 @@ function my_ajax_pagination() {
    //print_r($query_vars);
    $content =  get_the_content( $post_id ); ;
 
-   $post   = get_post( $post_id );
-   $output =  apply_filters(  $post->post_content );
+   $post   = get_post( $post_id , ARRAY_A);
+   
 
 
-   echo $output.' fuckathon '; 
+   echo $post.' fuckathon '; 
    //echo get_post($query_vars);
    die();
 }
