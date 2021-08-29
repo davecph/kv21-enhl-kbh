@@ -21,7 +21,7 @@
             alert($stuff.event_start_time);
            
 				$('#primary').append($stuff.event_start_time );
-            $('.entry-content').append($stuff.ID ); 
+            $('.entry-content p').append($stuff.ID ); 
 			}  
       })
 	})
