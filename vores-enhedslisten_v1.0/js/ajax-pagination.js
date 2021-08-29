@@ -11,7 +11,7 @@
          url: ajaxpagination.ajaxurl,
          type: 'post',
          data: {
-				action: 'ajax_pagination('.$post_id.')',
+				action: 'ajax_pagination',
 				query_vars: ajaxpagination.query_vars,
 				page: $post_id
 			},
