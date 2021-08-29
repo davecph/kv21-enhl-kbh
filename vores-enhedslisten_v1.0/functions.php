@@ -193,9 +193,9 @@ add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
 
 function my_ajax_pagination() {
 
-   $query_vars = json_decode( stripslashes( $_POST['query_vars'] ), true );
+   $post_id = json_decode( stripslashes( $_POST['query_vars'] ), true );
    //print_r($query_vars);
-   $content = apply_filters( 'the_content', get_the_content($query_vars) );
+   $content =  get_the_content($post_id) ;
    echo $content; 
    //echo get_post($query_vars);
    die();
