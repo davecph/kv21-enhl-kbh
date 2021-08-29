@@ -21,8 +21,8 @@
             alert($stuff.event_start_time);
            /*  document.getElementById('primary').innerHTML +=  $stuff.event_start_time;
             document.getElementById('colophon').innerHTML +=  $stuff.ID; */
-				$('#primary').append($stuff.event_start_time, html );
-            $('#colophon').append($stuff.ID, html ); 
+				$('#primary').append($stuff.event_start_time );
+            $('#colophon').append($stuff.ID ); 
 			}  
       })
 	})
