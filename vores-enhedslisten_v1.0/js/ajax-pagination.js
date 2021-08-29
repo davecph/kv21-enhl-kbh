@@ -6,7 +6,7 @@
       
          $post_id = $(this).attr('id').replace('post_item_', '');
         
-        console.log( post_id );
+        console.log( $post_id );
      
 
 
