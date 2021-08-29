@@ -16,7 +16,7 @@
 				
 			},
          success: function( data ) {
-				$stuff = toString(data);
+				$stuff = data.toString();
             alert($stuff);
 //				$('#primary').append( html );
 			}  
