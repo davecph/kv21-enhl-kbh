@@ -17,7 +17,7 @@
 			},
          success: function( data ) {
 				$stuff = data;
-            alert($stuff);
+            alert($stuff[ID]);
 //				$('#primary').append( html );
 			}  
       })
