@@ -179,12 +179,21 @@ function test_scripts() {
       wp_localize_script( 'load-post-content-ajax', 'loadpostcontentajax', array(
          'ajaxurl' => admin_url( 'admin-ajax.php' )
       ));
+
+      add_action( 'wp_ajax_nopriv_load-post-content-ajax', 'my_load_post_content_ajax' );
+      add_action( 'wp_ajax_load-post-content-ajax', 'my_load_post_content_ajax' );
+      
+      function my_load_post_content_ajax() {
+          echo get_bloginfo( 'title' );
+          die();
+      }
+
    /* / get post content with ajax*/
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-}
+}  
 add_action( 'wp_enqueue_scripts', 'test_scripts' );
 
 /**

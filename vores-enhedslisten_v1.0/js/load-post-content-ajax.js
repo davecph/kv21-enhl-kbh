@@ -1,6 +1,7 @@
 (function($) {
 	$(document).on( 'click', '.eventSection a', function( event ) {
 		event.preventDefault();
+
 		$.ajax({
          url: loadpostcontentajax.ajaxurl,
          type: 'post',
@@ -12,4 +13,4 @@
          }
       })
 	})
-})(jQuery);
+})(jQuery);                                        
