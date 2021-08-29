@@ -17,7 +17,7 @@
 			},
          success: function( data ) {
 				$stuff = data;
-            alert($stuff.substring(0,5)+' boo');
+            alert($stuff);
 //				$('#primary').append( html );
 			}  
       })
