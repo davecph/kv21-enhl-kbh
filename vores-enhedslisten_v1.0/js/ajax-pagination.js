@@ -16,9 +16,9 @@
 				
 			},
          success: function( data ) {
-            alert(data);
+            
 				$stuff = JSON.parse(data);
-            alert($stuff.ID);
+            alert($stuff.event_start_time);
             
 //				$('#primary').append( html );
 			}  
