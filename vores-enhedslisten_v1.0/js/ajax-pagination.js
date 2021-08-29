@@ -16,7 +16,7 @@
 				
 			},
          success: function( data ) {
-				
+				$stuff = data;
             alert($stuff['post_author']+'boo');
 //				$('#primary').append( html );
 			}  
