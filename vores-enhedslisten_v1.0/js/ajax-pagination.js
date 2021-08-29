@@ -1,12 +1,9 @@
 (function($) {
 	$(document).on( 'click', '.eventSection a', function( event ) {
 		event.preventDefault();
-      console.log($(event.target));
-
-      
-         $post_id = $(this).attr('id').replace('post_item_', '');
-        
-        console.log( $post_id );
+            
+      $post_id = $(this).attr('id').replace('post_item_', '');
+      console.log( $post_id );
      
 
 
@@ -14,11 +11,15 @@
          url: ajaxpagination.ajaxurl,
          type: 'post',
          data: {
-            action: 'ajax_pagination'
-         },
-         success: function( result ) {
-            console.log( result );
-         }
+				action: 'ajax_pagination',
+				query_vars: ajaxpagination.query_vars,
+				page: $post_id
+			},
+         success: function( html ) {
+				$('#main').find( 'article' ).remove();
+				$('#main nav').remove();
+				$('#main').append( html );
+			}
       })
 	})
 })(jQuery); 
