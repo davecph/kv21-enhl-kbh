@@ -1,6 +1,9 @@
 (function($) {
 	$(document).on( 'click', '.eventSection a', function( event ) {
 		event.preventDefault();
+      console.log($(event.target));
+
+
 		$.ajax({
          url: ajaxpagination.ajaxurl,
          type: 'post',
