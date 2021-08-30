@@ -26,12 +26,12 @@
                $('#ajaxpop #coverImg').attr("style", "");
             }
 
-            if ($("#ajaxpop").hasClass($content.evnt_type) !== false) {
+            
                $("#ajaxpop").removeClass("event_party");
                $("#ajaxpop").removeClass("event_activist");
                $("#ajaxpop").removeClass("event_debate");
                $("#ajaxpop").addClass($content.evnt_type);
-            }
+            
 
 
 
