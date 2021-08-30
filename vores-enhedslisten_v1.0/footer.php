@@ -22,7 +22,7 @@
 <?php /* include_once('template-parts/universalNavigation.php'); */ ?>
 <!-- END - universal navigation -->
 <?php wp_footer(); ?>
-
+require_once ( get_template_directory() . '/template-parts/ajaxpop.php' );
 </body>
 <!-- Just a stupid comment -->
 </html>
