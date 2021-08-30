@@ -23,6 +23,7 @@
 
          if ($("#ajaxpop").hasClass("show") !== true) {
             $("#ajaxpop").addClass("show");
+            $("body").addClass("noScroll");
          } else
          if ($("#ajaxpop").hasClass("show") == true) {
             console.log('here');

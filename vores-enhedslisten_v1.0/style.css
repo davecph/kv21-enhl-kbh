@@ -1092,6 +1092,11 @@ table {
   padding: 2vw;
 }
 
+body.noScroll {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
 /* Links
 --------------------------------------------- */
 a {
