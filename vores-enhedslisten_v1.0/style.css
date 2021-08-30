@@ -1072,7 +1072,6 @@ table {
 }
 #ajaxpop .ajaxpop-container {
   top: 100vh;
-  animation: slideup 1s 1s reverse both;
 }
 #ajaxpop.show {
   width: 100vw;
