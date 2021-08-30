@@ -69,96 +69,98 @@
       @include largeDesktop {
          grid-template-columns: repeat(6, 1fr);
       }
+   }
 
+   #coverImg {
+      display: none;
+   }
+
+   .hasTN {
       #coverImg {
-         display: none;
-      }
-
-      &.hasTN {
-         #coverImg {
-            display: block;
-            grid-column: 1/4;
-            grid-row: 1/3;
-
-            @include tablet {
-               grid-column: 1/5;
-            }
-
-            @include desktop {
-               grid-column: 1/5;
-            }
-
-            @include largeDesktop {
-               grid-column: 1/7;
-               grid-row: 1/4;
-            }
-         }
-
-         .headerContainer h1 {
-            color: #fff;
-         }
-      }
-
-      .headerContainer {
-         grid-column: 2/3;
-         grid-row: 2/3;
-
-         @include tablet {
-            grid-column: 2/4;
-         }
-
-         @include desktop {
-            grid-column: 2/4;
-         }
-
-         @include largeDesktop {
-            grid-column: 2/6;
-         }
-      }
-
-      .entry-content {
-         padding: 0;
-         grid-column: 2/3;
-         grid-row: 3/4;
-
-         @include tablet {
-            grid-row: 3/5;
-            padding: 1rem;
-         }
-
-         @include desktop {
-            grid-row: 3/5;
-            padding: 1rem;
-         }
-
-         @include largeDesktop {
-            grid-row: 3/5;
-            grid-column: 2/4;
-            padding: 1rem;
-         }
-      }
-
-      .factbox {
+         display: block;
          grid-column: 1/4;
-         grid-row: 4/5;
-         background-color: #333;
-         color: #fff;
-         padding: 1rem;
+         grid-row: 1/3;
+         background-blend-mode: multiply, luminosity;
 
          @include tablet {
-            grid-column: 3/4;
-            grid-row: 3/4;
+            grid-column: 1/5;
          }
 
          @include desktop {
-            grid-column: 3/4;
-            grid-row: 3/4;
+            grid-column: 1/5;
          }
 
          @include largeDesktop {
-            grid-column: 4/7;
-            grid-row: 3/4;
+            grid-column: 1/7;
+            grid-row: 1/4;
          }
+      }
+
+      .headerContainer h1 {
+         color: #fff;
+      }
+   }
+
+   .headerContainer {
+      grid-column: 2/3;
+      grid-row: 2/3;
+
+      @include tablet {
+         grid-column: 2/4;
+      }
+
+      @include desktop {
+         grid-column: 2/4;
+      }
+
+      @include largeDesktop {
+         grid-column: 2/6;
+      }
+   }
+
+   .entry-content {
+      padding: 0;
+      grid-column: 2/3;
+      grid-row: 3/4;
+
+      @include tablet {
+         grid-row: 3/5;
+         padding: 1rem;
+      }
+
+      @include desktop {
+         grid-row: 3/5;
+         padding: 1rem;
+      }
+
+      @include largeDesktop {
+         grid-row: 3/5;
+         grid-column: 2/4;
+         padding: 1rem;
+         background-color: #fff;
+      }
+   }
+
+   .factbox {
+      grid-column: 1/4;
+      grid-row: 4/5;
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+
+      @include tablet {
+         grid-column: 3/4;
+         grid-row: 3/4;
+      }
+
+      @include desktop {
+         grid-column: 3/4;
+         grid-row: 3/4;
+      }
+
+      @include largeDesktop {
+         grid-column: 4/6;
+         grid-row: 3/4;
       }
    }
 
