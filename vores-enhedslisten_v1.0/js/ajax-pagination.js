@@ -36,7 +36,7 @@
             if ($content.event_type == 'event_activist') {
                $('#ajaxpop  .factbox').html('<h5>Aktivistmøde</h5>');
             } 
-            $('#ajaxpop  .factbox').append('<h6>Tidspunkt</h6><h6><span class="fw-light">' + $content.event_start_time + ' – ' + $content.event_end_time + '</span></h6>');
+            $('#ajaxpop  .factbox').append('<h6>' + $content.event_start_time + ' – ' + $content.event_end_time + '</h6>');
             $('#ajaxpop .entry-content').html($content.post_content);
          }
       })
