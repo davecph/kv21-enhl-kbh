@@ -1158,7 +1158,7 @@ table {
     grid-row: 1/4;
   }
 }
-#ajaxpop .ajaxpop-content #coverImg.hasTN #coverImg {
+#ajaxpop .ajaxpop-content #coverImg.hasTN {
   display: block;
 }
 #ajaxpop .ajaxpop-content #coverImg.hasTN .headerContainer h1 {
