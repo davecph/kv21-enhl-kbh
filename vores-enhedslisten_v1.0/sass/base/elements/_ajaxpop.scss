@@ -22,13 +22,19 @@
          display: block;
       }
 
+      .ajaxpop-close::before {
+         
+         
+      }
+
       .ajaxpop-container {
          background-color: #fff;
          width: 80vw;
          min-height: 50vh;
          max-height: 90vh;
-         margin: auto;
+         margin: 5vh auto;
          padding: 2vw;
+         position: relative;
       }
    }
 }
