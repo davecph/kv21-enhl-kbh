@@ -1149,7 +1149,11 @@ table {
   color: #fff;
   padding: 1rem;
 }
-
+@media (min-width: 768px) and (max-width: 1024px) {
+  #ajaxpop .ajaxpop-content {
+    grid-template-columns: max(2rem, 3vw) 1fr 1fr max(2rem, 3vw);
+  }
+}
 @keyframes slideup {
   from {
     top: 100vh;
