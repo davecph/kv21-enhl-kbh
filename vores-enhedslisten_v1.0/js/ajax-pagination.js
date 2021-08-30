@@ -15,9 +15,9 @@
                $stuff = JSON.parse(data);
                //alert($stuff.event_start_time);
                console.log($stuff);
-               $('#primary').html($stuff.event_start_time);
-               $('#primary').append($stuff.thumbnail_url);
-               $('#colophon').html($stuff.ID);
+               $('#ajaxpop .ajaxpop-content').append($stuff.event_start_time);
+               $('#ajaxpop .ajaxpop-content').append($stuff.thumbnail_url);
+               $('#ajaxpop .ajaxpop-content').append($stuff.ID);
             }
          })
 
