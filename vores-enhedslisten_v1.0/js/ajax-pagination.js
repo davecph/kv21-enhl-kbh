@@ -26,16 +26,17 @@
             $("#coverImg").removeClass("event_debate");
             $("#coverImg").addClass($content.event_type);
             $('#ajaxpop  .headerContainer').html("<h1>" + $content.post_title + "</h1>");
-            $('#ajaxpop  .factbox').html('<h6>Tidspunkt</h6><h6><span class="fw-light">' + $content.event_start_time + ' – ' + $content.event_end_time + '</span></h6>');
+            
             if ($content.event_type == 'event_party') {
-               $('#ajaxpop  .factbox').append('<h5>Fest</h5>');
+               $('#ajaxpop  .factbox').html('<h5>Fest</h5>');
             } else
             if ($content.event_type == 'event_party') {
-               $('#ajaxpop  .factbox').append('<h5>Fest</h5>');
+               $('#ajaxpop  .factbox').html('<h5>Fest</h5>');
             } else
             if ($content.event_type == 'event_party') {
-               $('#ajaxpop  .factbox').append('<h5>Fest</h5>');
+               $('#ajaxpop  .factbox').html('<h5>Fest</h5>');
             } 
+            $('#ajaxpop  .factbox').append('<h6>Tidspunkt</h6><h6><span class="fw-light">' + $content.event_start_time + ' – ' + $content.event_end_time + '</span></h6>');
             $('#ajaxpop .entry-content').html($content.post_content);
          }
       })
