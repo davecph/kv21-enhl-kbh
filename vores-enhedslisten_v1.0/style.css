@@ -1153,6 +1153,19 @@ table {
   #ajaxpop .ajaxpop-content {
     grid-template-columns: max(2rem, 3vw) 1fr 1fr max(2rem, 3vw);
   }
+  #ajaxpop #coverImg {
+    grid-column: 1/5;
+  }
+  #ajaxpop .headerContainer {
+    grid-column: 2/4;
+  }
+  #ajaxpop .entry-content {
+    grid-row: 3/5;
+  }
+  #ajaxpop .factbox {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
 }
 @keyframes slideup {
   from {

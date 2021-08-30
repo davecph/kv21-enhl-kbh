@@ -98,6 +98,23 @@
       .ajaxpop-content {
          grid-template-columns: max(2rem, 3vw) 1fr 1fr max(2rem, 3vw);
       }
+
+      #coverImg {
+         grid-column: 1/5;
+      }
+
+      .headerContainer {
+         grid-column: 2/4;
+      }
+
+      .entry-content {
+         grid-row: 3/5;
+      }
+
+      .factbox {
+         grid-column: 3/4;
+         grid-row: 3/4;
+      }
    }
 
    @include desktop {}
