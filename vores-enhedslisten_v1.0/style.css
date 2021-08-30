@@ -1072,6 +1072,7 @@ table {
 }
 #ajaxpop .ajaxpop-container {
   top: 100vh;
+  animation: slideup 1s 1s reverse both;
 }
 #ajaxpop.show {
   width: 100vw;
@@ -1106,7 +1107,7 @@ table {
   max-height: 90vh;
   margin: max(1rem, 5vh) auto;
   position: relative;
-  animation: slideup 1s 1s forwards;
+  animation: slideup 1s 1s both;
 }
 #ajaxpop.show .ajaxpop-content {
   max-height: 85vh;
