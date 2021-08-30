@@ -1083,6 +1083,14 @@ table {
   z-index: 999;
   display: block;
 }
+#ajaxpop.show .ajaxpop-container {
+  background-color: #fff;
+  width: 80vw;
+  min-height: 50vh;
+  max-height: 90vh;
+  margin: auto;
+  padding: 2vw;
+}
 
 /* Links
 --------------------------------------------- */
