@@ -241,7 +241,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 
-
+require_once ( get_template_directory() . '/template-parts/ajaxpop.php' );
 
 
 
