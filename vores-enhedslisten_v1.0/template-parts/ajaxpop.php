@@ -1,4 +1,5 @@
 <div id="ajaxpop">
+   <div class="ajaxpop-cover"></div>
    <div class="ajaxpop-container">
       <div class="ajaxpop-close"></div>
       <div class="ajaxpop-content">
