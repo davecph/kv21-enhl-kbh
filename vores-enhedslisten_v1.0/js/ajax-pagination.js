@@ -20,7 +20,7 @@
             if ($content.thumbnail_url == false) {
                $('#ajaxpop #coverImg').attr("style", "");
             }
-            endif;
+            
             $("#coverImg").removeClass("event_party");
             $("#coverImg").removeClass("event_activist");
             $("#coverImg").removeClass("event_debate");
@@ -35,7 +35,7 @@
             } else
             if ($content.eventtype == 'event_party') {
                $('#ajaxpop  .factbox').append('<h5>Fest</h5>');
-            } endif;
+            } 
             $('#ajaxpop .entry-content').html($content.post_content);
          }
       })
