@@ -1,4 +1,4 @@
-$(document).ready(function() {
+
    (function($) {
       $(document).on('click', '.eventSection a', function(event) {
          event.preventDefault();
@@ -33,4 +33,4 @@ $(document).ready(function() {
 
       })
    })
-})(jQuery);
+(jQuery);
