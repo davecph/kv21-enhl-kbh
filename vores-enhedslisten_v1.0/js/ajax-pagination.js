@@ -15,7 +15,7 @@
             //alert($content.event_start_time);
             console.log($content);
 
-            if ($content.thumbnail_url !== false) {
+            /* if ($content.thumbnail_url !== false) {
                $('#ajaxpop #coverImg').attr("style", "--bg-img:url(" + $content.thumbnail_url + ")");
                if ($('.ajaxpop-content').hasClass('hasTN') == false) {
                   $('.ajaxpop-content').addClass('hasTN');
@@ -24,13 +24,13 @@
             if ($content.thumbnail_url == false && $('.ajaxpop-content').hasClass('hasTN') == true) {
                $('.ajaxpop-content').removeClass('hasTN');
                $('#ajaxpop #coverImg').attr("style", "");
-            }
+            } */
 
             
-            $("#ajaxpop").removeClass("event_party");
-            $("#ajaxpop").removeClass("event_activist");
-            $("#ajaxpop").removeClass("event_debate");
-            $("#ajaxpop").addClass($content.event_type);
+            $("#coverImg").removeClass("event_party");
+            $("#coverImg").removeClass("event_activist");
+            $("#coverImg").removeClass("event_debate");
+            $("#coverImg").addClass($content.event_type);
             
 
 
