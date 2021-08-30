@@ -15,16 +15,14 @@
             //alert($content.event_start_time);
             console.log($content);
 
-            /* if ($content.thumbnail_url !== false) {
+             if ($content.thumbnail_url !== false) {
                $('#ajaxpop #coverImg').attr("style", "--bg-img:url(" + $content.thumbnail_url + ")");
-               if ($('.ajaxpop-content').hasClass('hasTN') == false) {
-                  $('.ajaxpop-content').addClass('hasTN');
-               };
+               
             } else
-            if ($content.thumbnail_url == false && $('.ajaxpop-content').hasClass('hasTN') == true) {
-               $('.ajaxpop-content').removeClass('hasTN');
+            if ($content.thumbnail_url == false ) {
+               
                $('#ajaxpop #coverImg').attr("style", "");
-            } */
+            } 
 
             
             $("#coverImg").removeClass("event_party");
