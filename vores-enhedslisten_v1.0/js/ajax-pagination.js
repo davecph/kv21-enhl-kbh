@@ -14,11 +14,18 @@
             $content = JSON.parse(data);
             //alert($content.event_start_time);
             console.log($content);
-            $('#ajaxpop #coverImg').attr("style", "--bg-img:url("+$content.thumbnail_url+")" );
-            $('#ajaxpop  .headerContainer').html("<h1>" + $content.post_title + "</h1>" );
-            $('#ajaxpop  .factbox').html('<h6>Tidspunkt</h6><h6><span class="fw-light">'+$content.event_start_time+ ' – ' +$content.event_end_time+'</span><h6></h6>');
-            $('#ajaxpop .entry-content').html($content.post_content );
-            
+            if ($content.thumbnail_url !== '') {
+               $('#ajaxpop #coverImg').attr("style", "--bg-img:url(" + $content.thumbnail_url + ")");
+               if ($('.ajaxpop-content').hasClass('hasTN') == false) {
+                  $('.ajaxpop-content').addClass('hasTN');
+               };
+            } else
+            if ($content.thumbnail_url == '' && $('.ajaxpop-content').hasClass('hasTN') == true) {
+               $('.ajaxpop-content').removeClass('hasTN');
+            }
+            $('#ajaxpop  .headerContainer').html("<h1>" + $content.post_title + "</h1>");
+            $('#ajaxpop  .factbox').html('<h6>Tidspunkt</h6><h6><span class="fw-light">' + $content.event_start_time + ' – ' + $content.event_end_time + '</span><h6></h6>');
+            $('#ajaxpop .entry-content').html($content.post_content);
          }
       })
       if ($("#ajaxpop").hasClass("show") !== true) {
@@ -31,7 +38,6 @@
       }
    })
 })(jQuery);
-
 (function($) {
    $(document).on('click', '.ajaxpop-close', function(event) {
       event.preventDefault();
@@ -42,7 +48,6 @@
       }
    })
 })(jQuery);
-
 (function($) {
    $(document).on('click', '.ajaxpop-cover', function(event) {
       event.preventDefault();
