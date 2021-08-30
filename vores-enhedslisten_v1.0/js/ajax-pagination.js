@@ -14,6 +14,7 @@
             $content = JSON.parse(data);
             //alert($content.event_start_time);
             console.log($content);
+
             if ($content.thumbnail_url !== false) {
                $('#ajaxpop #coverImg').attr("style", "--bg-img:url(" + $content.thumbnail_url + ")");
                if ($('.ajaxpop-content').hasClass('hasTN') == false) {
@@ -24,6 +25,18 @@
                $('.ajaxpop-content').removeClass('hasTN');
                $('#ajaxpop #coverImg').attr("style", "");
             }
+
+            if ($("#ajaxpop").hasClass($content.evnt_type) == false) {
+               $("#ajaxpop").removeClass("event_party");
+               $("#ajaxpop").removeClass("event_activist");
+               $("#ajaxpop").removeClass("event_debate");
+               $("#ajaxpop").addClass($content.evnt_type);
+            }
+
+
+
+
+
             $('#ajaxpop  .headerContainer').html("<h1>" + $content.post_title + "</h1>");
             $('#ajaxpop  .factbox').html('<h6>Tidspunkt</h6><h6><span class="fw-light">' + $content.event_start_time + ' – ' + $content.event_end_time + '</span><h6></h6>');
             $('#ajaxpop .entry-content').html($content.post_content);
