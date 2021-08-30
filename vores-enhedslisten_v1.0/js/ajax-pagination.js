@@ -22,6 +22,7 @@
             } else
             if ($content.thumbnail_url == false && $('.ajaxpop-content').hasClass('hasTN') == true) {
                $('.ajaxpop-content').removeClass('hasTN');
+               $('#ajaxpop #coverImg').attr("style", "");
             }
             $('#ajaxpop  .headerContainer').html("<h1>" + $content.post_title + "</h1>");
             $('#ajaxpop  .factbox').html('<h6>Tidspunkt</h6><h6><span class="fw-light">' + $content.event_start_time + ' – ' + $content.event_end_time + '</span><h6></h6>');
