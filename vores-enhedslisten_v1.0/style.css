@@ -1111,7 +1111,7 @@ table {
   width: 100%;
   display: grid;
   grid-template-columns: 1rem auto 1rem;
-  grid-template-rows: 20vh 15vh auto auto;
+  grid-template-rows: 15vh auto auto auto;
 }
 #ajaxpop.show .ajaxpop-content #coverImg {
   grid-column: 1/4;
