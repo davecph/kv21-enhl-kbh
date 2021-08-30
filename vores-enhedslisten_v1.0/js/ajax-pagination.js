@@ -28,7 +28,8 @@
          $("#ajaxpop").removeClass("show");
       }
    })
-})
+})(jQuery);
+
 (function($) {
    $(document).on('click', '.ajaxpop-close', function(event) {
       event.preventDefault();
@@ -38,7 +39,7 @@
          $("body").removeClass("noScroll");
       }
    })
-})
+})(jQuery);
 
 (function($) {
    $(document).on('click', '.ajaxpop-cover', function(event) {
