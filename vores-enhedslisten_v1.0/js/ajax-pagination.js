@@ -16,9 +16,9 @@
             console.log($content);
             $('#ajaxpop #coverImg').attr("style", "--bg-img:url("+$content.thumbnail_url+")" );
             $('#ajaxpop .ajaxpop-content .headerContainer').html("<h1>" + $content.post_title + "</h1>" );
-            $('#ajaxpop .ajaxpop-content').append($content.event_start_time);
-            $('#ajaxpop .ajaxpop-content').append($content.thumbnail_url);
-            $('#ajaxpop .ajaxpop-content').append($content.ID);
+            $('#ajaxpop .ajaxpop-content .factbox').html('<h6>Tidspunkt</h6><h6><span class="fw-light">'+$content.event_start_time+ ' – ' +$content.event_end_time+'</span><h6></h6>');
+            
+            
          }
       })
       if ($("#ajaxpop").hasClass("show") !== true) {
