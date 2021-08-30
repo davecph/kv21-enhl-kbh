@@ -59,8 +59,15 @@
       border-bottom: 1rem solid white;
 
       #coverImg {
-         grid-column: 1/4;
-         grid-row: 1/3;
+         display: none;
+      }
+
+      &.hasTN {
+         #coverImg {
+            grid-column: 1/4;
+            grid-row: 1/3;
+            display: block;
+         }
       }
 
       .headerContainer {
