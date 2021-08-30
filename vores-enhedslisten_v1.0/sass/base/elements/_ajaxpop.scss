@@ -18,6 +18,7 @@
          top: 0;
          left: 0;
          display: block;
+         animation: fade 1s;
       }
 
       .ajaxpop-close::before {
@@ -33,7 +34,7 @@
          max-height: 90vh;
          margin: max(1rem, 5vh) auto;
          position: relative;
-         animation: slideup 2s forward;
+         animation: slideup 2s;
       }
 
       .ajaxpop-content {
@@ -51,6 +52,16 @@
 
    to {
       top: 0vh
+   }
+}
+
+@keyframes fade {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 0.85;
    }
 }
 
