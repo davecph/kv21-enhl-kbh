@@ -1226,9 +1226,11 @@ table {
     grid-row: 3/4;
   }
 }
-#ajaxpop .ajaxpop-content .factbox include largeDesktop {
-  grid-column: 4/7;
-  grid-row: 3/4;
+@media (min-width: 1601px) {
+  #ajaxpop .ajaxpop-content .factbox {
+    grid-column: 4/7;
+    grid-row: 3/4;
+  }
 }
 @keyframes slideup {
   from {

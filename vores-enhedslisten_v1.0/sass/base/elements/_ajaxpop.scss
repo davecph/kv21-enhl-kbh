@@ -155,7 +155,7 @@
             grid-row: 3/4;
          }
 
-         include largeDesktop {
+         @include largeDesktop {
             grid-column: 4/7;
             grid-row: 3/4;
          }
