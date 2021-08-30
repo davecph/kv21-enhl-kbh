@@ -23,6 +23,7 @@
       .ajaxpop-close::before {
          float: right;
          cursor: pointer;
+         margin: min(3rem, 5vw) min(3rem, 5vw) 0 0;
       }
 
       .ajaxpop-container {

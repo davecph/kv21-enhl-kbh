@@ -14,6 +14,7 @@
             $stuff = JSON.parse(data);
             //alert($stuff.event_start_time);
             console.log($stuff);
+            $('#ajaxpop .ajaxpop-content .headerContent').html('<h1>', $stuff.post_title ,'</h1>');
             $('#ajaxpop .ajaxpop-content').append($stuff.event_start_time);
             $('#ajaxpop .ajaxpop-content').append($stuff.thumbnail_url);
             $('#ajaxpop .ajaxpop-content').append($stuff.ID);

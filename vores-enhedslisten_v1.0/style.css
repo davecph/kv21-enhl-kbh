@@ -666,7 +666,7 @@ h1[style*="text-align: center"] {
   font-size: 2.5rem;
   width: 3rem;
   height: 3rem;
-  line-height: 0.85;
+  line-height: 1.25;
   font-weight: 300;
 }
 [class*=icon_][class*=none]::before {
@@ -1091,6 +1091,7 @@ table {
 #ajaxpop.show .ajaxpop-close::before {
   float: right;
   cursor: pointer;
+  margin: min(3rem, 5vw) min(3rem, 5vw) 0 0;
 }
 #ajaxpop.show .ajaxpop-container {
   background-color: #fff;
