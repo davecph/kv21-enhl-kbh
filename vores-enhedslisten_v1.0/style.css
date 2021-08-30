@@ -1097,7 +1097,7 @@ table {
   width: 80vw;
   min-height: 50vh;
   max-height: 90vh;
-  margin: 5vh auto;
+  margin: max(1rem, 5vh) auto;
   padding: max(2rem, 2vw);
   position: relative;
 }
