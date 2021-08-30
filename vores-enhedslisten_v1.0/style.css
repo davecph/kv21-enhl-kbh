@@ -1130,6 +1130,11 @@ table {
   grid-row: 1/3;
   display: block;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  #ajaxpop .ajaxpop-content.hasTN #coverImg {
+    grid-column: 1/5;
+  }
+}
 #ajaxpop .ajaxpop-content.hasTN .headerContainer h1 {
   color: #fff;
 }
@@ -1137,10 +1142,20 @@ table {
   grid-column: 2/3;
   grid-row: 2/3;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  #ajaxpop .ajaxpop-content .headerContainer {
+    grid-column: 2/4;
+  }
+}
 #ajaxpop .ajaxpop-content .entry-content {
   padding: 0;
   grid-column: 2/3;
   grid-row: 3/4;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #ajaxpop .ajaxpop-content .entry-content {
+    grid-row: 3/5;
+  }
 }
 #ajaxpop .ajaxpop-content .factbox {
   grid-column: 1/4;
@@ -1150,19 +1165,7 @@ table {
   padding: 1rem;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  #ajaxpop .ajaxpop-content {
-    grid-template-columns: max(2rem, 3vw) 1fr 1fr max(2rem, 3vw);
-  }
-  #ajaxpop #coverImg {
-    grid-column: 1/5;
-  }
-  #ajaxpop .headerContainer {
-    grid-column: 2/4;
-  }
-  #ajaxpop .entry-content {
-    grid-row: 3/5;
-  }
-  #ajaxpop .factbox {
+  #ajaxpop .ajaxpop-content .factbox {
     grid-column: 3/4;
     grid-row: 3/4;
   }
