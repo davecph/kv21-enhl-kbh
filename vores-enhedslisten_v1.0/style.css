@@ -1103,7 +1103,7 @@ table {
   max-height: 90vh;
   margin: max(1rem, 5vh) auto;
   position: relative;
-  animation: slideup 1s;
+  animation: slideup 1s 1s;
 }
 #ajaxpop.show .ajaxpop-content {
   max-height: 85vh;
