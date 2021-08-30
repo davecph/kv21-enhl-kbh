@@ -14,29 +14,28 @@
             $content = JSON.parse(data);
             //alert($content.event_start_time);
             console.log($content);
-
-             if ($content.thumbnail_url !== false) {
+            if ($content.thumbnail_url !== false) {
                $('#ajaxpop #coverImg').attr("style", "--bg-img:url(" + $content.thumbnail_url + ")");
-               
             } else
-            if ($content.thumbnail_url == false ) {
-               
+            if ($content.thumbnail_url == false) {
                $('#ajaxpop #coverImg').attr("style", "");
-            } 
-
-            
+            }
+            endif;
             $("#coverImg").removeClass("event_party");
             $("#coverImg").removeClass("event_activist");
             $("#coverImg").removeClass("event_debate");
             $("#coverImg").addClass($content.event_type);
-            
-
-
-
-
-
             $('#ajaxpop  .headerContainer').html("<h1>" + $content.post_title + "</h1>");
             $('#ajaxpop  .factbox').html('<h6>Tidspunkt</h6><h6><span class="fw-light">' + $content.event_start_time + ' – ' + $content.event_end_time + '</span><h6></h6>');
+            if ($content.eventtype == 'event_party') {
+               $('#ajaxpop  .factbox').append('<h5>Fest</h5>');
+            } else
+            if ($content.eventtype == 'event_party') {
+               $('#ajaxpop  .factbox').append('<h5>Fest</h5>');
+            } else
+            if ($content.eventtype == 'event_party') {
+               $('#ajaxpop  .factbox').append('<h5>Fest</h5>');
+            } endif;
             $('#ajaxpop .entry-content').html($content.post_content);
          }
       })
