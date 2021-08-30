@@ -27,10 +27,10 @@
             }
 
             
-               $("#ajaxpop").removeClass("event_party");
-               $("#ajaxpop").removeClass("event_activist");
-               $("#ajaxpop").removeClass("event_debate");
-               $("#ajaxpop").addClass($content.evnt_type);
+            $("#ajaxpop").removeClass("event_party");
+            $("#ajaxpop").removeClass("event_activist");
+            $("#ajaxpop").removeClass("event_debate");
+            $("#ajaxpop").addClass($content.event_type);
             
 
 
