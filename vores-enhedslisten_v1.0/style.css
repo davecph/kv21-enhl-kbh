@@ -1092,12 +1092,18 @@ table {
   display: block;
   animation: fade 0.5s forwards;
 }
-#ajaxpop.show .ajaxpop-close::before {
-  float: right;
+#ajaxpop.show .ajaxpop-close {
+  background-color: rgba(0, 0, 0, 0.33);
+  border-radius: 50%;
+  display: i;
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
   cursor: pointer;
-  margin: min(3rem, 5vw) min(3rem, 5vw) 0 0;
   z-index: 9999;
-  position: relative;
 }
 #ajaxpop.show .ajaxpop-container {
   background-color: #fff;
