@@ -1,5 +1,8 @@
 #ajaxpop {
    display: none;
+   .ajaxpop-container {
+      top: 100vh;
+   }
 
    &.show {
       width: 100vw;

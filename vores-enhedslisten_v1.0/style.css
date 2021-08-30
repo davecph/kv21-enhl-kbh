@@ -1070,6 +1070,9 @@ table {
 #ajaxpop {
   display: none;
 }
+#ajaxpop .ajaxpop-container {
+  top: 100vh;
+}
 #ajaxpop.show {
   width: 100vw;
   height: 100vh;
