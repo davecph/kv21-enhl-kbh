@@ -11,13 +11,13 @@
             query_vars: $post_id,
          },
          success: function(data) {
-            $stuff = JSON.parse(data);
-            //alert($stuff.event_start_time);
-            console.log($stuff);
-            $('#ajaxpop .ajaxpop-content .headerContainer').html('<h1>', $stuff.post_title ,'</h1>');
-            $('#ajaxpop .ajaxpop-content').append($stuff.event_start_time);
-            $('#ajaxpop .ajaxpop-content').append($stuff.thumbnail_url);
-            $('#ajaxpop .ajaxpop-content').append($stuff.ID);
+            $content = JSON.parse(data);
+            //alert($content.event_start_time);
+            console.log($content);
+            $('#ajaxpop .ajaxpop-content .headerContainer').html('<h1>', $content.post_title ,'</h1>');
+            $('#ajaxpop .ajaxpop-content').append($content.event_start_time);
+            $('#ajaxpop .ajaxpop-content').append($content.thumbnail_url);
+            $('#ajaxpop .ajaxpop-content').append($content.ID);
          }
       })
       if ($("#ajaxpop").hasClass("show") !== true) {
