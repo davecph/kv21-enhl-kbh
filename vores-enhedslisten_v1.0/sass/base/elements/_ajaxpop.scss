@@ -33,6 +33,7 @@
          max-height: 90vh;
          margin: max(1rem, 5vh) auto;
          position: relative;
+         animation: slideup 2s forward;
       }
 
       .ajaxpop-content {
@@ -40,6 +41,16 @@
             padding: 0;
          }
       }
+   }
+}
+
+@keyframes slideup {
+   from {
+      top: 100vh;
+   }
+
+   to {
+      top: 0vh
    }
 }
 
