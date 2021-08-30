@@ -62,6 +62,10 @@
          grid-template-columns: max(2rem, 3vw) 1fr 1fr max(2rem, 3vw)
       }
 
+      @include desktop {
+         grid-template-columns: max(2rem, 3vw) 1fr 1fr max(2rem, 3vw)
+      }
+
       #coverImg {
          display: none;
       }
@@ -73,6 +77,10 @@
             display: block;
 
             @include tablet {
+               grid-column: 1/5;
+            }
+
+            @include desktop {
                grid-column: 1/5;
             }
          }
@@ -89,6 +97,10 @@
          @include tablet {
             grid-column: 2/4;
          }
+
+         @include desktop {
+            grid-column: 2/4;
+         }
       }
 
       .entry-content {
@@ -98,6 +110,12 @@
 
          @include tablet {
             grid-row: 3/5;
+            padding: 1rem;
+         }
+
+         @include desktop {
+            grid-row: 3/5;
+            padding: 1rem;
          }
       }
 
@@ -109,6 +127,11 @@
          padding: 1rem;
 
          @include tablet {
+            grid-column: 3/4;
+            grid-row: 3/4;
+         }
+
+         @include desktop {
             grid-column: 3/4;
             grid-row: 3/4;
          }
