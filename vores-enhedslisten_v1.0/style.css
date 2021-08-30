@@ -1105,8 +1105,30 @@ table {
   position: relative;
   animation: slideup 1s;
 }
+#ajaxpop.show .ajaxpop-content {
+  max-height: 85vh;
+  overflow: scroll;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1rem auto 1rem;
+  grid-template-rows: 20vh 15vh auto auto;
+}
+#ajaxpop.show .ajaxpop-content #coverImg {
+  grid-column: 1/4;
+  grid-row: 1/3;
+}
+#ajaxpop.show .ajaxpop-content .headerContainer {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
 #ajaxpop.show .ajaxpop-content .entry-content {
   padding: 0;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+#ajaxpop.show .ajaxpop-content .factbox {
+  grid-column: 1/4;
+  grid-row: 4/5;
 }
 
 @keyframes slideup {

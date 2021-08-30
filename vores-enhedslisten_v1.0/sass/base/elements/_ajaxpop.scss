@@ -40,8 +40,32 @@
       }
 
       .ajaxpop-content {
+         max-height: 85vh;
+         overflow: scroll;
+         width: 100%;
+         display: grid;
+         grid-template-columns: 1rem auto 1rem;
+         grid-template-rows: 20vh 15vh auto auto;
+
+         #coverImg {
+            grid-column: 1/4;
+            grid-row: 1/3;
+         }
+
+         .headerContainer {
+            grid-column: 2/3;
+            grid-row: 2/3;
+         }
+
          .entry-content {
             padding: 0;
+            grid-column: 2/3;
+            grid-row: 3/4;
+         }
+
+         .factbox {
+            grid-column: 1/4;
+            grid-row: 4/5;
          }
       }
    }
