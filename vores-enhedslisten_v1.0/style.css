@@ -1093,6 +1093,8 @@ table {
   float: right;
   cursor: pointer;
   margin: min(3rem, 5vw) min(3rem, 5vw) 0 0;
+  z-index: 9999;
+  position: relative;
 }
 #ajaxpop.show .ajaxpop-container {
   background-color: #fff;
