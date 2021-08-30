@@ -1107,19 +1107,18 @@ table {
 }
 #ajaxpop .ajaxpop-container {
   background-color: #fff;
-  width: 80vw;
+  width: 85vw;
   min-height: 50vh;
-  max-height: 90vh;
-  margin: max(1rem, 5vh) auto;
+  margin: max(2rem, 5vh) auto;
   position: relative;
   animation: slideup 1s 1s both;
 }
 #ajaxpop .ajaxpop-content {
-  max-height: 85vh;
+  max-height: 90vh;
   overflow: scroll;
   width: 100%;
   display: grid;
-  grid-template-columns: 1rem auto 1rem;
+  grid-template-columns: max(2rem, 3vw) auto max(2rem, 3vw);
   grid-template-rows: 15vh auto auto auto;
   border-bottom: 1rem solid white;
 }
@@ -1141,6 +1140,7 @@ table {
   grid-row: 4/5;
   background-color: #333;
   color: #fff;
+  padding: 1rem;
 }
 
 @keyframes slideup {
