@@ -4,13 +4,25 @@
    &.show {
       width: 100vw;
       height: 100vh;
-      background-color: rgba(0, 0, 0, .85);
+      
       position: fixed;
       top: 0;
       left: 0;
       z-index: 999;
       display: block;
-      .ajaxpop-container{
+
+      .ajaxpop-cover {
+         width: 100vw;
+         height: 100vh;
+         background-color: rgba(0, 0, 0, .85);
+         position: fixed;
+         top: 0;
+         left: 0;
+         
+         display: block;
+      }
+
+      .ajaxpop-container {
          background-color: #fff;
          width: 80vw;
          min-height: 50vh;
@@ -21,7 +33,7 @@
    }
 }
 
-body.noScroll{
+body.noScroll {
    max-height: 100vh;
    overflow: hidden;
 }
