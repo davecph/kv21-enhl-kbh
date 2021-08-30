@@ -1098,8 +1098,10 @@ table {
   min-height: 50vh;
   max-height: 90vh;
   margin: max(1rem, 5vh) auto;
-  padding: max(2rem, 2vw);
   position: relative;
+}
+#ajaxpop.show .ajaxpop-content .entry-content {
+  padding: 0;
 }
 
 body.noScroll {
