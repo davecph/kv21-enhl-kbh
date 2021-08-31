@@ -409,7 +409,6 @@ function frm_populate_posts($values, $field){
     $values['options'] = array(''); //remove this line if you are using a checkbox or radio button field
     $values['options'][''] = ''; //remove this line if you are using a checkbox or radio button field
 
-    console_log(print_r($posts).'hey');
     foreach($posts as $p){
       /* $date_now = date('YmdHis');
       $compare_time = get_field('event_start_time', $p->ID, false );
