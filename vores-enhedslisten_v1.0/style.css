@@ -1120,7 +1120,7 @@ table {
   display: grid;
   grid-template-columns: max(2rem, 3vw) auto max(2rem, 3vw);
   grid-template-rows: 20vh auto auto auto;
-  border-bottom: 1rem solid white;
+  border-bottom: 1rem solid #eee;
   background-color: #eee;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
