@@ -6,7 +6,7 @@
  * 
  * 
  */
-console.log('navigation.js is here')
+console.log('navigation.js is here');
 
 ( function() {
 	const siteNavigation = document.getElementById( 'site-navigation' );
