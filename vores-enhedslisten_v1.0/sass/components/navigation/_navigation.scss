@@ -16,7 +16,7 @@ $menuIndent:1rem;
          display: block;
       }
 
-      &.toggled .menu-strukturmenu-container {
+      &.toggled .menu-strukturmenu-container, &.toggled .menu-main-menu-container {
          display: block;
          //flex-direction: column;
          background-color: rgba(88, 88, 88, .95);

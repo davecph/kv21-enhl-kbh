@@ -1663,7 +1663,7 @@ body.home .headerContainer {
     border: none;
     display: block;
   }
-  .main-navigation.toggled .menu-strukturmenu-container {
+  .main-navigation.toggled .menu-strukturmenu-container, .main-navigation.toggled .menu-main-menu-container {
     display: block;
     background-color: rgba(88, 88, 88, 0.95);
     width: 100vw;
@@ -1675,7 +1675,7 @@ body.home .headerContainer {
     left: 0;
     z-index: 110;
   }
-  .main-navigation.toggled .menu-strukturmenu-container > ul {
+  .main-navigation.toggled .menu-strukturmenu-container > ul, .main-navigation.toggled .menu-main-menu-container > ul {
     display: block;
   }
 }
