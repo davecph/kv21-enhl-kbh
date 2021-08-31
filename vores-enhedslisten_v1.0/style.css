@@ -1544,7 +1544,7 @@ input[type=text]#filterInput {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   #page article.has-post-thumbnail {
-    grid-template-columns: auto clamp(21rem, 25vw, 35rem) clamp(40ch, 50vw, 75ch) auto;
+    grid-template-columns: auto clamp(21rem, 25vw, 35rem) clamp(40ch, auto, 75ch) auto;
     grid-template-areas: ". headerContainer headerContainer ." ". manchet main  ." ". . main ." ". . fact  .";
   }
 }

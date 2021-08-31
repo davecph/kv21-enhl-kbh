@@ -89,7 +89,7 @@
       ;
 
       @include tablet {
-         grid-template-columns: auto clamp(21rem, 25vw, 35rem) clamp(40ch, 50vw, 75ch) auto;
+         grid-template-columns: auto clamp(21rem, 25vw, 35rem) clamp(40ch, auto, 75ch) auto;
          grid-template-areas:
             ". headerContainer headerContainer ."
             ". manchet main  ."
