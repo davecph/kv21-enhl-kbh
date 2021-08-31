@@ -1,5 +1,5 @@
 $(document).ready(function() {
-   console.log('ready!!');
+   console.log('ready!!!!');
    $('[id*="expand_btn_"]').click(function() {
       
       $item_id = $(this).attr('id');
