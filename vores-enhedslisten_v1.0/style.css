@@ -1240,6 +1240,13 @@ table {
     grid-row: 3/4;
   }
 }
+#ajaxpop .factbox p {
+  color: #fff;
+}
+#ajaxpop .factbox a.btn {
+  margin-top: 1rem;
+  display: block;
+}
 @keyframes slideup {
   from {
     top: 100vh;

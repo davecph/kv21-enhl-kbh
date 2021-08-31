@@ -37,7 +37,7 @@
             $('#ajaxpop  .factbox').append('<h6>' + $content.event_start_time + ' – ' + $content.event_end_time + '</h6>');
             if ($content.location_type == true) {
                $('#ajaxpop  .factbox').append('<p>Eventen foregår online</p>');
-               $('#ajaxpop  .factbox').append('<a class="btn success-btn" href="' + $content.location_type_online_url + '">Klik her for at deltage</a>');
+               $('#ajaxpop  .factbox').append('<a class="btn btn-success" href="' + $content.location_type_online_url + '">Klik her for at deltage</a>');
             }
             $('#ajaxpop .entry-content').html($content.post_content);
          }

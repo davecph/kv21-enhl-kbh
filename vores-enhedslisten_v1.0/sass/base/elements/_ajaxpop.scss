@@ -168,6 +168,15 @@
          grid-column: 4/6;
          grid-row: 3/4;
       }
+
+      p {
+         color: #fff;
+      }
+
+      a.btn {
+         margin-top: 1rem;
+         display: block;
+      }
    }
 
    @include desktop {}
