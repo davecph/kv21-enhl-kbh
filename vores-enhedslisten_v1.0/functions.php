@@ -171,7 +171,7 @@ function test_scripts() {
    
    /* wp_enqueue_script( 'universal-navigation', get_template_directory_uri() . '/js/universalNavigation.js' ); */
 
-   /* wp_enqueue_script( 'section-expand', get_template_directory_uri() . '/js/sectionExpand.js' ); */
+   wp_enqueue_script( 'section-expand', get_template_directory_uri() . '/js/sectionExpand.js' );
 
    /*get post content with ajax*/
       wp_enqueue_script( 'ajax-pagination',  get_stylesheet_directory_uri() . '/js/ajax-pagination.js', array( 'jquery' ), '1.0', true );

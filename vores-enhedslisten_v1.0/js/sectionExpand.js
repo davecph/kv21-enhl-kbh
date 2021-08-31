@@ -1,20 +1,18 @@
 $(document).ready(function() {
    console.log('ready!!');
-   $('#expandCandidates').click(function() {
+   $('[id*="expand_btn_"]').click(function() {
+
+      $item_id = $(this).attr('id').replace('expand_btn_"', '');
+      $item_id = 'expand_section_'.$item_id;
+
       console.log('clicked yup!');
-      if ($("#candidateGrid").hasClass("displayAll") !== true) {
-         $("#candidateGrid").addClass("displayAll");
+      if ($($item_id).hasClass("displayAll") !== true) {
+         $($item_id).addClass("displayAll");
       } else
-      if ($("#candidateGrid").hasClass("displayAll") == true) {
+      if ($($item_id).hasClass("displayAll") == true) {
          console.log('here');
-         $("#candidateGrid").removeClass("displayAll");
+         $($item_id).removeClass("displayAll");
       }
    });
-   $(document).click(function(event) {
-      console.log($(event.target));
-      $(event.target).closest(".clickable").each(function() {
-         
-      });
-      
-   });
+   
 });
