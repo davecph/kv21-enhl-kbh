@@ -40,6 +40,9 @@
                $('#ajaxpop  .factbox').append('<p>Eventen foregår online</p>');
                $('#ajaxpop  .factbox').append('<a class="btn btn-success" target="_blank" href="' + $content.location_type_online_url + '">Klik her for at deltage</a>');
             }
+            $content.tag_candidates.forEach(function(item) {
+               $('#ajaxpop  .factbox').append('<p>'+item+'</p>');
+           });
             $('#ajaxpop .entry-content').html($content.post_content);
          }
       })
