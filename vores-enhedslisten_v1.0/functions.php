@@ -401,7 +401,7 @@ function frm_populate_posts($values, $field){
       $start_time = get_field('event_start_time', $p->ID );
       $end_time = get_field('event_end_time', $p->ID );
       if($date_now < $compare_time){
-         console_log('here now');
+         
          
          $values['options'][$p->ID] = $p->post_title.' '.$start_time.' – '.$end_time;
       }
@@ -413,7 +413,7 @@ function frm_populate_posts($values, $field){
   }
   return $values;
 }
-
+console_log('here now');
 
 /* / Test formidable*/
 
