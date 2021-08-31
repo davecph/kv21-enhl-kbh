@@ -2,7 +2,7 @@
    display: grid;
    grid-template-columns: auto clamp(18rem, 20vw, 35rem) clamp(40ch, 40vw, 85ch) clamp(18rem, 20vw, 35rem) auto;
    grid-template-rows: auto clamp(20rem, 20vw, 40vh) auto auto;
-   background-color: #ffffff;
+   //background-color: #ffffff;
    column-gap: 1.5vw;
    grid-template-areas:
       ". headerContainer headerContainer headerContainer ."
@@ -95,7 +95,7 @@
       display: grid;
       // grid-template-columns: auto clamp(21rem, 20vw, 35rem) clamp(40ch, 33vw, 75ch) clamp(21rem, 20vw, 35rem) auto;
       grid-template-rows: minmax(30vw, auto) clamp(20rem, 20vw, 40vh) auto auto;
-      background-color: #ffffff;
+      background-color: #eee;
       column-gap: 1.5vw;
       grid-template-areas:
          ". headerContainer headerContainer headerContainer ."

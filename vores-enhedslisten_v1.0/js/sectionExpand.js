@@ -5,7 +5,7 @@ $(document).ready(function() {
       $item_id = $(this).attr('id').replace('expand_btn_', '');
       
       $item_id = '#expand_section_'+$item_id;
-console.log($item_id);
+      
       if ($($item_id).hasClass("displayAll") !== true) {
          $($item_id).addClass("displayAll");
       } else
