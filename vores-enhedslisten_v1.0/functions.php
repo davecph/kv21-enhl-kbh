@@ -384,7 +384,7 @@ function frm_populate_posts($values, $field){
                      'post_type' => 'post', 
                      'category' => '2', 
                      'meta_key' => 'event_type',
-                     'meta_value' => 'active_event',
+                     'meta_value' => 'event_activist',
                      'post_status' => array(
                         'publish', 'private'), 
                      'numberposts' => 3, 
