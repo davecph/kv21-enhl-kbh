@@ -191,6 +191,16 @@ function test_scripts() {
 add_action( 'wp_ajax_nopriv_ajax_pagination', 'my_ajax_pagination' );
 add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
 
+/* enables console.log for debugging php*/
+   function console_log($output, $with_script_tags = true) {
+      $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
+   ');';
+      if ($with_script_tags) {
+         $js_code = '<script>' . $js_code . '</script>';
+      }
+      echo $js_code;
+   }
+/* / enables console.log for debugging php*/
 function my_ajax_pagination() {
 
    $post_id = json_decode( stripslashes( $_POST['query_vars'] ), true );
@@ -391,6 +401,8 @@ function frm_populate_posts($values, $field){
       $start_time = get_field('event_start_time', $p->ID );
       $end_time = get_field('event_end_time', $p->ID );
       if($date_now < $compare_time){
+         console_log('here now');
+         
          $values['options'][$p->ID] = $p->post_title.' '.$start_time.' – '.$end_time;
       }
             
