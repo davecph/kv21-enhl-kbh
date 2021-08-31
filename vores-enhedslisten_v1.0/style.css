@@ -1155,11 +1155,13 @@ table {
 @media (min-width: 768px) and (max-width: 1024px) {
   #ajaxpop #coverImg {
     grid-column: 1/5;
+    grid-row: 1/4;
   }
 }
 @media (min-width: 1025px) and (max-width: 1600px) {
   #ajaxpop #coverImg {
     grid-column: 1/5;
+    grid-row: 1/4;
   }
 }
 @media (min-width: 1601px) {
@@ -1194,6 +1196,7 @@ table {
   padding: 0;
   grid-column: 2/3;
   grid-row: 3/4;
+  background-color: #fff;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   #ajaxpop .entry-content {
@@ -1212,7 +1215,6 @@ table {
     grid-row: 3/5;
     grid-column: 2/4;
     padding: 1rem;
-    background-color: #fff;
   }
 }
 #ajaxpop .factbox {
