@@ -133,22 +133,25 @@
       padding: 1rem 0;
       grid-column: 2/3;
       grid-row: 4/5;
-      background-color: #fff;
+      background-color: #eee;
 
       @include tablet {
          grid-row: 3/5;
          padding: 1rem;
+         background-color: #fff;
       }
 
       @include desktop {
          grid-row: 3/5;
          padding: 1rem;
+         background-color: #fff;
       }
 
       @include largeDesktop {
          grid-row: 3/5;
          grid-column: 2/4;
          padding: 1rem;
+         background-color: #fff;
       }
    }
 
