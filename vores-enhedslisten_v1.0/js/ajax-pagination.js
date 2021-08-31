@@ -25,6 +25,7 @@
             $("#coverImg").removeClass("event_debate");
             $("#coverImg").addClass($content.event_type);
             $('#ajaxpop  .headerContainer').html("<h1>" + $content.post_title + "</h1>");
+            console.log($content.event_type);
             if ($content.event_type == 'event_party') {
                $('#ajaxpop  .factbox').html('<h5>Fest</h5>');
             } else
