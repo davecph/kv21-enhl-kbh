@@ -37,6 +37,11 @@
                $('#ajaxpop  .factbox').html('<h5>Aktivistmøde</h5>');
             } 
             $('#ajaxpop  .factbox').append('<h6>' + $content.event_start_time + ' – ' + $content.event_end_time + '</h6>');
+            if ($content.location_type == true) {
+               $('#ajaxpop  .factbox').append('<h5>Eventen foregår online</h5>');
+               $('#ajaxpop  .factbox').append('<a class="btn success" href="'+ $content.location_type_online_url +'">Klik her for at deltage</a>');
+               
+            } 
             $('#ajaxpop .entry-content').html($content.post_content);
          }
       })
