@@ -12,7 +12,7 @@
    ;
 
    @include tablet {
-      grid-template-columns: auto clamp(18rem, 25vw, 35rem) clamp(40ch, 50vw, 75ch) auto;
+      grid-template-columns: auto clamp(18rem, 25vw, 35rem) clamp(40ch, auto, 75ch) auto;
       grid-template-areas:
          ". headerContainer headerContainer ."
          ". manchet main  ."
@@ -128,7 +128,7 @@
       }
 
       &.category-candidates #coverImg{
-         grid-row: 1 /5;
+         grid-row: 1/5;
 
          @include mobile {
             grid-column: 1 / 4;
