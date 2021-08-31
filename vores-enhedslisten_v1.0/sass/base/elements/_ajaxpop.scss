@@ -26,7 +26,7 @@
       }
 
       .ajaxpop-close {
-         background-color: rgba(0, 0, 0, .33);
+         //background-color: rgba(0, 0, 0, .33);
          border-radius: 50%;
          display: i;
          position: absolute;
@@ -51,7 +51,8 @@
 
    .ajaxpop-content {
       max-height: 90vh;
-      overflow: scroll;
+      overflow-x: hidden;
+      overflow-y: auto;
       width: 100%;
       display: grid;
       grid-template-columns: max(2rem, 3vw) auto max(2rem, 3vw);
