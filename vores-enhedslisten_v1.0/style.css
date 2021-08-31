@@ -2057,6 +2057,13 @@ body.home .headerContainer {
   padding: 0;
 }
 
+[id^=expand_section_] .candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n+9) {
+  display: none;
+}
+[id^=expand_section_].displayAll .candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n+9) {
+  display: inherit;
+}
+
 .elementor-679 {
   grid-column: 1/6;
 }
@@ -2422,13 +2429,6 @@ body.archive #page .spacer {
 }
 .candidate_grid .uc_content h3 {
   word-break: break-word;
-}
-
-#candidateGrid .candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n+9) {
-  display: none;
-}
-#candidateGrid.displayAll .candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n+9) {
-  display: inherit;
 }
 
 /* Comments
