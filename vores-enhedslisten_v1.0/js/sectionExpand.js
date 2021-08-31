@@ -3,7 +3,7 @@ $(document).ready(function() {
    $('[id*="expand_btn_"]').click(function() {
       
       $item_id = $(this).attr('id').replace('expand_btn_', '');
-      
+      console.log($item_id);
       $item_id = 'expand_section_'.$item_id;
 
       if ($($item_id).hasClass("displayAll") !== true) {
