@@ -20,10 +20,10 @@
             if ($content.thumbnail_url == false) {
                $('#ajaxpop #coverImg').attr("style", "");
             }
-            $("#coverImg").removeClass("event_party");
-            $("#coverImg").removeClass("event_activist");
-            $("#coverImg").removeClass("event_debate");
-            $("#coverImg").addClass($content.event_type);
+            $("#ajaxpop #coverImg").removeClass("event_party");
+            $("#ajaxpop #coverImg").removeClass("event_activist");
+            $("#ajaxpop #coverImg").removeClass("event_debate");
+            $("#ajaxpop #coverImg").addClass($content.event_type);
             $('#ajaxpop  .headerContainer').html("<h1>" + $content.post_title + "</h1>");
             console.log($content.event_type);
             if ($content.event_type == 'event_party') {
