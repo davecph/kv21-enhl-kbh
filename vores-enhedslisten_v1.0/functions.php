@@ -380,34 +380,48 @@ add_filter('frm_setup_edit_fields_vars', 'frm_populate_posts', 20, 2); //use thi
 function frm_populate_posts($values, $field){
   if($field->id == 6){ //replace 125 with the ID of the field to populate
    
-    $posts = get_posts( array(
-                     'post_type' => 'post', 
-                     'category' => '2', 
-                     'meta_key' => 'event_type',
-                     'meta_value' => 'event_activist',
-                     'post_status' => array(
-                        'publish', 'private'), 
-                     'numberposts' => 3, 
-                     'orderby' => 'title', 
-                     'order' => 'ASC'
-                  ));
+   $date_now = date('Y-m-d H:i:s');
+   
+   $posts = get_posts( array(
+      'numberposts'	=> -1,
+      'category'		=> 'event',
+   
+      'meta_query'	=> array(
+         'relation'		=> 'AND',
+            array(
+               'key'		=> 'event_type',
+               'value'		=> 'event_activist',
+               'compare'	=> '=' 
+            ),
+            array(
+               'key'		=> 'event_start_time',
+               'value'		=> $date_now,
+               'type' => 'DATETIME',
+               'compare'	=> '>=' 
+            )
+         ),
+
+      'orderby' => 'meta_value',
+      'meta_key' => 'event_start_time', 
+      'order' => 'ASC'
+   ));
     unset($values['options']);
     $values['options'] = array(''); //remove this line if you are using a checkbox or radio button field
     $values['options'][''] = ''; //remove this line if you are using a checkbox or radio button field
 
-    
+    console_log(print_r($posts).'hey');
     foreach($posts as $p){
-      $date_now = date('YmdHis');
+      /* $date_now = date('YmdHis');
       $compare_time = get_field('event_start_time', $p->ID, false );
-      $compare_time = preg_replace("/[^0-9]/", "", $compare_time);
+      $compare_time = preg_replace("/[^0-9]/", "", $compare_time); */
       
       $start_time = get_field('event_start_time', $p->ID );
       $end_time = get_field('event_end_time', $p->ID );
-      if($date_now < $compare_time){
+      /* if($date_now < $compare_time){ */
          
          
          $values['options'][$p->ID] = $p->post_title.' '.$start_time.' – '.$end_time;
-      }
+      /* } */
             
       
     }
