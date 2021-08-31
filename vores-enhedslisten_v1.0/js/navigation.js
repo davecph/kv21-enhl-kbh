@@ -3,7 +3,11 @@
  *
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
+ * 
+ * 
  */
+console.log('navigation.js is here')
+
 ( function() {
 	const siteNavigation = document.getElementById( 'site-navigation' );
 
