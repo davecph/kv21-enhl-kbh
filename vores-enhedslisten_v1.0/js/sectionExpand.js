@@ -2,9 +2,8 @@ $(document).ready(function() {
    console.log('ready!!!!');
    $('[id*="expand_btn_"]').click(function() {
       
-      $item_id = $(this).attr('id');
-      $bob = $item_id.replace('expand_btn_"', '');
-      console.log($bob+'fuck');
+      $item_id = $(this).attr('id').replace('expand_btn_', '');
+      
       $item_id = 'expand_section_'.$item_id;
 
       if ($($item_id).hasClass("displayAll") !== true) {
