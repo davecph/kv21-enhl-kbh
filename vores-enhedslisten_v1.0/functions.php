@@ -379,6 +379,7 @@ add_filter('frm_setup_new_fields_vars', 'frm_populate_posts', 20, 2);
 add_filter('frm_setup_edit_fields_vars', 'frm_populate_posts', 20, 2); //use this function on edit too
 function frm_populate_posts($values, $field){
   if($field->id == 6){ //replace 125 with the ID of the field to populate
+   console_log('here now 3');
     $posts = get_posts( array(
                      'post_type' => 'post', 
                      'category' => '2', 
@@ -393,7 +394,7 @@ function frm_populate_posts($values, $field){
     unset($values['options']);
     $values['options'] = array(''); //remove this line if you are using a checkbox or radio button field
     $values['options'][''] = ''; //remove this line if you are using a checkbox or radio button field
-    console_log('here now 2');
+    
     foreach($posts as $p){
       $date_now = date('YmdHis');
       $compare_time = get_field('event_start_time', $p->ID, false );
