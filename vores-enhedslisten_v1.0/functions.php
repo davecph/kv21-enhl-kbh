@@ -419,7 +419,7 @@ function frm_populate_posts($values, $field){
       /* if($date_now < $compare_time){ */
          
          
-         $values['options'][$p->ID] = $p->post_title.' '.$start_time.' – '.$end_time;
+         $values['options'][$p->ID] = $p->post_title.': '.$start_time.' – '.$end_time;
       /* } */
             
       
