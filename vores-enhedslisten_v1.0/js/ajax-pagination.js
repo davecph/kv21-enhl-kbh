@@ -43,7 +43,7 @@
             $candidates = $content.tag_candidates;
             console.log($candidates);
             $candidates.forEach(function(item) {
-               $('#ajaxpop  .factbox').append('<p>'+item+'</p>');
+               $('#ajaxpop  .factbox').append(get_post_title(item));
            });
             $('#ajaxpop .entry-content').html($content.post_content);
          }
