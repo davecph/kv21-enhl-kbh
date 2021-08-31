@@ -19,7 +19,8 @@ $menuIndent:1rem;
       &.toggled .menu-strukturmenu-container, &.toggled .menu-main-menu-container {
          display: block;
          //flex-direction: column;
-         background-color: rgba(88, 88, 88, .95);
+         background-color: $primRed;
+         
          width: 100vw;
          height: 100vh;
          position: fixed;

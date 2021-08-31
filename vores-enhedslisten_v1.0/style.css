@@ -1665,7 +1665,7 @@ body.home .headerContainer {
   }
   .main-navigation.toggled .menu-strukturmenu-container, .main-navigation.toggled .menu-main-menu-container {
     display: block;
-    background-color: rgba(88, 88, 88, 0.95);
+    background-color: #D0004D;
     width: 100vw;
     height: 100vh;
     position: fixed;
