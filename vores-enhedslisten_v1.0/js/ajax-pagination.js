@@ -20,13 +20,11 @@
             if ($content.thumbnail_url == false) {
                $('#ajaxpop #coverImg').attr("style", "");
             }
-            
             $("#coverImg").removeClass("event_party");
             $("#coverImg").removeClass("event_activist");
             $("#coverImg").removeClass("event_debate");
             $("#coverImg").addClass($content.event_type);
             $('#ajaxpop  .headerContainer').html("<h1>" + $content.post_title + "</h1>");
-            
             if ($content.event_type == 'event_party') {
                $('#ajaxpop  .factbox').html('<h5>Fest</h5>');
             } else
@@ -35,13 +33,12 @@
             } else
             if ($content.event_type == 'event_activist') {
                $('#ajaxpop  .factbox').html('<h5>Aktivistmøde</h5>');
-            } 
+            }
             $('#ajaxpop  .factbox').append('<h6>' + $content.event_start_time + ' – ' + $content.event_end_time + '</h6>');
             if ($content.location_type == true) {
-               $('#ajaxpop  .factbox').append('<h5>Eventen foregår online</h5>');
-               $('#ajaxpop  .factbox').append('<a class="btn success" href="'+ $content.location_type_online_url +'">Klik her for at deltage</a>');
-               
-            } 
+               $('#ajaxpop  .factbox').append('<p>Eventen foregår online</p>');
+               $('#ajaxpop  .factbox').append('<a class="btn success-btn" href="' + $content.location_type_online_url + '">Klik her for at deltage</a>');
+            }
             $('#ajaxpop .entry-content').html($content.post_content);
          }
       })
