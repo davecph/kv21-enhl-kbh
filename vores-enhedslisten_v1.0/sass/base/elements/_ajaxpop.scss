@@ -123,11 +123,12 @@
 
       h1 {
          color: #fff;
+         margin-bottom: 2rem;
       }
    }
 
    .entry-content {
-      padding: 0;
+      padding: 1rem 0;
       grid-column: 2/3;
       grid-row: 3/4;
       background-color: #fff;
