@@ -4,7 +4,7 @@ $(document).ready(function() {
       
       $item_id = $(this).attr('id');
       $bob = $item_id.replace('expand_btn_"', '');
-      console.log($bob);
+      console.log($bob+'fuck');
       $item_id = 'expand_section_'.$item_id;
 
       if ($($item_id).hasClass("displayAll") !== true) {
