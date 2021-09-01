@@ -4,11 +4,18 @@
 
 .contentSection_1 {
    background-color: #f8f8f8;
-   
+}
+
+.contentSection_2 {
+   background-color: $primGreen;
 }
 
 .contentSection_3 {
    background-color: $primRed;
+}
+
+.contentSection_2,
+.contentSection_3 {
    color: #fff;
 
    a h1,
@@ -30,7 +37,7 @@
    }
 }
 
-[id ^= 'expand_section_'] {
+[id ^='expand_section_'] {
    .candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n + 9) {
       display: none;
    }
