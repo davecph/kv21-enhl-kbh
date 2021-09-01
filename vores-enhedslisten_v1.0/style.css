@@ -2035,7 +2035,7 @@ body.home .headerContainer {
   background-color: #f8f8f8;
 }
 
-.contentSection_2 {
+.contentSection_4 {
   background-color: #159F6B;
 }
 
@@ -2043,24 +2043,24 @@ body.home .headerContainer {
   background-color: #D0004D;
 }
 
-.contentSection_2,
+.contentSection_4,
 .contentSection_3 {
   color: #fff;
 }
-.contentSection_2 a h1,
-.contentSection_2 a h2,
-.contentSection_2 a h3,
-.contentSection_2 a h4,
-.contentSection_2 a h5,
-.contentSection_2 a h6,
-.contentSection_2 a p,
-.contentSection_2 h1,
-.contentSection_2 h2,
-.contentSection_2 h3,
-.contentSection_2 h4,
-.contentSection_2 h5,
-.contentSection_2 h6,
-.contentSection_2 p,
+.contentSection_4 a h1,
+.contentSection_4 a h2,
+.contentSection_4 a h3,
+.contentSection_4 a h4,
+.contentSection_4 a h5,
+.contentSection_4 a h6,
+.contentSection_4 a p,
+.contentSection_4 h1,
+.contentSection_4 h2,
+.contentSection_4 h3,
+.contentSection_4 h4,
+.contentSection_4 h5,
+.contentSection_4 h6,
+.contentSection_4 p,
 .contentSection_3 a h1,
 .contentSection_3 a h2,
 .contentSection_3 a h3,
