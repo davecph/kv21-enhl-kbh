@@ -218,6 +218,8 @@ function my_ajax_pagination() {
    $post['short_description'] = get_field('short_description', $post_id);
    $post['tag_candidates'] = get_field('tag_candidates', $post_id);
    $post['event_end_time'] = get_field('event_end_time', $post_id);
+   $post['event_venue'] = get_field('event_venue', $post_id);
+   $post['temp_address'] = get_field('temp_address', $post_id);
    $post['location_type'] = get_field('location_type', $post_id);
    $post['location_type_online_url'] = get_field('location_type_online_url', $post_id);
    $post['location_physical'] = get_field('location_physical', $post_id);

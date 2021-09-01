@@ -39,7 +39,8 @@
             if ($content.location_type == true) {
                $('#ajaxpop  .factbox').append('<p>Eventen foregår online</p>');
                $('#ajaxpop  .factbox').append('<a class="btn btn-success" target="_blank" href="' + $content.location_type_online_url + '">Klik her for at deltage</a>');
-            }
+            } else $('#ajaxpop  .factbox').append('<p>'+$content.event_venue+'</p>');$('#ajaxpop  .factbox').append('<p>'+$content.temp_address+'</p>');
+
             /* $candidates = $content.tag_candidates;
             console.log($candidates);
             $candidates.forEach(function(item) {
