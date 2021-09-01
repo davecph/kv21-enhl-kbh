@@ -1245,6 +1245,7 @@ table {
   #ajaxpop .factbox {
     grid-column: 4/6;
     grid-row: 3/4;
+    min-width: 40rem;
   }
 }
 #ajaxpop .factbox p {
