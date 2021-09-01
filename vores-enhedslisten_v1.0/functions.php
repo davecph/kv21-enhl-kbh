@@ -295,7 +295,7 @@ function sortEventsByDate($args, $widgetControlsValues){
 
 	
    $args = array(
-      'posts_per_page'	=> 1000,
+      'posts_per_page'	=> -1,
       'category'		=> 'event',
    
       'meta_query'	=> array(
@@ -327,7 +327,7 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
    $currentPost =  get_the_id();
 
    $args = array(
-      'numberposts'	=> -1,
+      'posts_per_page'	=> -1,
       'category'		=> 'event',
    
       'meta_query'	=> array(
@@ -385,7 +385,7 @@ function frm_populate_posts($values, $field){
    $date_now = date('Y-m-d H:i:s');
    
    $posts = get_posts( array(
-      'numberposts'	=> -1,
+      'posts_per_page'	=> 5,
       'category'		=> 'event',
    
       'meta_query'	=> array(
