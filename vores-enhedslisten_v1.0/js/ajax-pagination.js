@@ -25,7 +25,6 @@
             $("#ajaxpop #coverImg").removeClass("event_debate");
             $("#ajaxpop #coverImg").addClass($content.event_type);
             $('#ajaxpop  .headerContainer').html("<h1>" + $content.post_title + "</h1>");
-            
             if ($content.event_type == 'event_party') {
                $('#ajaxpop  .factbox').html('<h5>Fest</h5>');
             } else
@@ -39,8 +38,10 @@
             if ($content.location_type == true) {
                $('#ajaxpop  .factbox').append('<p>Eventen foregår online</p>');
                $('#ajaxpop  .factbox').append('<a class="btn btn-success" target="_blank" href="' + $content.location_type_online_url + '">Klik her for at deltage</a>');
-            } else ($('#ajaxpop  .factbox').append('<p>'+$content.event_venue+'</p>');$('#ajaxpop  .factbox').append('<p>'+$content.temp_address+'</p>'));
-
+            } else {
+               $('#ajaxpop  .factbox').append('<p>' + $content.event_venue + '</p>');
+               $('#ajaxpop  .factbox').append('<p>' + $content.temp_address + '</p>')
+            };
             /* $candidates = $content.tag_candidates;
             console.log($candidates);
             $candidates.forEach(function(item) {
@@ -63,7 +64,6 @@
    $(document).on('click', '.ajaxpop-close', function(event) {
       event.preventDefault();
       if ($("#ajaxpop").hasClass("show") == true) {
-         
          $("#ajaxpop").removeClass("show");
          $("body").removeClass("noScroll");
       }
