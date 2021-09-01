@@ -295,7 +295,7 @@ function sortEventsByDate($args, $widgetControlsValues){
 
 	
    $args = array(
-      'numberposts'	=> -1,
+      'numberposts'	=> 1000,
       'category'		=> 'event',
    
       'meta_query'	=> array(
