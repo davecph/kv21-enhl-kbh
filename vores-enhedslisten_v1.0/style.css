@@ -2483,6 +2483,9 @@ body.archive #page .spacer {
   word-break: break-word;
 }
 
+.post_magazine_grid {
+  color: #fff;
+}
 .post_magazine_grid h5,
 .post_magazine_grid h5 a,
 .post_magazine_grid p,
