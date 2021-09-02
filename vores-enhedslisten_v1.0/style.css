@@ -2483,23 +2483,12 @@ body.archive #page .spacer {
   word-break: break-word;
 }
 
-.candidate_grid a,
-.candidate_grid a:hover {
+.post_magazine_grid h5,
+.post_magazine_grid h5 a,
+.post_magazine_grid p,
+.post_magazine_grid p a,
+.post_magazine_grid a {
   color: #fff;
-}
-.candidate_grid .uc_post_image {
-  background-image: linear-gradient(#888, #888), var(--bg-img);
-  background-blend-mode: saturation;
-}
-.candidate_grid .uc_post_image:hover {
-  background-image: var(--bg-img);
-  background-blend-mode: normal;
-}
-.candidate_grid .uc_content {
-  text-align: left;
-}
-.candidate_grid .uc_content h3 {
-  word-break: break-word;
 }
 
 /* Comments
