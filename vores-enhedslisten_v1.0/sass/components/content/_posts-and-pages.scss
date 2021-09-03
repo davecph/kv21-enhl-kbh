@@ -84,7 +84,7 @@ article.page {
       background-position-x: 50%;
       background-repeat: no-repeat;
       background-size: cover;
-      animation: move 15s forwards ease-out, wobble 2s alternate;
+      animation: move 15s forwards ease-out, wobble 2s alternate infinite;
    }
 
    @keyframes move {
