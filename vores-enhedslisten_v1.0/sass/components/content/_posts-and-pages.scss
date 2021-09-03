@@ -69,7 +69,7 @@ article.page {
       background-image: url(https://dev-kv21-kbh.ponr.dk/wp-content/themes/vores-enhedslisten_v1.0/img/waves_anim.svg);
       background-position-y: 100vh;
       background-size: cover;
-      animation: move 15s forwards ease-out, wobble 2s alternate infinite ease-in-out;
+      animation: move 15s forwards ease-out;
    }
 
    @keyframes move {
