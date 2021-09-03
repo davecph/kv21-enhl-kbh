@@ -60,10 +60,12 @@ article.page {
    width: 40%;
    overflow: hidden; */
 
- /*   &::before {
+   &::before {
       z-index: -1;
       display: block;
-      position: absolute;
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 100vw;
       height: 100vh;
       content: '';
@@ -72,7 +74,7 @@ article.page {
       background-repeat: no-repeat;
       background-size: cover;
       animation: move 15s forwards ease-out;
-   } */
+   }
 
    @keyframes move {
       from {

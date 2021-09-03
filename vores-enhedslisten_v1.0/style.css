@@ -2214,19 +2214,21 @@ article.page {
   /* height: 90vh;
   width: 40%;
   overflow: hidden; */
-  /*   &::before {
-       z-index: -1;
-       display: block;
-       position: absolute;
-       width: 100vw;
-       height: 100vh;
-       content: '';
-       background-image: url(https://dev-kv21-kbh.ponr.dk/wp-content/themes/vores-enhedslisten_v1.0/img/waves_anim.svg);
-       background-position-x: 50%;
-       background-repeat: no-repeat;
-       background-size: cover;
-       animation: move 15s forwards ease-out;
-    } */
+}
+.elementor-page-729::before {
+  z-index: -1;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  background-image: url(https://dev-kv21-kbh.ponr.dk/wp-content/themes/vores-enhedslisten_v1.0/img/waves_anim.svg);
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: move 15s forwards ease-out;
 }
 @keyframes move {
   from {
