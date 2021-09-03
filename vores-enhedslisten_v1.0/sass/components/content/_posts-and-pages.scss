@@ -56,9 +56,19 @@ article.page {
 }
 
 .elementor-page-729 {
+
    /* height: 90vh;
    width: 40%;
    overflow: hidden; */
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 p,
+   a {
+      color: #fff;
+   }
 
    &::before {
       z-index: -1;

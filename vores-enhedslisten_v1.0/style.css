@@ -2215,6 +2215,15 @@ article.page {
   width: 40%;
   overflow: hidden; */
 }
+.elementor-page-729 h1,
+.elementor-page-729 h2,
+.elementor-page-729 h3,
+.elementor-page-729 h4,
+.elementor-page-729 h5,
+.elementor-page-729 h6 p,
+.elementor-page-729 a {
+  color: #fff;
+}
 .elementor-page-729::before {
   z-index: -1;
   display: block;
