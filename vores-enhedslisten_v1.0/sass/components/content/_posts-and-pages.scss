@@ -61,6 +61,7 @@ article.page {
    overflow: hidden; */
 
    &::before {
+      z-index: -1;
       display: block;
       position: absolute;
       width: 100vw;
@@ -79,7 +80,7 @@ article.page {
       }
 
       to {
-         background-position-y: 0vh;
+         background-position-y: -10vh;
       }
    }
 

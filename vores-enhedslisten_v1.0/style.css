@@ -2216,6 +2216,7 @@ article.page {
   overflow: hidden; */
 }
 .elementor-page-729::before {
+  z-index: -1;
   display: block;
   position: absolute;
   width: 100vw;
@@ -2232,7 +2233,7 @@ article.page {
     background-position-y: -100vh;
   }
   to {
-    background-position-y: 0vh;
+    background-position-y: -10vh;
   }
 }
 @keyframes wobble {
