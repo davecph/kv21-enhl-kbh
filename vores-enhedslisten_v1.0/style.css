@@ -2227,10 +2227,10 @@ article.page {
 }
 @keyframes move {
   from {
-    background-position-y: -100%;
+    background-position-y: -100vh;
   }
   to {
-    background-position-y: 0%;
+    background-position-y: 0vh;
   }
 }
 @keyframes wobble {
