@@ -173,6 +173,11 @@ function test_scripts() {
 
    wp_enqueue_script( 'section-expand', get_template_directory_uri() . '/js/sectionExpand.js' );
 
+   /* <!-- the ajax pop-up --> */
+    require_once ( get_template_directory() . '/template-parts/ajaxpop.php' ); 
+   /* <!-- / the ajax pop-up --> */
+
+
    /*get post content with ajax*/
       wp_enqueue_script( 'ajax-pagination',  get_stylesheet_directory_uri() . '/js/ajax-pagination.js', array( 'jquery' ), '1.0', true );
 
