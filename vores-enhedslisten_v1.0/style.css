@@ -2237,7 +2237,7 @@ article.page {
   background-position-x: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: move 15s forwards ease-out;
+  animation: move 15s forwards ease-out, wobble 2s alternate;
 }
 @keyframes move {
   from {
@@ -2249,10 +2249,10 @@ article.page {
 }
 @keyframes wobble {
   from {
-    transform: rotate(2deg) skew(2deg);
+    transform: skewY(2deg);
   }
   to {
-    transform: rotate(-2deg) skew(-2deg);
+    transform: skewY(-2deg);
   }
 }
 
