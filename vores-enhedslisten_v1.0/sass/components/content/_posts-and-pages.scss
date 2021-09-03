@@ -63,8 +63,8 @@ article.page {
    &::before {
       display: block;
       position: absolute;
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
       content: '';
       background-image: url(https://dev-kv21-kbh.ponr.dk/wp-content/themes/vores-enhedslisten_v1.0/img/waves_anim.svg);
       background-position-x: 50%;
