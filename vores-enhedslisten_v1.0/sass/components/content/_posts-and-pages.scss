@@ -78,16 +78,16 @@ article.page {
       top: 0;
       left: 0;
       width: 100vw;
-      height: 100vh;
+      height: 110vh;
       content: '';
       background-image: url(https://dev-kv21-kbh.ponr.dk/wp-content/themes/vores-enhedslisten_v1.0/img/waves_anim.svg);
       background-position-x: 50%;
       background-repeat: no-repeat;
       background-size: cover;
-      animation: move 15s forwards ease-out, wobble 2s alternate infinite;
+      animation: move_water 15s forwards ease-out, wobble_water 2s alternate infinite;
    }
 
-   @keyframes move {
+   @keyframes move_water {
       from {
          background-position-y: 100vh;
       }
@@ -97,7 +97,7 @@ article.page {
       }
    }
 
-   @keyframes wobble {
+   @keyframes wobble_water {
       from {
          transform: skewY(2deg);
       }
