@@ -2235,7 +2235,7 @@ article.page {
     background-position-y: -100vh;
   }
   to {
-    background-position-y: -10vh;
+    background-position-y: -20vh;
   }
 }
 @keyframes wobble {
