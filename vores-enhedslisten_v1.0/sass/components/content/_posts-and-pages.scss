@@ -88,11 +88,11 @@ article.page {
 
    @keyframes move {
       from {
-         background-position-y: -100vh;
+         background-position-y: 100vh;
       }
 
       to {
-         background-position-y: -20vh;
+         background-position-y: 16vh;
       }
    }
 
@@ -107,22 +107,3 @@ article.page {
    }
 }
 
-@keyframes move {
-   from {
-      top: 100%
-   }
-
-   to {
-      top: 2%
-   }
-}
-
-@keyframes wobble {
-   from {
-      transform: rotate(2deg) skew(2deg);
-   }
-
-   to {
-      transform: rotate(-2deg) skew(-2deg);
-   }
-}
