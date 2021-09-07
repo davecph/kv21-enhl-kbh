@@ -1,4 +1,4 @@
-#page article {
+#page article, body.single article {
    display: grid;
    grid-template-columns: auto clamp(18rem, 20vw, 35rem) clamp(40ch, 40vw, 85ch) clamp(18rem, 20vw, 35rem) auto;
    grid-template-rows: auto clamp(20rem, 20vw, 40vh) auto auto;
@@ -188,7 +188,7 @@
    }
 }
 
-#page article.wide-content {
+#page article.wide-content,  body.single article.wide-content {
    grid-template-areas:
       ". manchet headerContainer headerContainer ."
       ". main main main ."

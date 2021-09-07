@@ -23,6 +23,7 @@
 <!-- END - universal navigation -->
 <?php wp_footer(); ?>
 
+
 </body>
 <!-- Just a stupid comment -->
 </html>

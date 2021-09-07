@@ -15,6 +15,12 @@
 get_header();
 ?>
 <!-- page.php -->
+<!--  add header and nav -->
+<?php require_once ( get_template_directory().'/template-parts/header-area.php' ); ?>
+<!-- / add header and nav -->
+ <!-- the ajax pop-up --> 
+ <?php require_once ( get_template_directory() . '/template-parts/ajaxpop.php' ); ?>
+ <!-- / the ajax pop-up -->
 	<main id="primary" class="site-main">
 
 		<?php
