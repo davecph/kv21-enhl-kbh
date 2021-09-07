@@ -1,0 +1,35 @@
+.heroSection {
+   min-height: 80vh;
+   padding: 10vh 1rem 5vh;
+   color: white;
+
+   h1 {
+      font-size: max(3.2rem, min(8vw, 8rem));
+      font-size: clamp(3.2rem, 8vw, 8rem);
+      line-height: max(2.6rem, min(6.5vw, 6.5rem));
+      line-height: clamp(2.6rem, 6.5vw, 6.5rem);
+      max-width: 16ch;
+      margin: 0 auto 1rem;
+      transform: rotate(-7deg) skew(-7deg);
+      transform-origin: bottom left;
+   }
+
+   h2 {
+      font-size: max(1.6rem, min(4vw, 4rem));
+      font-size: clamp(1.6rem, 4vw, 4rem);
+      line-height: max(1.6rem, min(4vw, 4rem));
+      line-height: clamp(1.6rem, 4vw, 4rem);
+      max-width: 32ch;
+      margin: 0 auto 1rem;
+   }
+
+   p {
+      color: white;
+      margin: auto;
+      @extend %p-large;
+   }
+
+   @include not-mobile {
+      padding: 25vh 16vw 12vh;
+   }
+}

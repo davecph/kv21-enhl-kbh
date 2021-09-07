@@ -16,10 +16,11 @@ $menuIndent:1rem;
          display: block;
       }
 
-      &.toggled .menu-strukturmenu-container {
+      &.toggled .menu-strukturmenu-container, &.toggled .menu-main-menu-container {
          display: block;
          //flex-direction: column;
-         background-color: rgba(88, 88, 88, .95);
+         background-color: $primRed;
+         
          width: 100vw;
          height: 100vh;
          position: fixed;
@@ -255,12 +256,5 @@ $menuIndent:1rem;
       display: flex;
    }
 
-   .nav-previous {
-      flex: 1 0 50%;
-   }
 
-   .nav-next {
-      text-align: end;
-      flex: 1 0 50%;
-   }
 }

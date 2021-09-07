@@ -16,20 +16,20 @@
 
          <section id="coverImg" 
             <?php if ( has_post_thumbnail() ):  ?> 
-               style="--bg-img:url(<?php the_post_thumbnail_url( 'x-large' ); ?>)" 
+               style="--bg-img:url(<?php the_post_thumbnail_url( 'medium_large' ); ?>)" 
             <?php endif; ?> 
             > 
             
          </section>
          <section id="personImg" 
-            <?php if ( has_post_thumbnail() ):  ?> style="--bg-img:url(<?php the_post_thumbnail_url( 'medium-large' ); ?>)"
+            <?php if ( has_post_thumbnail() ):  ?> style="--bg-img:url(<?php the_post_thumbnail_url( 'medium' ); ?>)"
             <?php endif; ?> > 
          </section>
       <?php else : ?>
          <!-- not single -->
          
             <section id="coverImg" 
-               <?php if ( has_post_thumbnail() ):  ?> style="--bg-img:url(<?php the_post_thumbnail_url( 'medium-large' ); ?>)"
+               <?php if ( has_post_thumbnail() ):  ?> style="--bg-img:url(<?php the_post_thumbnail_url( 'medium' ); ?>)"
                <?php endif; ?> > 
                <?php the_title( '<h5 class="entry-title "><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h5>' ); ?>
             </section>
@@ -45,15 +45,7 @@
       </header>
    <?php endif; ?>
 <!-- / .entry-header -->
-	<?php	if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				test_posted_on();
-				test_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-	<?php endif ; ?>
+
 	
    <?php if (is_singular() ) :  ?>
       <div class="entry-content">
@@ -104,39 +96,39 @@
          <?php if (get_field('age')) : ?>
             <h6>Alder: <span class="fw-light"><?php the_field('age'); ?></span>  </h6>
          <?php endif; ?><?php if (get_field('afdeling')) : ?>
-            <h6>Afdeling: <span class="fw-light"><?php the_field('afdeling'); ?> </span> </h6>
+            <h6>Bydel: <span class="fw-light"><?php the_field('afdeling'); ?> </span> </h6>
          <?php endif; ?><?php if (get_field('education')) : ?>
             <h6>Uddannelse: <span class="fw-light"><?php the_field('education'); ?> </span> </h6>
          <?php endif; ?><?php if (get_field('job')) : ?>
             <h6>Beskæftigelse: <span class="fw-light"><?php the_field('job'); ?> </span> </h6>
          <?php endif; ?><?php if (get_field('union')) : ?>
             <h6>Fagforening: <span class="fw-light"><?php the_field('union'); ?> </span> </h6>
-            <div class="iconBlock"> 
+         <?php endif ?>
+         <div class="iconBlock"> 
                <?php if( have_rows('candidate_contact_info') ): ?>
                   <!-- bob is fucked -->
                   <?php while( have_rows('candidate_contact_info') ): the_row(); ?>
                      <?php if( get_sub_field('e-mail') ): ?> 
-                        <a class="icon_mail_secGrey_small" href="mailto:<?php the_sub_field('e-mail'); ?>"></a>
+                        <a class="icon_mail_white_small" href="mailto:<?php the_sub_field('e-mail'); ?>"></a>
                      <?php endif; ?>
                      <?php if( get_sub_field('facebook') ): ?>
-                        <a class="icon_facebook_secGrey_small" href="<?php the_sub_field('facebook'); ?>"></a>
+                        <a class="icon_facebook_white_small" href="<?php the_sub_field('facebook'); ?>"></a>
                      <?php endif; ?>
                      <?php if( get_sub_field('instagram') ): ?>
-                        <a class="icon_instagram_secGrey_small" href="<?php the_sub_field('instagram'); ?>"></a>
+                        <a class="icon_instagram_white_small" href="<?php the_sub_field('instagram'); ?>"></a>
                      <?php endif; ?>
                      <?php if( get_sub_field('twitter') ): ?>
-                        <a class="icon_twitter_secGrey_small" href="<?php the_sub_field('twitter'); ?>"></a>
+                        <a class="icon_twitter_white_small" href="<?php the_sub_field('twitter'); ?>"></a>
                      <?php endif; ?>
                      <?php if( get_sub_field('linkedin') ): ?>
-                        <a class="icon_linkedin_secGrey_small" href="<?php the_sub_field('linkedin'); ?>"></a>
+                        <a class="icon_linkedin_white_small" href="<?php the_sub_field('linkedin'); ?>"></a>
                      <?php endif; ?>
                      
-                  <?php endwhile; 
-               endif; ?> 
-            </div>
+                  <?php endwhile;  ?> 
+         </div>
       </div>
    <?php endif; ?>
-
+  <?php echo do_shortcode(' [elementor-template id="679"] '); ?>
 	<footer class="entry-footer">
 		<?php test_entry_footer(); ?>
 	</footer><!-- .entry-footer -->

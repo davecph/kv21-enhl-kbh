@@ -2,11 +2,21 @@
 --------------------------------------------- */
 @import "navigation/navigation";
 @import "navigation/universalNavigation";
+@import "navigation/post-navigation";
+
+/* sections
+--------------------------------------------- */
+@import "sections/heroSection";
+@import "sections/contentSection";
+@import "sections/eventSection";
+
+
 /* Posts and pages
 --------------------------------------------- */
 @import "content/posts-and-pages";
 /* Flip box design
 --------------------------------------------- */
+
 @import "content/flipBox";
 /*the cover image */
 @import "content/coverImg";
@@ -14,6 +24,9 @@
 @import "content/archive";
 @import "content/iconBlock";
 @import "content/events-calendar-list";
+@import "content/ue-postGrid-candidate_grid";
+@import "content/post_magazine_grid";
+
 
 /* Comments
 --------------------------------------------- */

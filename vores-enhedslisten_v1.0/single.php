@@ -55,10 +55,16 @@ get_header();
             get_template_part( 'template-parts/content', get_post_type() );
          endif;  
          echo "<!-- 03 -->";
+         $next_post = get_next_post();
+         $prev_post = get_previous_post();
 			the_post_navigation(
+
+            
 				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'test' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'test' ) . '</span> <span class="nav-title">%title</span>',
+               'in_same_term' => true,
+               'taxonomy' => 'category',
+					'prev_text' => '<span class="nav-subtitle"><span class="icon_arrow-l_white_small"></span>'.get_the_post_thumbnail($prev_post->ID,'thumbnail').'<span class="nav-title">%title</span></span>',
+					'next_text' => '<span class="nav-subtitle"><span class="nav-title">%title</span>'.get_the_post_thumbnail($next_post->ID,'thumbnail').'<span class="icon_arrow-r_white_small"></span></span>',
 				)
 			);
          echo "<!-- 04 -->";

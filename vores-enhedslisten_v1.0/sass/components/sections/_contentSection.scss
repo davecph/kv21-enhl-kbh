@@ -1,0 +1,50 @@
+[class *=contentSection_] {
+   padding: 8vh 0 6vh;
+}
+
+.contentSection_1 {
+   background-color: #f8f8f8;
+}
+
+.contentSection_4 {
+   background-color: $primGreen;
+}
+
+.contentSection_3 {
+   background-color: $primRed;
+}
+
+.contentSection_4,
+.contentSection_3 {
+   color: #fff;
+
+   a h1,
+   a h2,
+   a h3,
+   a h4,
+   a h5,
+   a h6,
+   a p,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p {
+      color: #fff;
+      padding: 0;
+   }
+}
+
+[id ^='expand_section_'] {
+   .candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n + 9) {
+      display: none;
+   }
+
+   &.displayAll {
+      .candidate_grid .ue_post_grid .ue_post_grid_item:nth-child(1n + 9) {
+         display: inherit;
+      }
+   }
+}

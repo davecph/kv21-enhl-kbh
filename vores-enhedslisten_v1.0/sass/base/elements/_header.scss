@@ -29,7 +29,7 @@
       padding: .5rem;
 
       .site-branding a::before {
-         background-image: url(img/vores_logo_marker.svg);
+         background-image: url(img/kbh_logo_marker_alt.svg);
          width: 10vh;
          height: 7vh;
       }
@@ -70,7 +70,7 @@
          padding: clamp(0.5rem, 2vw, 1.5rem);
 
          a::before {
-            background-image: url(img/vores_logo_full.svg);
+            background-image: url(img/kbh_logo_full.svg);
             width: clamp(12rem, 18vw, 23rem);
             height: clamp(3rem, 6vw, 5.5rem);
          }

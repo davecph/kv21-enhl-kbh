@@ -1,11 +1,57 @@
 // Center block
 @mixin center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 // Column width with margin
 @mixin column-width($numberColumns: 3) {
-	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+   width: map-get($columns, $numberColumns) - (($columns__margin * ($numberColumns - 1)) / $numberColumns);
 }
+
+%water_rise {
+
+   background-size: cover;
+   background-position: 50% 0vh;
+   background-image: url(img/waves_anim.svg);
+   background-repeat: no-repeat;
+   animation: water_rise 15s -6s ease-in-out;
+
+   @keyframes water_rise {
+      from {
+         background-position: 50% 100vh;
+      }
+
+      to {
+         background-position: 50% 0vh;
+      }
+   }
+}
+
+
+.xxxxxxcontainer{width: 100%;
+   height:100vh;
+   overflow: hidden;
+   //background-color:blue;
+   img{
+     position:relative;
+     //top: 33%;
+     //width:100%;
+     //height:100%;
+     object-fit: cover;
+     transform: scale(210%);
+     transform-origin: center top;
+     object-position:center top;
+     animation: move 10s ease-out, wobble 2s alternate infinite ease-in-out;
+   }
+ }
+ @keyframes move{
+   from{top: 100%}
+   to{top: 3%}
+ }
+ 
+ @keyframes wobble{
+   from{transform: rotate(2deg) skew(2deg) ;}
+   to{transform: rotate(-2deg) skew(-2deg);}
+ }

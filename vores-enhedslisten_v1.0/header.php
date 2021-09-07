@@ -18,10 +18,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="profile" href="https://gmpg.org/xfn/11"> <?php wp_head(); ?> 
 
-   <link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri( ); ?>/style.css?v=<?php echo date("ymdhis"); ?>">
+   
    </link> 
 </head>
-
+<!-- Great comment -->
 <body <?php body_class(); ?>> <?php wp_body_open(); ?> <div id="page" class="site">
       <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'test' ); ?></a>
       <header id="masthead" class="site-header <?php if ( has_post_thumbnail() ):  ?> with-coverImg <?php endif; ?>">

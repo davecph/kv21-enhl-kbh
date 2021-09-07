@@ -1,0 +1,26 @@
+.candidate_grid {
+
+   a,
+   a:hover {
+      color: #fff;
+   }
+
+   .uc_post_image {
+      background-image: linear-gradient(#888, #888), var(--bg-img);
+      background-blend-mode: saturation;
+
+      &:hover {
+         background-image: var(--bg-img);
+         background-blend-mode: normal;
+      }
+   }
+
+   .uc_content {
+      text-align: left;
+
+      h3 {
+         word-break: break-word;
+      }
+   }
+}
+
