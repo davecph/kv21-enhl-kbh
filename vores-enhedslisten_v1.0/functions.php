@@ -198,6 +198,8 @@ require_once ( get_template_directory().'/template-parts/header-area.php' );
 	}
 }  
 
+add_action( 'wp_enqueue_scripts', 'test_scripts' );
+
 add_action( 'wp_ajax_nopriv_ajax_pagination', 'my_ajax_pagination' );
 add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
 
@@ -241,7 +243,7 @@ function my_ajax_pagination() {
    die();
 }
 
-add_action( 'wp_enqueue_scripts', 'test_scripts' );
+
 
 /**
  * Implement the Custom Header feature.
