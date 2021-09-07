@@ -245,6 +245,33 @@ function my_ajax_pagination() {
 
 
 
+/**
+ * Implement the Custom Header feature.
+ */
+require get_template_directory() . '/inc/custom-header.php';
+
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/template-tags.php';
+
+/**
+ * Functions which enhance the theme by hooking into WordPress.
+ */
+require get_template_directory() . '/inc/template-functions.php';
+
+/**
+ * Customizer additions.
+ */
+require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Load Jetpack compatibility file.
+ */
+if ( defined( 'JETPACK__VERSION' ) ) {
+	require get_template_directory() . '/inc/jetpack.php';
+}
+
 
 
 
@@ -255,7 +282,7 @@ function my_ajax_pagination() {
 /**
  * Adding odoo features
  */
-require_once ( get_template_directory() . '/odoo-shortcodes.php' );
+
 
 /* Adding sorting by ACF to  CPT  events */
 add_action( 'elementor/query/events_sorted_by_date', function( $query ) {
