@@ -162,8 +162,8 @@ add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
  * Enqueue scripts and styles.
  */
 function test_scripts() {
-	wp_enqueue_style( 'test-style', get_stylesheet_uri(), array(), _S_VERSION );
-   wp_style_add_data( 'test-style', 'rtl', 'replace' );
+	//wp_enqueue_style( 'test-style', get_stylesheet_uri(), array(), _S_VERSION );
+   //wp_style_add_data( 'test-style', 'rtl', 'replace' );
    
    wp_enqueue_script( 'jquery-3.5.1', get_template_directory_uri() . '/js/jquery-3.5.1.min.js'); 
 
