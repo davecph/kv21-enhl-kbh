@@ -158,21 +158,52 @@ add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
 
 
+/**
+ * Enqueue scripts and styles.
+ */
+function test_scripts() {
+	wp_enqueue_style( 'test-style', get_stylesheet_uri(), array(), _S_VERSION );
+   wp_style_add_data( 'test-style', 'rtl', 'replace' );
+   
+   wp_enqueue_script( 'jquery-3.5.1', get_template_directory_uri() . '/js/jquery-3.5.1.min.js'); 
 
+   wp_enqueue_script( 'test-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+   
+   /* wp_enqueue_script( 'universal-navigation', get_template_directory_uri() . '/js/universalNavigation.js' ); */
+
+   wp_enqueue_script( 'section-expand', get_template_directory_uri() . '/js/sectionExpand.js' );
+   
+/* add header and nav */
+require_once ( get_template_directory().'/template-parts/header-area.php' ); 
+/* / add header and nav */
+
+/* <!-- the ajax pop-up --> */
+   require_once ( get_template_directory() . '/template-parts/ajaxpop.php' ); 
+/* <!-- / the ajax pop-up --> */
+
+
+
+   /*get post content with ajax*/
+      wp_enqueue_script( 'ajax-pagination',  get_stylesheet_directory_uri() . '/js/ajax-pagination.js', array( 'jquery' ), '1.0', true );
+
+      global $wp_query;
+      wp_localize_script( 'ajax-pagination', 'ajaxpagination', array(
+         'ajaxurl' => admin_url( 'admin-ajax.php' ),
+         'query_vars' => json_encode( $wp_query->query )
+      ));
+   /* / get post content with ajax*/
+
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+}  
+
+add_action( 'wp_enqueue_scripts', 'test_scripts' );
 
 add_action( 'wp_ajax_nopriv_ajax_pagination', 'my_ajax_pagination' );
 add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
 
-/* enables console.log for debugging php*/
-   function console_log($output, $with_script_tags = true) {
-      $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
-   ');';
-      if ($with_script_tags) {
-         $js_code = '<script>' . $js_code . '</script>';
-      }
-      echo $js_code;
-   }
-/* / enables console.log for debugging php*/
+
 function my_ajax_pagination() {
 
    $post_id = json_decode( stripslashes( $_POST['query_vars'] ), true );
