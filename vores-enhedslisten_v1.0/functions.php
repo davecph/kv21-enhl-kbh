@@ -173,6 +173,14 @@ function test_scripts() {
 
    wp_enqueue_script( 'section-expand', get_template_directory_uri() . '/js/sectionExpand.js' );
    
+/* add header and nav */
+require_once ( get_template_directory().'/template-parts/header-area.php' ); 
+/* / add header and nav */
+
+/* <!-- the ajax pop-up --> */
+   require_once ( get_template_directory() . '/template-parts/ajaxpop.php' ); 
+/* <!-- / the ajax pop-up --> */
+
 
 
    /*get post content with ajax*/
@@ -262,13 +270,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-/* add header and nav */
-require_once ( get_template_directory().'/template-parts/header-area.php' ); 
-/* / add header and nav */
 
-/* <!-- the ajax pop-up --> */
-   require_once ( get_template_directory() . '/template-parts/ajaxpop.php' ); 
-/* <!-- / the ajax pop-up --> */
 
 
 
