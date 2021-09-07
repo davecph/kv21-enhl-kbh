@@ -213,36 +213,37 @@ add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
       echo $js_code;
    }
 /* / enables console.log for debugging php*/
+function my_ajax_pagination() {
+
+   $post_id = json_decode( stripslashes( $_POST['query_vars'] ), true );
+   //print_r($query_vars);
+   $content =  get_the_content( $post_id ); ;
+
+   $post = get_post( $post_id , ARRAY_A);
+
+   
+    
+   
+   $post['thumbnail_url'] = get_the_post_thumbnail_url( $post_id, 'x-large' );
+   $post['event_start_time'] = get_field('event_start_time', $post_id);
+   $post['event_type'] = get_field('event_type', $post_id);
+   $post['short_description'] = get_field('short_description', $post_id);
+   $post['tag_candidates'] = get_field('tag_candidates', $post_id);
+   $post['event_end_time'] = get_field('event_end_time', $post_id);
+   $post['event_venue'] = get_field('event_venue', $post_id);
+   $post['temp_address'] = get_field('temp_address', $post_id);
+   $post['location_type'] = get_field('location_type', $post_id);
+   $post['location_type_online_url'] = get_field('location_type_online_url', $post_id);
+   $post['location_physical'] = get_field('location_physical', $post_id);
 
 
 
-
-/**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
-
-/**
- * Custom template tags for this theme.
- */
-require get_template_directory() . '/inc/template-tags.php';
-
-/**
- * Functions which enhance the theme by hooking into WordPress.
- */
-require get_template_directory() . '/inc/template-functions.php';
-
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
-
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
+   echo json_encode($post); 
+   //echo get_post($query_vars);
+   die();
 }
+
+
 
 
 
