@@ -1477,7 +1477,7 @@ input[type=text]#filterInput {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-#page article {
+#page article, body.single article {
   display: grid;
   grid-template-columns: auto clamp(18rem, 20vw, 35rem) clamp(40ch, 40vw, 85ch) clamp(18rem, 20vw, 35rem) auto;
   grid-template-rows: auto clamp(20rem, 20vw, 40vh) auto auto;
@@ -1485,29 +1485,29 @@ input[type=text]#filterInput {
   grid-template-areas: ". headerContainer headerContainer headerContainer ." ". manchet main . ." ". . main fact ." ". . main . .";
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  #page article {
+  #page article, body.single article {
     grid-template-columns: auto clamp(18rem, 25vw, 35rem) clamp(40ch, auto, 75ch) auto;
     grid-template-areas: ". headerContainer headerContainer ." ". manchet main  ." ". . main ." ". . fact  .";
   }
 }
 @media (max-width: 767px), (max-height: 600px) {
-  #page article {
+  #page article, body.single article {
     grid-template-columns: 2rem auto 2rem;
     grid-template-areas: " . headerContainer ." ". manchet ." ". main ." ". fact .";
   }
 }
-#page article .headerContainer {
+#page article .headerContainer, body.single article .headerContainer {
   grid-area: headerContainer;
   align-self: flex-end;
   color: #000;
   margin: 10rem 0 2vw;
 }
-#page article .coverImg-caption {
+#page article .coverImg-caption, body.single article .coverImg-caption {
   grid-area: manchet;
   justify-self: end;
   align-self: end;
 }
-#page article #kicker {
+#page article #kicker, body.single article #kicker {
   grid-area: manchet;
   color: #000;
   font-weight: 300;
@@ -1515,42 +1515,42 @@ input[type=text]#filterInput {
   line-height: 1.725rem;
   text-align: right;
 }
-#page article .factbox {
+#page article .factbox, body.single article .factbox {
   grid-area: fact;
   padding: 1rem;
   background: rgba(30, 30, 30, 0.8);
   color: #fff;
 }
-#page article.category-candidates #coverImg {
+#page article.category-candidates #coverImg, body.single article.category-candidates #coverImg {
   grid-row: 1/5;
 }
 @media (max-width: 767px), (max-height: 600px) {
-  #page article.category-candidates #coverImg {
+  #page article.category-candidates #coverImg, body.single article.category-candidates #coverImg {
     grid-column: 1/4;
     grid-row: 1/3;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  #page article.category-candidates #coverImg {
+  #page article.category-candidates #coverImg, body.single article.category-candidates #coverImg {
     grid-column: 1/5;
     grid-row: 1/3;
   }
 }
-#page article.category-candidates .factbox {
+#page article.category-candidates .factbox, body.single article.category-candidates .factbox {
   grid-column: 2/3;
   grid-row: 3/4;
 }
 @media (max-width: 767px), (max-height: 600px) {
-  #page article.category-candidates .factbox {
+  #page article.category-candidates .factbox, body.single article.category-candidates .factbox {
     grid-area: fact;
   }
 }
-#page article .entry-content {
+#page article .entry-content, body.single article .entry-content {
   grid-area: main;
   background-color: rgba(255, 255, 255, 0.85);
   overflow-y: auto;
 }
-#page article.has-post-thumbnail {
+#page article.has-post-thumbnail, body.single article.has-post-thumbnail {
   display: grid;
   grid-template-rows: minmax(30vw, auto) clamp(20rem, 20vw, 40vh) auto auto;
   background-color: #eee;
@@ -1558,45 +1558,45 @@ input[type=text]#filterInput {
   grid-template-areas: ". headerContainer headerContainer headerContainer ." ". manchet main . ." ". . main fact ." ". . main . .";
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  #page article.has-post-thumbnail {
+  #page article.has-post-thumbnail, body.single article.has-post-thumbnail {
     grid-template-columns: auto clamp(21rem, 25vw, 35rem) clamp(40ch, auto, 75ch) auto;
     grid-template-areas: ". headerContainer headerContainer ." ". manchet main  ." ". . main ." ". . main  .";
   }
 }
 @media (max-width: 767px), (max-height: 600px) {
-  #page article.has-post-thumbnail {
+  #page article.has-post-thumbnail, body.single article.has-post-thumbnail {
     grid-template-columns: 2rem auto 2rem;
     grid-template-areas: " . headerContainer ." ". manchet ." ". main ." ". fact .";
   }
 }
-#page article.has-post-thumbnail #personImg {
+#page article.has-post-thumbnail #personImg, body.single article.has-post-thumbnail #personImg {
   grid-area: manchet;
 }
-#page article.has-post-thumbnail #coverImg {
+#page article.has-post-thumbnail #coverImg, body.single article.has-post-thumbnail #coverImg {
   grid-column: 1/6;
   grid-row: 1/3;
 }
 @media (max-width: 767px), (max-height: 600px) {
-  #page article.has-post-thumbnail #coverImg {
+  #page article.has-post-thumbnail #coverImg, body.single article.has-post-thumbnail #coverImg {
     grid-column: 1/4;
     grid-row: 1/3;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  #page article.has-post-thumbnail #coverImg {
+  #page article.has-post-thumbnail #coverImg, body.single article.has-post-thumbnail #coverImg {
     grid-column: 1/5;
     grid-row: 1/3;
   }
 }
-#page article.has-post-thumbnail .headerContainer {
+#page article.has-post-thumbnail .headerContainer, body.single article.has-post-thumbnail .headerContainer {
   color: #fff;
 }
-#page article.has-post-thumbnail #kicker {
+#page article.has-post-thumbnail #kicker, body.single article.has-post-thumbnail #kicker {
   color: #fff;
   align-self: flex-end;
   padding-bottom: 2rem;
 }
-#page article.has-post-thumbnail .entry-content {
+#page article.has-post-thumbnail .entry-content, body.single article.has-post-thumbnail .entry-content {
   padding: clamp(1rem, 2.5vw, 3rem);
 }
 
@@ -1626,17 +1626,17 @@ input[type=text]#filterInput {
   display: block;
 }
 
-#page article.wide-content {
+#page article.wide-content, body.single article.wide-content {
   grid-template-areas: ". manchet headerContainer headerContainer ." ". main main main ." ". main main main ." ". . fact . .";
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  #page article.wide-content {
+  #page article.wide-content, body.single article.wide-content {
     grid-template-columns: auto clamp(21rem, 25vw, 35rem) clamp(40ch, 50vw, 75ch) auto;
     grid-template-areas: ". headerContainer headerContainer ." ". manchet manchet  ." ". main main ." ". . fact  .";
   }
 }
 @media (max-width: 767px), (max-height: 600px) {
-  #page article.wide-content {
+  #page article.wide-content, body.single article.wide-content {
     grid-template-columns: 2rem auto 2rem;
     grid-template-areas: " . headerContainer ." ". manchet ." ". main ." ". fact .";
   }
