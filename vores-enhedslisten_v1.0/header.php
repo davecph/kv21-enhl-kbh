@@ -20,7 +20,7 @@
    <link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri( ); ?>/style.css?v=<?php echo date("ymdhis"); ?>">
 </head>
 <!-- Great FUCK -->
-<body <?php body_class(); ?>> 
+<body <?php body_class(); ?> > 
 <?php wp_body_open(); ?> 
 <div id="page" class="site">
      
