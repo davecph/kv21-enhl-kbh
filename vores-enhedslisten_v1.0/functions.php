@@ -463,12 +463,6 @@ add_filter('acf/validate_value/name=event_end_time', 'afc_validate_event_time', 
 
 /* / AFC event time validation */
 
-/* add header and nav */
-require_once ( get_template_directory().'/template-parts/header-area.php' ); 
-/* / add header and nav */
 
-/* <!-- the ajax pop-up --> */
-   require_once ( get_template_directory() . '/template-parts/ajaxpop.php' ); 
-/* <!-- / the ajax pop-up --> */
 
 ?>
