@@ -173,6 +173,10 @@ function test_scripts() {
 
    wp_enqueue_script( 'section-expand', get_template_directory_uri() . '/js/sectionExpand.js' );
    
+
+
+
+
    /*get post content with ajax*/
       wp_enqueue_script( 'ajax-pagination',  get_stylesheet_directory_uri() . '/js/ajax-pagination.js', array( 'jquery' ), '1.0', true );
 
@@ -272,7 +276,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * Adding odoo features
  */
-
+require_once ( get_template_directory() . '/odoo-shortcodes.php' );
 
 /* Adding sorting by ACF to  CPT  events */
 add_action( 'elementor/query/events_sorted_by_date', function( $query ) {
@@ -462,7 +466,5 @@ add_filter('acf/validate_value/name=event_start_time', 'afc_validate_event_time'
 add_filter('acf/validate_value/name=event_end_time', 'afc_validate_event_time', 10, 4);
 
 /* / AFC event time validation */
-
-
 
 ?>
