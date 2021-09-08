@@ -1994,7 +1994,7 @@ body.home .headerContainer {
 
 .elementor-location-footer ul {
   display: grid;
-  --auto-grid-min-size: 20rem;
+  --auto-grid-min-size: 12rem;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
   grid-gap: 1rem;
   padding: 0;
@@ -2008,7 +2008,7 @@ body.home .headerContainer {
   display: block;
 }
 .elementor-location-footer ul li {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -2019,6 +2019,7 @@ body.home .headerContainer {
 .elementor-location-footer ul li a {
   font-size: 1rem;
   text-transform: none;
+  color: #fff;
 }
 .elementor-location-footer ul li ul li {
   padding: 0;
