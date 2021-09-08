@@ -1992,9 +1992,6 @@ body.home .headerContainer {
   margin: 0 0.5rem 0 0;
 }
 
-.footerLinkSection {
-  background-color: violet;
-}
 .footerLinkSection ul {
   display: grid;
   --auto-grid-min-size: 12rem;
