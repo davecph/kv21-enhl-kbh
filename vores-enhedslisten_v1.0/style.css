@@ -2208,14 +2208,6 @@ article.page {
   display: none;
 }
 
-@media (max-width: 767px), (max-height: 600px) {
-  .page-content,
-.entry-content,
-.entry-summary {
-    padding: 7.5vw;
-  }
-}
-
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
