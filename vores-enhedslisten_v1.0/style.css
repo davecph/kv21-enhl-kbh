@@ -1992,10 +1992,10 @@ body.home .headerContainer {
   margin: 0 0.5rem 0 0;
 }
 
-.elementor-location-footer {
+.footerLinkSection {
   background-color: violet;
 }
-.elementor-location-footer ul {
+.footerLinkSection ul {
   display: grid;
   --auto-grid-min-size: 12rem;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
@@ -2004,28 +2004,28 @@ body.home .headerContainer {
   margin: 0;
   list-style: none;
 }
-.elementor-location-footer ul ul {
+.footerLinkSection ul ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: block;
 }
-.elementor-location-footer ul li {
+.footerLinkSection ul li {
   font-size: 1.2rem;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   color: #fff;
 }
-.elementor-location-footer ul li:last-of-type {
+.footerLinkSection ul li:last-of-type {
   margin-bottom: 1rem;
 }
-.elementor-location-footer ul li a {
+.footerLinkSection ul li a {
   font-size: 1rem;
   text-transform: none;
   color: #fff;
 }
-.elementor-location-footer ul li ul li {
+.footerLinkSection ul li ul li {
   padding: 0;
   margin: 0;
 }
