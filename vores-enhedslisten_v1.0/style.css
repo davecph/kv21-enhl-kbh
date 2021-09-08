@@ -1998,6 +1998,7 @@ body.home .headerContainer {
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
   grid-gap: 1rem;
   padding: 0;
+  list-style: none;
 }
 .elementor-location-footer ul ul {
   list-style: none;
@@ -2011,6 +2012,9 @@ body.home .headerContainer {
 }
 .elementor-location-footer ul li a {
   font-size: 1rem;
+}
+.elementor-location-footer ul li ul li {
+  padding: 0;
 }
 
 /* sections

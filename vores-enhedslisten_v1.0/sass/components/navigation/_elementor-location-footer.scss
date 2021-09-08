@@ -4,6 +4,7 @@
    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
    grid-gap: 1rem;
    padding: 0;
+   list-style: none;
 
    ul {
       list-style: none;
@@ -19,5 +20,6 @@
       a {
          font-size: 1rem
       }
+      ul li{padding: 0}
    }
 }
