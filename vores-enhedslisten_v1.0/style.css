@@ -2012,6 +2012,7 @@ body.home .headerContainer {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  color: #fff;
 }
 .elementor-location-footer ul li:last-of-type {
   margin-bottom: 1rem;
