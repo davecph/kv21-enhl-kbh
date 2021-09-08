@@ -1997,15 +1997,15 @@ body.home .headerContainer {
   --auto-grid-min-size: 20rem;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
   grid-gap: 1rem;
-  padding: max(1rem, 3vw);
-}
-.elementor-location-footer ul ul {
-  list-style: none;
-  margin: 0;
+  padding: 0 ul;
+  padding-list-style: none;
+  padding-margin: 0;
+  padding-padding: 0;
 }
 .elementor-location-footer ul li {
   font-size: 1.5rem;
   margin: 0;
+  padding: 0;
 }
 .elementor-location-footer ul li a {
   font-size: 1rem;
