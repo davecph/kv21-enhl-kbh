@@ -30,14 +30,7 @@
    <?php endif; ?>
 
 <div class="headerContainer">
-<?php if( get_field('page_header') ): ?> 
-            <h1> <?php the_field('page_header'); ?></h1> 
-         <?php else : the_title( '<h1>', '</h1>' ); ?>
-         <?php endif; ?> 
-         <?php if( get_field('minor_header') ): ?> 
-            <h2> <?php the_field('minor_header'); ?></h2> 
-         <?php endif; ?>
-</div>
+
 
 
 
