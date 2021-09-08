@@ -1992,6 +1992,9 @@ body.home .headerContainer {
   margin: 0 0.5rem 0 0;
 }
 
+.elementor-location-footer {
+  background-color: violet;
+}
 .elementor-location-footer ul {
   display: grid;
   --auto-grid-min-size: 12rem;
