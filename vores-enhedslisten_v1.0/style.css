@@ -2005,6 +2005,7 @@ body.home .headerContainer {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: block;
 }
 .elementor-location-footer ul li {
   font-size: 1.5rem;
@@ -2012,9 +2013,12 @@ body.home .headerContainer {
   padding: 0;
   text-transform: uppercase;
 }
+.elementor-location-footer ul li:last-of-type {
+  margin-bottom: 1rem;
+}
 .elementor-location-footer ul li a {
   font-size: 1rem;
-  text-transform: unset;
+  text-transform: none;
 }
 .elementor-location-footer ul li ul li {
   padding: 0;
