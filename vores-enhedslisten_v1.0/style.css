@@ -1992,6 +1992,13 @@ body.home .headerContainer {
   margin: 0 0.5rem 0 0;
 }
 
+.elementor-location-footer {
+  display: grid;
+  --auto-grid-min-size: 20rem;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
+  padding: max(1rem, 3vw);
+}
 .elementor-location-footer ul {
   list-style: none;
   margin: 0;
