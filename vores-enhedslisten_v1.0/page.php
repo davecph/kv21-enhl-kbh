@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-<!-- page.php -->
+<!-- page.php w. comment -->
 <!--  add header and nav -->
 <?php require_once ( get_template_directory().'/template-parts/header-area.php' ); ?>
 <!-- / add header and nav -->
