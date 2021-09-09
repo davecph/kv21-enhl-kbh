@@ -211,9 +211,9 @@ function my_ajax_pagination() {
 
    $post_id = json_decode( stripslashes( $_POST['query_vars'] ), true );
    //print_r($query_vars);
-   $content =  get_the_content( $post_id ); ;
+/*    $content =  get_the_content( $post_id ); ;
 
-   $post = get_post( $post_id , ARRAY_A);
+   $post = get_post( $post_id , ARRAY_A); */
 
    
     
@@ -426,11 +426,9 @@ function frm_populate_posts($values, $field){
       
       $start_time = get_field('event_start_time', $p->ID );
       $end_time = get_field('event_end_time', $p->ID );
-      /* if($date_now < $compare_time){ */
-         
-         
-         $values['options'][$p->ID] = $p->post_title.': '.$start_time.' – '.$end_time;
-      /* } */
+      $short_desc = get_field('short_description', $p->ID );
+      $values['options'][$p->ID] = $p->post_title.': '.$start_time.' – '.$end_time;
+      
             
       
     }
