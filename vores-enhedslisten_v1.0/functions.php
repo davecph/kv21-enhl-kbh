@@ -434,7 +434,7 @@ function frm_populate_posts($values, $field){
             
       
     }
-    $values['use_key'] = true; //this will set the field to save the post ID instead of post title
+    $values['use_key'] = false; //this will set the field to save the post ID instead of post title
     unset($values['options'][0]);
   }
   return $values;
