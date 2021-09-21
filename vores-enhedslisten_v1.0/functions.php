@@ -207,6 +207,10 @@ add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
       echo $js_code;
    }
 /* / enables console.log for debugging php*/
+
+global $wp_query;
+$wp_query = new WP_Query();
+
 function my_ajax_pagination() {
 
    $post_id = json_decode( stripslashes( $_POST['query_vars'] ), true );
