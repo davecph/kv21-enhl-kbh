@@ -100,7 +100,7 @@
             $content = JSON.parse(data);
             //alert($content.event_start_time);
             console.log($content);
-            $("#frm_field_21_container").html('<strong>Beskrivelse: </strong>' + $content.short_description+'<a class "showEventLink" id="post_item_'+$post_id+'">Læs mere</a>');
+            $("#frm_field_21_container").html('<strong>Beskrivelse: </strong>' + $content.short_description+'<a class="showEventLink" id="post_item_'+$post_id+'">Læs mere</a>');
          }
       })
       
