@@ -210,8 +210,7 @@ function my_ajax_pagination() {
 
    $post_id = json_decode( stripslashes( $_POST['query_vars'] ), true );
    //print_r($query_vars);
-   $content =  get_the_content( $post_id ); 
-
+   
    $post = get_post( $post_id , ARRAY_A); 
 
    
@@ -230,7 +229,7 @@ function my_ajax_pagination() {
    //$post['post_content'] = the_content( '412');
    
    echo json_encode($post); 
-   //echo get_post($query_vars);
+   
    die();
 }
 
@@ -240,15 +239,11 @@ add_action( 'wp_ajax_show_event_info', 'show_event_info' );
 function show_event_info() {
 
    $post_id = json_decode( stripslashes( $_POST['query_vars'] ), true );
-   //print_r($query_vars);
-/*    $content =  get_the_content( $post_id ); 
- */
-   //$post = get_post( $post_id , ARRAY_A); 
  
    $post['short_description'] = get_field('short_description', $post_id);
   
    echo json_encode($post); 
-   //echo get_post($query_vars);
+
    die();
 }
 
