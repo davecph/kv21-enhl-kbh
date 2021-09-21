@@ -432,7 +432,7 @@ function frm_populate_posts($values, $field){
       $end_time = get_field('event_end_time', $p->ID );
       $short_desc = get_field('short_description', $p->ID );
       $values['options'][$p->ID] = $p->post_title.': '.$start_time.' – '.$end_time;
-      $values['values'][$p->ID] = $post_id;
+      $values['value'][$p->ID] = $post_id;
       
             
       
