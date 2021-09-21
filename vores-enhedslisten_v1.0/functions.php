@@ -234,7 +234,7 @@ function my_ajax_pagination() {
    $post['location_type_online_url'] = get_field('location_type_online_url', $post_id);
    $post['location_physical'] = get_field('location_physical', $post_id);
    $post['post_title'] = get_the_title($post_id);
-   $post['post_content'] = get_the_content( 412);
+   $post['post_content'] = the_content( 412);
    
    echo json_encode($post); 
    //echo get_post($query_vars);
