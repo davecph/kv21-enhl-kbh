@@ -32,7 +32,7 @@
                $('#ajaxpop  .factbox').html('<h5>Debat</h5>');
             } else
             if ($content.event_type == 'event_activist') {
-               $('#ajaxpop  .factbox').html('<h5>Aktivistmøde</h5>');
+               $('#ajaxpop  .factbox').html('<h5>Aktivisme</h5>');
             }
             $('#ajaxpop  .factbox').append('<h6>' + $content.event_start_time + ' – ' + $content.event_end_time + '</h6>');
             if ($content.location_type == true) {
