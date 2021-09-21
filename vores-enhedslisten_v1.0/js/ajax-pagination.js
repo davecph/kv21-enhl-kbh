@@ -47,7 +47,8 @@
             $candidates.forEach(function(item) {
                $('#ajaxpop  .factbox').append(the_post_title(item));
            }); */
-            $('#ajaxpop .entry-content').html($content.post_content);
+           $('#ajaxpop .entry-content').html($content.short_description);
+            $('#ajaxpop .entry-content').append($content.post_content);
          }
       })
       if ($("#ajaxpop").hasClass("show") !== true) {
