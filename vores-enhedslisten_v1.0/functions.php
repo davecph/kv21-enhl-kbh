@@ -243,7 +243,7 @@ function show_event_info() {
    //print_r($query_vars);
 /*    $content =  get_the_content( $post_id ); 
  */
-   $post = get_post( $post_id , ARRAY_A); 
+   //$post = get_post( $post_id , ARRAY_A); 
  
    $post['short_description'] = get_field('short_description', $post_id);
   
