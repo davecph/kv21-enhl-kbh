@@ -209,7 +209,7 @@ add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
 /* / enables console.log for debugging php*/
 
 global $wp_query;
-$wp_query = new WP_Query();
+
 
 function my_ajax_pagination() {
 
