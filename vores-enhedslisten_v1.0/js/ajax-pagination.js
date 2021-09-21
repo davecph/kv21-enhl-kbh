@@ -55,11 +55,12 @@
          $("body").addClass("noScroll");
       } else
       if ($("#ajaxpop").hasClass("show") == true) {
-         ;
+         $("body").removeClass("noScroll");
          $("#ajaxpop").removeClass("show");
       }
    })
 })(jQuery);
+
 (function($) {
    $(document).on('click', '.ajaxpop-close', function(event) {
       event.preventDefault();
@@ -69,6 +70,7 @@
       }
    })
 })(jQuery);
+
 (function($) {
    $(document).on('click', '.ajaxpop-cover', function(event) {
       event.preventDefault();
