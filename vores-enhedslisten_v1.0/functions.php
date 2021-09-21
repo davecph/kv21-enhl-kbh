@@ -420,12 +420,12 @@ function frm_populate_posts($values, $field){
       'order' => 'ASC'
    ));
 
-   print_r($posts);
+   
     unset($values['options']);
     $values['options'] = array(''); //remove this line if you are using a checkbox or radio button field
     $values['options'][''] = ''; //remove this line if you are using a checkbox or radio button field
    
-    print_r($values);
+    
    
     foreach($posts as $p){
       /* $date_now = date('YmdHis');
@@ -438,7 +438,7 @@ function frm_populate_posts($values, $field){
       $values['options'][$p->ID] = $p->post_title.': '.$start_time.' – '.$end_time;
       $values['value'][$p->ID] = $post_id;
       
-            
+      print_r($values);      
       
     }
     $values['use_key'] = false; //this will set the field to save the post ID instead of post title
