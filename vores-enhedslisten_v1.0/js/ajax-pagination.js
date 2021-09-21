@@ -83,3 +83,23 @@
    })
 })
 (jQuery);
+
+(function($) {
+   $(document).on('change', '#field_s7ch9', function(event) {
+      event.preventDefault();
+      $post_id = $(this).attr('value');
+      console.log($post_id);
+      $.ajax({
+         url: ajaxpagination.ajaxurl,
+         type: 'post',
+         data: {
+            action: 'ajax_pagination',
+            query_vars: $post_id,
+         },
+         success: function(data) {
+            
+         }
+      })
+      
+   })
+})(jQuery);
