@@ -47,7 +47,8 @@
             $candidates.forEach(function(item) {
                $('#ajaxpop  .factbox').append(the_post_title(item));
            }); */
-            $('#ajaxpop .entry-content').html($content.post_content);
+           $('#ajaxpop .entry-content').html('<h6>' + $content.short_description + '</h6>');
+            $('#ajaxpop .entry-content').append($content.post_content);
          }
       })
       if ($("#ajaxpop").hasClass("show") !== true) {
@@ -55,11 +56,12 @@
          $("body").addClass("noScroll");
       } else
       if ($("#ajaxpop").hasClass("show") == true) {
-         ;
+         $("body").removeClass("noScroll");
          $("#ajaxpop").removeClass("show");
       }
    })
 })(jQuery);
+
 (function($) {
    $(document).on('click', '.ajaxpop-close', function(event) {
       event.preventDefault();
@@ -69,6 +71,7 @@
       }
    })
 })(jQuery);
+
 (function($) {
    $(document).on('click', '.ajaxpop-cover', function(event) {
       event.preventDefault();

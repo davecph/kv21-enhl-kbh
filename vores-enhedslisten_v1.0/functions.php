@@ -207,13 +207,17 @@ add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
       echo $js_code;
    }
 /* / enables console.log for debugging php*/
+
+global $wp_query;
+
+
 function my_ajax_pagination() {
 
    $post_id = json_decode( stripslashes( $_POST['query_vars'] ), true );
    //print_r($query_vars);
-/*    $content =  get_the_content( $post_id ); ;
+   $content =  get_the_content( $post_id ); 
 
-   $post = get_post( $post_id , ARRAY_A); */
+   $post = get_post( $post_id , ARRAY_A); 
 
    
     
@@ -229,9 +233,9 @@ function my_ajax_pagination() {
    $post['location_type'] = get_field('location_type', $post_id);
    $post['location_type_online_url'] = get_field('location_type_online_url', $post_id);
    $post['location_physical'] = get_field('location_physical', $post_id);
-
-
-
+   $post['post_title'] = get_the_title($post_id);
+   //$post['post_content'] = the_content( '412');
+   
    echo json_encode($post); 
    //echo get_post($query_vars);
    die();
