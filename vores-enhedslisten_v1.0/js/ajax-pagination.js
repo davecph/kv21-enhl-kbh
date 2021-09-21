@@ -1,5 +1,5 @@
 (function($) {
-   $(document).on('click', '.eventSection a', function(event) {
+   $(document).on('click', 'a.showEventLink', function(event) {
       event.preventDefault();
       $post_id = $(this).attr('id').replace('post_item_', '');
       console.log($post_id);
@@ -100,7 +100,7 @@
             $content = JSON.parse(data);
             //alert($content.event_start_time);
             console.log($content);
-            $("#frm_field_21_container").html('<strong>Beskrivelse: </strong>' + $content.short_description+'<span class="eventSection"><a id="post_item_'+$post_id+'">Læs mere</a></span>');
+            $("#frm_field_21_container").html('<strong>Beskrivelse: </strong>' + $content.short_description+'<a class "showEventLink" id="post_item_'+$post_id+'">Læs mere</a>');
          }
       })
       
