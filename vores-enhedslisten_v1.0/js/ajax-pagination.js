@@ -100,6 +100,7 @@
             $content = JSON.parse(data);
             //alert($content.event_start_time);
             console.log($content);
+            $("#frm_field_21_container").html($content.short_description);
          }
       })
       
