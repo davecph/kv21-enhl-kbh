@@ -88,7 +88,7 @@
    $(document).on('change', '#field_s7ch9', function(event) {
       event.preventDefault();
       $post_id = $(this).attr('value');
-      console.log($post_id);
+      console.log(this);
       $.ajax({
          url: ajaxpagination.ajaxurl,
          type: 'post',
