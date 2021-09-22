@@ -86,9 +86,11 @@
 
 (function($) {
    $(document).on('change', '#field_s7ch9', function(event) {
+      
+      console.log('bob');
       event.preventDefault();
       $post_id = $("#field_s7ch9").val();
-      console.log($post_id);
+      
       $.ajax({
          url: ajaxpagination.ajaxurl,
          type: 'post',
