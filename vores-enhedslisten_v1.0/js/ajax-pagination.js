@@ -2,7 +2,7 @@
    $(document).on('click', 'a.showEventLink', function(event) {
       event.preventDefault();
       $post_id = $(this).attr('id').replace('post_item_', '');
-      console.log($post_id);
+      console.log('hej john');
       $.ajax({
          url: ajaxpagination.ajaxurl,
          type: 'post',
