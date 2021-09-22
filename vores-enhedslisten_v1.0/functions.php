@@ -156,7 +156,16 @@ add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
 
 
-
+/* enables console.log for debugging php*/
+function console_log($output, $with_script_tags = true) {
+   $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
+');';
+   if ($with_script_tags) {
+      $js_code = '<script>' . $js_code . '</script>';
+   }
+   echo $js_code;
+}
+/* / enables console.log for debugging php*/
 
 /**
  * Enqueue scripts and styles.
@@ -197,30 +206,13 @@ add_action( 'wp_enqueue_scripts', 'test_scripts' );
 add_action( 'wp_ajax_nopriv_ajax_pagination', 'my_ajax_pagination' );
 add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
 
-/* enables console.log for debugging php*/
-   function console_log($output, $with_script_tags = true) {
-      $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
-   ');';
-      if ($with_script_tags) {
-         $js_code = '<script>' . $js_code . '</script>';
-      }
-      echo $js_code;
-   }
-/* / enables console.log for debugging php*/
-
-global $wp_query;
-
-
 function my_ajax_pagination() {
 
    $post_id = json_decode( stripslashes( $_POST['query_vars'] ), true );
    //print_r($query_vars);
-   $content =  get_the_content( $post_id ); 
-
+   
    $post = get_post( $post_id , ARRAY_A); 
 
-   
-    
    
    $post['thumbnail_url'] = get_the_post_thumbnail_url( $post_id, 'x-large' );
    $post['event_start_time'] = get_field('event_start_time', $post_id);
@@ -237,7 +229,21 @@ function my_ajax_pagination() {
    //$post['post_content'] = the_content( '412');
    
    echo json_encode($post); 
-   //echo get_post($query_vars);
+   
+   die();
+}
+
+add_action( 'wp_ajax_nopriv_show_event_info', 'show_event_info' );
+add_action( 'wp_ajax_show_event_info', 'show_event_info' );
+
+function show_event_info() {
+
+   $post_id = json_decode( stripslashes( $_POST['query_vars'] ), true );
+ 
+   $post['short_description'] = get_field('short_description', $post_id);
+  
+   echo json_encode($post); 
+
    die();
 }
 
@@ -419,10 +425,14 @@ function frm_populate_posts($values, $field){
       'meta_key' => 'event_start_time', 
       'order' => 'ASC'
    ));
+
+   
     unset($values['options']);
     $values['options'] = array(''); //remove this line if you are using a checkbox or radio button field
     $values['options'][''] = ''; //remove this line if you are using a checkbox or radio button field
-
+   
+    
+   
     foreach($posts as $p){
       /* $date_now = date('YmdHis');
       $compare_time = get_field('event_start_time', $p->ID, false );
@@ -432,11 +442,10 @@ function frm_populate_posts($values, $field){
       $end_time = get_field('event_end_time', $p->ID );
       $short_desc = get_field('short_description', $p->ID );
       $values['options'][$p->ID] = $p->post_title.': '.$start_time.' – '.$end_time;
-      
-            
+           
       
     }
-    $values['use_key'] = false; //this will set the field to save the post ID instead of post title
+    $values['use_key'] = true; //this will set the field to save the post ID instead of post title
     unset($values['options'][0]);
   }
   return $values;

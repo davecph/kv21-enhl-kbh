@@ -1,5 +1,5 @@
 (function($) {
-   $(document).on('click', '.eventSection a', function(event) {
+   $(document).on('click', 'a.showEventLink', function(event) {
       event.preventDefault();
       $post_id = $(this).attr('id').replace('post_item_', '');
       console.log($post_id);
@@ -83,3 +83,27 @@
    })
 })
 (jQuery);
+
+(function($) {
+   $(document).on('change', '#field_s7ch9', function(event) {
+      event.preventDefault();
+      $post_id = $("#field_s7ch9").val();
+      //console.log($post_id);
+      $.ajax({
+         url: ajaxpagination.ajaxurl,
+         type: 'post',
+         data: {
+            action: 'show_event_info',
+            query_vars: $post_id,
+         },
+         success: function(data) {
+            $content = JSON.parse(data);
+            //alert($content.event_start_time);
+            console.log($content);
+            $("#frm_field_21_container").html('<strong>Beskrivelse: </strong>' + $content.short_description+'<p><a class="showEventLink" id="post_item_'+$post_id+'">Læs mere</a></p>');
+            
+         }
+      })
+      
+   })
+})(jQuery);
