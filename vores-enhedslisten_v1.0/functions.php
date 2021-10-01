@@ -403,7 +403,7 @@ function frm_populate_posts($values, $field){
    $date_now = date('Y-m-d H:i:s');
    
    $posts = get_posts( array(
-      'posts_per_page'	=> 5,
+      'posts_per_page'	=> 25,
       'category'		=> 'event',
    
       'meta_query'	=> array(
