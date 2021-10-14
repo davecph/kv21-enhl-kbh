@@ -374,6 +374,40 @@ function sortCandidateEventsByDate($args, $widgetControlsValues){
 add_filter("sortCandidateEventsByDate", "sortCandidateEventsByDate", 10, 2);
 
 
+function sortCandidateNewsByDate($args, $widgetControlsValues){
+
+   $currentPost =  get_the_id();
+
+   $args = array(
+      'posts_per_page'	=> -1,
+      'category'		=> 'news',
+   
+      'meta_query'	=> array(
+         
+         array(
+            'key'		=> 'tag_candidates',
+            'value'		=> $currentPost,
+            'compare'	=> 'LIKE' 
+         )
+         
+      ),
+
+       
+      'order' => 'DSC'
+   );
+   
+   return($args);
+}
+
+add_filter("sortCandidateNewsByDate", "sortCandidateNewsByDate", 10, 2);
+
+
+
+
+
+
+
+
 
 
 /* New post from category */
