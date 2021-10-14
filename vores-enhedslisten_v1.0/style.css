@@ -2121,16 +2121,16 @@ body.home .headerContainer {
   display: inherit;
 }
 
-.elementor-679 {
+.elementor-679, .elementor-1406 {
   grid-column: 1/6;
 }
 @media (max-width: 767px), (max-height: 600px) {
-  .elementor-679 {
+  .elementor-679, .elementor-1406 {
     grid-column: 1/4;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .elementor-679 {
+  .elementor-679, .elementor-1406 {
     grid-column: 1/5;
   }
 }
