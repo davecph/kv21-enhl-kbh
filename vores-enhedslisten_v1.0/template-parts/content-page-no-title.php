@@ -29,11 +29,6 @@
          <h6 class="coverImg-caption"> <?php the_post_thumbnail_caption() ;  ?> </h6>
    <?php endif; ?>
 
-<div class="headerContainer">
-
-
-
-
 
 
 
