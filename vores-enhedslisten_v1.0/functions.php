@@ -390,13 +390,13 @@ function sortCandidateNewsByDate($args, $widgetControlsValues){
          )
       ), 
            
-/*       'meta_query'	=> array(
+       'meta_query'	=> array(
          array(
             'key'		=> 'tag_candidates',
             'value'		=> $currentPost,
             'compare'	=> 'LIKE' 
          )
-      )  */
+      )  
 
      /* 'order' => 'DSC' */
    );
