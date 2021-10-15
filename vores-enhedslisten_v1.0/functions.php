@@ -392,7 +392,7 @@ function sortCandidateNewsByDate($args, $widgetControlsValues){
            
        'meta_query'	=> array(
          array(
-            'key'		=> 'tag_candidates',
+            'key'		=> 'tag_candidates_news',
             'value'		=> $currentPost,
             'compare'	=> 'LIKE' 
          )
