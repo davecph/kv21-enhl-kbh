@@ -380,7 +380,7 @@ function sortCandidateNewsByDate($args, $widgetControlsValues){
 
    $args = array(
       'posts_per_page'	=> -1,
-      'category'		=> 'event',
+      'category'		=> 'news',
    
       /* 'meta_query'	=> array(
          
