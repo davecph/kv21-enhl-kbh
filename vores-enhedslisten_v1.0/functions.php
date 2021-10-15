@@ -390,7 +390,7 @@ function sortCandidateNewsByDate($args, $widgetControlsValues){
       ),
       
    
-      /* 'meta_query'	=> array(
+       'meta_query'	=> array(
          
          array(
             'key'		=> 'tag_candidates',
@@ -398,7 +398,7 @@ function sortCandidateNewsByDate($args, $widgetControlsValues){
             'compare'	=> 'LIKE' 
          )
          
-      ), */
+      ) 
      
       /* 'order' => 'DSC' */
    );
