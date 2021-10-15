@@ -387,8 +387,7 @@ function sortCandidateNewsByDate($args, $widgetControlsValues){
             'terms' => '7'
 
          )
-
-      )
+      ),
       
    
       /* 'meta_query'	=> array(
@@ -400,9 +399,8 @@ function sortCandidateNewsByDate($args, $widgetControlsValues){
          )
          
       ), */
-
-       
-      'order' => 'DSC'
+     
+      /* 'order' => 'DSC' */
    );
    
    return($args);
