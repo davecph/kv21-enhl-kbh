@@ -381,6 +381,7 @@ function sortCandidateNewsByDate($args, $widgetControlsValues){
    $args = array(
       'post_type' => 'post',
       'posts_per_page'	=> -1,
+      'category' => 'news',
       /* 'relation'		=> 'AND',
       'meta_query'	=> array(
          array(
@@ -389,13 +390,13 @@ function sortCandidateNewsByDate($args, $widgetControlsValues){
             'compare'	=> 'LIKE' 
          )
       ), */
-      'tax_query' => array(
+      /* 'tax_query' => array(
          
          array(
             'taxonomy'		=> 'category',
             'terms' => '7'
          )
-      )
+      ) */
      /* 'order' => 'DSC' */
    );
    
