@@ -399,7 +399,7 @@ function sortCandidateNewsByDate($args, $widgetControlsValues){
    return($args);
 }
 
-add_filter("sortCandidateNewsByDate", "sortCandidateNewsByDate", 10, 2);
+add_filter("sortCandidateNewsByDate", "sortCandidateNewsByDate", 10, 1);
 
 
 
