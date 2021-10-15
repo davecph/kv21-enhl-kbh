@@ -391,7 +391,7 @@ function sortCandidateNewsByDate($args, $widgetControlsValues){
       ),
       'tax_query' => array(
          
-         '0' => array(
+         array(
             'taxonomy'		=> 'category',
             'terms' => '7'
          )
