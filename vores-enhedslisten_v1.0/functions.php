@@ -381,14 +381,14 @@ function sortCandidateNewsByDate($args, $widgetControlsValues){
    $args = array(
       'post_type' => 'post',
       'posts_per_page'	=> -1,
-      'relation'		=> 'AND',
+      /* 'relation'		=> 'AND',
       'tax_query' => array(
          
          array(
             'taxonomy'		=> 'category',
             'terms' => '7'
          )
-      ), 
+      ),  */
            
        'meta_query'	=> array(
          array(
