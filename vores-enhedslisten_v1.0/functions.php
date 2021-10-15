@@ -382,23 +382,22 @@ function sortCandidateNewsByDate($args, $widgetControlsValues){
       'post_type' => 'post',
       'posts_per_page'	=> -1,
       
-      
-      
-      
+      'tax_query' => array(
+         
+         array(
+            'taxonomy'		=> 'category',
+            'terms' => '7'
+         )
+      ), 
+           
       'meta_query'	=> array(
          array(
             'key'		=> 'tag_candidates',
             'value'		=> $currentPost,
             'compare'	=> 'LIKE' 
          )
-      ), 
-      /* 'tax_query' => array(
-         
-         array(
-            'taxonomy'		=> 'category',
-            'terms' => '7'
-         )
-      ) */
+      ) 
+
      /* 'order' => 'DSC' */
    );
    
