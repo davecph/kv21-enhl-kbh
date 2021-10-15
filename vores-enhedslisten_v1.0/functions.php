@@ -394,17 +394,9 @@ function sortCandidateNewsByDate($args, $widgetControlsValues){
          '0' => array(
             'taxonomy'		=> 'category',
             'terms' => '7'
-         ),
-
-        
-
-
+         )
       )
-      
-   
-     
-     
-      /* 'order' => 'DSC' */
+     /* 'order' => 'DSC' */
    );
    
    return($args);
