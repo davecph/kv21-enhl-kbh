@@ -279,11 +279,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 
 
-function shortcodes_init(){
+
    add_shortcode( 'SC_post_title', 'SC_post_title_function' );
-   console_log('fuck') ;
-}
-add_action('init', 'shortcodes_init');
+
+
 
 function SC_post_title_function( $post_id ){
    console_log($post_id) ;
