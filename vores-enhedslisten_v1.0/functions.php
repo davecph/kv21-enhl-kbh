@@ -284,7 +284,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 
 
-function SC_post_title_function( $post_id ){
+function SC_post_title_function(  ){
    //console_log($post_id) ;
    //get_the_title($post_id);
    $output = 'ost';
