@@ -281,7 +281,7 @@ function SC_post_title_function($post_id  ){
    //console_log($post_id) ;
    $title = get_the_title($post_id);
    $post_id = print_r($post_id);
-   return $post_id;
+   console_log( $post_id );
 }
 
 
