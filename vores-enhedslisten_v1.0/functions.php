@@ -285,8 +285,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 
 function SC_post_title_function( $post_id ){
-   console_log($post_id) ;
-   //get_the_title($post_id);
+   //console_log($post_id) ;
+   get_the_title($post_id);
 }
 
 /**
