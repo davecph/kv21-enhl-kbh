@@ -285,8 +285,8 @@ function shortcodes_init(){
 add_action('init', 'shortcodes_init');
 
 function SC_post_title_function( $post_id ){
-   echo 'heer';
-   get_the_title($post_id);
+   console_log($post_id) ;
+   //get_the_title($post_id);
 }
 
 /**
