@@ -277,11 +277,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 
-function SC_post_title_function(  ){
+function SC_post_title_function($post_id  ){
    //console_log($post_id) ;
-   $title = get_the_title(1610);
-   $output = 'ostemadf'.$title;
-   return $output;
+   $title = get_the_title($post_id);
+   
+   return $title;
 }
 
 
