@@ -279,7 +279,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 function SC_post_title_function(  ){
    //console_log($post_id) ;
-   get_the_title($post = 419);
+   get_the_title($post = 1610);
    $output = 'ost';
    return $output;
 }
