@@ -280,7 +280,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 function SC_post_title_function(  ){
    //console_log($post_id) ;
    $title = get_the_title(1610);
-   $output = 'ost'.$title;
+   $output = 'ostemadf'.$title;
    return $output;
 }
 
