@@ -280,11 +280,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 
 function shortcodes_init(){
-   add_shortcode( 'SC_post_title', 'SC_post_title_function' );
+   add_shortcode( 'SC_post_title', 'SCposttitlefunction' );
 }
 add_action('init', 'shortcodes_init');
 
-function SC_post_title_function( post_id,  SC_post_title ){
+function SCposttitlefunction( $post_id,  $SC_post_title ){
    get_the_title(post_id);
 }
 
