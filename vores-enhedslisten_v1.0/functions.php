@@ -277,19 +277,19 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 
-
-
-
-   add_shortcode( 'SC_post_title', 'SC_post_title_function' );
-
-
-
 function SC_post_title_function(  ){
    //console_log($post_id) ;
    //get_the_title($post_id);
    $output = 'ost';
    return $output;
 }
+
+
+   add_shortcode( 'SC_post_title', 'SC_post_title_function' );
+
+
+
+
 
 /**
  * Adding odoo features
