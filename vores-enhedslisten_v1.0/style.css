@@ -2237,22 +2237,22 @@ article.page {
   padding: 0.5rem 1rem;
 }
 
-.elementor-page-729 {
+.elementor-page-729x {
   /* height: 90vh;
   width: 40%;
   overflow: hidden; */
 }
-.elementor-page-729 h1,
-.elementor-page-729 h2,
-.elementor-page-729 h3,
-.elementor-page-729 h4,
-.elementor-page-729 h5,
-.elementor-page-729 h6,
-.elementor-page-729 p,
-.elementor-page-729 a {
+.elementor-page-729x h1,
+.elementor-page-729x h2,
+.elementor-page-729x h3,
+.elementor-page-729x h4,
+.elementor-page-729x h5,
+.elementor-page-729x h6,
+.elementor-page-729x p,
+.elementor-page-729x a {
   color: #fff;
 }
-.elementor-page-729::before {
+.elementor-page-729x::before {
   z-index: -1;
   display: block;
   position: fixed;
