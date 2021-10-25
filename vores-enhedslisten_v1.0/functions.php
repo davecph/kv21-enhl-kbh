@@ -280,7 +280,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 function SC_post_title_function($att){
    //console_log($post_id) ;
    $post_id = $att[post_id];
-   print $post_id;
    $title = get_the_title($post_id);
    return $title;
      
